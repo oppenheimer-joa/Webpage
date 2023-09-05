@@ -35,3 +35,6 @@ def dictionary(request):
         movie_details.append({"movie_title": original_title, "movie_poster": poster_path})
 
     return render(request, 'sms_site/dictionary.html', {"movie_details": movie_details})
+
+def home(request):
+    return render(request, "sms_site/home.html")

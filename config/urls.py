@@ -9,6 +9,7 @@ from config.views import index
 urlpatterns = [
     path('userpage/', include('userpage.urls')),
     path('dict/', include('sms_site.urls')),
+    path('home/', include('sms_site.urls')),
     path('admin/', admin.site.urls),
     # add path - p202
     path('posts/', include('posts.urls')),
