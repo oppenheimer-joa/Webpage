@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+</head>
+<body>
+    <h1>Movie Details</h1>
+
+    <ul>
+        {% for movie in movie_details %}
+            <li>
+                <h2>{{ movie.movie_title }}</h2>
+                <img src="{{ movie.movie_poster }}" alt="{{ movie.movie_title }} Poster">
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

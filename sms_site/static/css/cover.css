@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main {
+    background-image: url('../img/mainPage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.head_name {
+    font-size: 80px;
+    margin-top: 3px;
+    margin-right:20px;
+    color: #FFFFFF;
+    text-align: right;
+    margin-bottom: 20px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: bold;
+}
+
+.secondary_header {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top: 170px;
+    color: #FFFFFF;
+    text-align: right;
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.description {
+    font-size: 15px;
+    margin-right: 30px;
+    color: #FFFFFF;
+    text-align: right;
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.start_main {
+    margin-left:auto;
+    top:50%;
+    background-color:#ffae00;
+    color: #202020;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    min-height:20px;
+    min-width: 100px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 15px;
+}
+
+.button-container {
+    margin-top: 70px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.start_main:hover {
+    background-color:#FFFFFF;
+    transition: 0.4s;
+    color: #000000;
+  }

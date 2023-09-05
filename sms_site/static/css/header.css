@@ -1,0 +1,43 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202020;
+    border-bottom: 1px solid #ffae00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_content {
+    display: flex; /* 이미지와 타이틀을 좌우로 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+}
+
+.header_title {
+    margin-left: 10px; /* 이미지와 타이틀 사이에 여백 추가 */
+    font-family: 'GmarketSansMedium', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.home_button {
+    background-color: #ffae00;
+    color: #202020;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 20px;
+    min-width: 60px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 15px;
+    margin-right:10px;
+}
+
+.logo_img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-left: 10px;
+}

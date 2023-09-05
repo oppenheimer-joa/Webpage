@@ -1,0 +1,7 @@
+{% extends 'postsBase.html' %}
+
+{% block content %}
+    <h1>main</h1>
+    <div>{{ user.username }} (ID: {{ user.id }})</div>
+    <a href="/users/logout/">로그아웃</a>
+{% endblock %}
