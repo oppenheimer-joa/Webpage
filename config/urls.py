@@ -7,15 +7,25 @@ from django.conf.urls.static import static
 from config.views import index
 
 urlpatterns = [
-    path('userpage/', include('userpage.urls')),
-    path('dict/', include('sms_site.urls')),
+    # default page
+    # path('', index),       ## 나중에 시작 페이지랑 연결
+    # login & account
+    path('', include('users.urls')),
     path('admin/', admin.site.urls),
+    # main page
+    path('main/', include('sms_site.urls')),    ## 나중에 메인 페이지랑 연결  include
+    # movie info
+    path('movie/', include('sms_site.urls')),
+    # performance info
+    ## path('performance/', include('performance.urls')),
+    # user info
+    path('userinfo/', include('userpage.urls')),
+    
+    
     # add path - p202
-    path('posts/', include('posts.urls')),
-    # add path - p199
-    path('users/', include('users.urls')),
-    # add path - p188
-    path('', index)
+    path('posts/', include('posts.urls'))
+    
+    
 ]
 
 # add urlpatterns - p188

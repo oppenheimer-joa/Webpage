@@ -24,7 +24,6 @@ INSTALLED_APPS = [
     'users',
     # add corsheaders'
     'corsheaders',
-    'account',
     'userpage',
     'storages',
     'rest_framework',
@@ -75,7 +74,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 config = ConfigParser()
 # config.read('config.ini')
-config.read('/Users/kimdohoon/git/openheimer/Webpage/config/config.ini')
+config.read('config/config.ini')
 
 s3_access = config.get("AWS", "S3_ACCESS")
 s3_secret = config.get("AWS", "S3_SECRET")

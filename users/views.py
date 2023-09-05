@@ -16,6 +16,9 @@ def login_view(request):
     # add additional settings - p212
     if request.method == "POST":
         form = LoginForm(data=request.POST)
+        request.session['login_session'] = form.login_session
+        request.session.set_expiry(0) # 브라우저 닫을 시 세션 삭제
+        print('login session :::::::: ', request.session['login_session'])
         print('form.is_valid():', form.is_valid())
         print('form.cleaned_data:', form.cleaned_data)
 
@@ -23,10 +26,12 @@ def login_view(request):
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
+            
 
             user = authenticate(username=username, password=password)
             if user:
                 login(request, user)
+                print(request)
                 return redirect('/posts/main')
             else:
                 # add additional settings - p217
@@ -118,3 +123,10 @@ def signup(request):
     
     context = {'form' : form}
     return render(request, 'users/signup.html', context)
+
+def index(request):
+    # add settings - p206
+    if request.user.is_authenticated:
+        return redirect('/posts/main/')
+    else:
+        return redirect('/users/login/')
