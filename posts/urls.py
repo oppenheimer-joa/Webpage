@@ -4,5 +4,5 @@ from posts.views import main
 
 # add urlpatterns - p201
 urlpatterns = [
-    path('main/', main),
+    path('', main),
 ]

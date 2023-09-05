@@ -8,8 +8,7 @@ def userdetail(request) :
     user_info = request.session['login_session']
 
     context = {
-        'user_nm': user_info[0],
-        'user_pw': user_info[1]
+        'user_nm': user_info
     }
     return render(request, 'userpage/userdetail.html', context)
 

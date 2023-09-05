@@ -11,14 +11,11 @@ def login_view(request):
     # add additional settings - p205
     # 추후 이 부분을 적절히 수정
     if request.user.is_authenticated:
-        return redirect('/posts/feeds/')
+        return redirect('/main')
     
     # add additional settings - p212
     if request.method == "POST":
         form = LoginForm(data=request.POST)
-        request.session['login_session'] = form.login_session
-        request.session.set_expiry(0) # 브라우저 닫을 시 세션 삭제
-        print('login session :::::::: ', request.session['login_session'])
         print('form.is_valid():', form.is_valid())
         print('form.cleaned_data:', form.cleaned_data)
 
@@ -31,8 +28,9 @@ def login_view(request):
             user = authenticate(username=username, password=password)
             if user:
                 login(request, user)
-                print(request)
-                return redirect('/posts/main')
+                request.session['login_session'] = user.username
+                request.session.set_expiry(0) # 브라우저 닫을 시 세션 삭제
+                return redirect('/main')
             else:
                 # add additional settings - p217
                 form.add_error(None, "입력한 자격증명에 해당하는 사용자가 없습니다.")
