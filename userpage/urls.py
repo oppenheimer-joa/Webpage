@@ -2,9 +2,9 @@ from django import *
 from django.urls import path
 # from django.conf.urls import url
 from django.conf.urls import include
-from . import views
+from userpage import views
 
 urlpatterns = [
     path('', views.userdetail, name='userdetail'),
-    # path('movie', views.moviedetail, name='moviedetail')
+    path('moviedetail/<str:id>/', views.moviedetail, name='moviedetail')
 ]

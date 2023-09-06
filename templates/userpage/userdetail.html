@@ -24,9 +24,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">영화정보</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="blog-home.html">주차별 박스오피스</a></li>
-                                <li><a class="dropdown-item" href="blog-home.html">일반 영화</a></li>
-                                <li><a class="dropdown-item" href="blog-post.html">???</a></li>    
+                                <li><a class="dropdown-item" href="/movie">주차별 박스오피스</a></li>
+                                <li><a class="dropdown-item" href="/movie">일반 영화</a></li>
+                                <li><a class="dropdown-item" href="/movie">???</a></li>    
                             </ul>
                         </li>
                         <li class="nav-item dropdown">                          
@@ -53,13 +53,12 @@
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://i.pinimg.com/564x/fd/72/fd/fd72fdb97dc5dd6a5c120180ac6d4782.jpg" alt="..." /></div>
-                <div class="col-lg-5">
+                <div class="col-lg-8">
                     <div> 
-                        <h2 class="font-weight-light"> 안녕하세요 <strong> {{ user_nm }} </strong> 님 ! </h2> 
-                        <button> 회원 정보 수정 </button>
+                        <h1 class="font-weight-light"> 좋은 하루 되세요 <strong style="background: linear-gradient(to top, #fff891 40%, transparent 40%);"> {{ user_nm }} </strong> 님 ! </h1> 
+                        <button style="padding: auto; margin-bottom: 10px;"> 회원 정보 수정 </button>
                     </div>
                     <div>
-                        <h5> 비밀번호 : {{ user_pw }} </h5>
                         <h5> 가입 날짜 : </h5>
                         <h5> 나의 레벨 : </h5>
                         <h5> 나의 이메일 : </h5>
@@ -80,9 +79,9 @@
                             <h2 class="card-title"> <strong> 🎬 Movie 🎥 </strong> </h2>
                             <p class="card-text"> 내가 평가한 영화 목록</p>
                             <div class="movie-container"> 
-                                <div class="conatiner-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 1 </div>
-                                <div class="conatiner-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 2 </div>
-                                <div class="conatiner-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 3 </div>
+                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 1 </div>
+                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 2 </div>
+                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 3 </div>
                             </div>
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!"> 더 보러 가기 </a></div>
@@ -94,9 +93,9 @@
                             <h2 class="card-title"> <strong> 🤸‍♀️ Performance 🤸‍♂️ </strong> </h2>
                             <p class="card-text"> 내가 본 공연 목록 </p>
                             <div class="movie-container"> 
-                                <div class="conatiner-context"> 공연 1 </div>
-                                <div class="conatiner-context"> 공연 2 </div>
-                                <div class="conatiner-context"> 공연 3 </div>
+                                <div class="container-context"> 공연 1 </div>
+                                <div class="container-context"> 공연 2 </div>
+                                <div class="container-context"> 공연 3 </div>
                             </div>
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!"> 더 보러 가기 </a></div>

@@ -10826,14 +10826,14 @@ textarea.form-control-lg {
   }
 }
 
-.conatiner-context {
+.container-context {
     display: inline-block;
     border-color: #055160;
     border-style: solid;
-    width: 120px;
+    width: 130px;
     height: 200px;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 .img-liked-movie {
     display:table-cell;

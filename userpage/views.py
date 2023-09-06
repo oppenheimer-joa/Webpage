@@ -12,10 +12,10 @@ def userdetail(request) :
     }
     return render(request, 'userpage/userdetail.html', context)
 
-def moviedetail(request) :
+def moviedetail(request,id) :
     storage = S3Boto3Storage()
-    idx = '872585'
-    file_name = f"TMDB_movieDetails_{idx}_2023-07-14.json"
+    id = '872585'
+    file_name = f"TMDB_movieDetails_{id}_2023-07-14.json"
     json_file = storage.open(f'TMDB/detail/2023-07-14/{file_name}')
     print(json_file)
     data = json_file.read()
