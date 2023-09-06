@@ -79,9 +79,9 @@
                             <h2 class="card-title"> <strong> 🎬 Movie 🎥 </strong> </h2>
                             <p class="card-text"> 내가 평가한 영화 목록</p>
                             <div class="movie-container"> 
-                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 1 </div>
-                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 2 </div>
-                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 3 </div>
+                                <div class="container-context"> <a href="moviedetail/{{ user_movie1.id }}"> <img class="img-liked-movie" src="https://image.tmdb.org/t/p/original{{ user_movie1.poster_path }}" alt="..." /> </a> {{ user_movie1.original_title }}  </div>
+                                <div class="container-context"> <a href="moviedetail/{{ user_movie2.id }}"> <img class="img-liked-movie" src="https://image.tmdb.org/t/p/original{{ user_movie2.poster_path }}" alt="..." /> </a> {{ user_movie2.original_title }}  </div>
+                                <div class="container-context"> <a href="moviedetail/{{ user_movie3.id }}"> <img class="img-liked-movie" src="https://image.tmdb.org/t/p/original{{ user_movie3.poster_path }}" alt="..." /> </a> {{ user_movie3.original_title }}  </div>
                             </div>
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!"> 더 보러 가기 </a></div>

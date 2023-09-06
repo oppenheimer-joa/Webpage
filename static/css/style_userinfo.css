@@ -1285,7 +1285,7 @@ progress {
   }
   .col-lg-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 70%;
   }
   .col-lg-6 {
     flex: 0 0 auto;
@@ -10825,23 +10825,32 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
+.movie-container {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 280px;
+    
+}
 .container-context {
     display: inline-block;
-    border-color: #055160;
-    border-style: solid;
+    align-items: center;
+    align-content: center;
     width: 130px;
-    height: 200px;
-    margin: 10px;
-    padding: 5px;
+    height: 180px;
+    margin: 5px;
+    padding: 2px;
 }
 .img-liked-movie {
-    display:table-cell;
+    display: inline-block;
     background-repeat: no-repeat;
-    max-width:100px;
+    max-width:130px;
     max-height:180px;
-    margin: 10px;
-    padding: 10px;
+    margin: 4px;
+    padding: 6px;
+    background-color: #fff891;
+
 }
 .rating {
     position: relative;

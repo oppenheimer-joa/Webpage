@@ -14,21 +14,57 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     </head>
     <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <!-- 우측 상단 타이틀 설정 -->
+                <a class="navbar-brand" href="/main">♻️ 슬기로운 문화 생활</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">영화정보</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="/movie">주차별 박스오피스</a></li>
+                                <li><a class="dropdown-item" href="/movie">일반 영화</a></li>
+                                <li><a class="dropdown-item" href="/movie">???</a></li>    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">                          
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">공연정보</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="blog-home.html">주차별 공연</a></li>
+                                <li><a class="dropdown-item" href="blog-home.html">지역별 공연</a></li>
+                                <li><a class="dropdown-item" href="blog-post.html">이주의 공연</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">     
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">회원정보</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="/userinfo/">상세보기</a></li>
+                                <li><a class="dropdown-item" href="/users/logout/">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://image.tmdb.org/t/p/original{{ poster_path }}" alt="{{ original_title }}" /></div>
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="{{ movie.original_title }}" /></div>
                 <div class="col-lg-5">
                     <div> 
-                        <h2 class="font-weight-light"> <strong> 영화명 : {{ original_title }} </strong>  </h2>
+                        <h2 class="font-weight-light" style="margin-bottom: 40px;"> <strong> 🎬 <strong style="background: linear-gradient(to top, #fff891 40%, transparent 40%);"> {{ movie.original_title }} </strong> </strong> </h2>
                     </div>
                     <div>
-                        <h5> 평균 평점 : </h5>
-                        <h5> 줄거리 : </h5>
-                        <h5> 등장 인물 : </h5>
-                        <h5> 별점 주기
-                            <div class="rating">
+                        <h5> <strong> 개봉일 &nbsp; </strong> {{ movie.release_date }} </h5>
+                        <h5> <strong> 상영 시간 &nbsp; </strong> {{ movie.runtime }}분 </h5>
+                        <h5> <strong> 등장 인물 &nbsp; </strong> </h5>
+                        <h5> <strong> 줄거리 &nbsp; </strong> </h5>
+                        <h5> <strong> 별점 주기 </strong>
+                            <div class="rating" style="padding: auto; margin: 10px;">
                                 <span class="rating__result"></span> 
                                 <i class="rating__star far fa-star"></i>
                                 <i class="rating__star far fa-star"></i>
@@ -37,45 +73,16 @@
                                 <i class="rating__star far fa-star"></i>
                                 
                             </div>
-                            <button> 등록하기 </button>
+                            <button style="padding: auto; margin-bottom: 10px;"> 등록하기 </button>
                         </h5>
+                        <div> 
+                            <h5> 평점 : ⭐{{ movie.vote_average }} </h5> <span> 👥{{ movie.vote_count }}명 </span>
+                        </div>
                         
                     </div>
                     
                 </div>
                 
-            </div>
-
-            <!-- Content Row-->
-            <div class="row gx-4 gx-lg-5" style="text-align: center;">
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title"> <strong> 🎬 Movie 🎥 </strong> </h2>
-                            <p class="card-text"> 내가 평가한 영화 목록</p>
-                            <div class="movie-container"> 
-                                <div class="container-context"> <img class="img-liked-movie" src="https://image.tmdb.org/t/p/original{{ poster_path }}" alt="{{ original_title }}" /> {{ original_title }} </div>
-                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 2 </div>
-                                <div class="container-context"> <img class="img-liked-movie" src="https://i.pinimg.com/564x/2d/ac/04/2dac04ebc5734314e327b6dd15c2be42.jpg" alt="..." /> 영화 3 </div>
-                            </div>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!"> 더 보러 가기 </a></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title"> <strong> 🤸‍♀️ Performance 🤸‍♂️ </strong> </h2>
-                            <p class="card-text"> 내가 본 공연 목록 </p>
-                            <div class="movie-container"> 
-                                <div class="container-context"> 공연 1 </div>
-                                <div class="container-context"> 공연 2 </div>
-                                <div class="container-context"> 공연 3 </div>
-                            </div>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!"> 더 보러 가기 </a></div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- Footer-->
