@@ -68,8 +68,8 @@ def signup(request):
         form = SignupForm(data=request.POST, files=request.FILES)
         if form.is_valid():
             user = form.save()
-            login(request, user)
-            return redirect('/posts/feeds/')
+            # login(request, user)
+            return redirect('/users/login')
         # removed - p232
         # else:
             # context = {'form':form}

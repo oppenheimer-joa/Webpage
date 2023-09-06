@@ -5,17 +5,18 @@ from django.urls import path, include # p199
 from django.conf import settings
 from django.conf.urls.static import static
 from config.views import index
+from sms_site.views import dictionary
 
 urlpatterns = [
     # default page
-    # path('', index),       ## 나중에 시작 페이지랑 연결
+    path('', include('sms_site.urls')),       ## 나중에 시작 페이지랑 연결
     # login & account
     path('users/', include('users.urls')),
     path('admin/', admin.site.urls),
     # main page
     path('main/', include('posts.urls')),    ## 나중에 메인 페이지랑 연결  include
     # movie info
-    path('movie/', include('sms_site.urls')),
+    path('movie/', dictionary),
     # performance info
     ## path('performance/', include('performance.urls')),
     # user info
