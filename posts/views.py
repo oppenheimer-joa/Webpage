@@ -16,3 +16,10 @@ def main(request):
 
     return render(request, 'posts/main.html')
 
+# 이미지 업로드
+from django.shortcuts import render
+from .models import ExternalImageModel
+
+def external_image_detail(request, pk):
+    external_image = ExternalImageModel.objects.get(pk=pk)
+    return render(request, 'external_image_detail.html', {'external_image': external_image})
