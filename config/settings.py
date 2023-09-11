@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 config = ConfigParser()
 # config.read('config.ini')
-config.read('config/config.ini')
+config.read('/home/neivekim76/config/config.ini')
 
 s3_access = config.get("AWS", "S3_ACCESS")
 s3_secret = config.get("AWS", "S3_SECRET")
