@@ -13,7 +13,7 @@ SECRET_KEY = 'ejdqv%f@s4i0qj@l%3o5%(qjw*ju$yz9v7(h+5t-e@xvy*zcsb'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.70.89', 'localhost']
+ALLOWED_HOSTS = ['192.168.70.89', '34.64.160.47', 'localhost', 'google.com']
 
 INSTALLED_APPS = [
     # add bootstrap4

@@ -30,26 +30,46 @@ def external_image_detail(request, pk):
     
     combined_df = pd.DataFrame()
     for obj in objects.get('Contents'):
-        file_path = 's3://{}/{}'.format(bucket_name, obj.get('Key'))
+        file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
         if file_path.find('parquet') == -1:
             continue
-        s3_object = s3.get_object(Bucket=bucket_name, Key=obj.get('Key'))
+        s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
         parquet_stream = s3_object['Body'].read()
         table = pq.read_table(BytesIO(parquet_stream))
         df = table.to_pandas()
         new_df = pd.concat([combined_df, df])
 
-    row = new_df[new_df['movie_id'] == pk]
-    movie_id = row['movie_id']
-    movie_nm = row['movie_nm']
-    poster_path = f"https://image.tmdb.org/t/p/original{row['poster_path']}"
-
-    try: ExternalImageModel.objects.create(image_url=poster_path)
-    except : pass
-
-    external_image = ExternalImageModel.objects.get(pk=pk)
+    row = new_df[new_df['id'] == pk]
+    try:
+        movie_id = row['id'].tolist()[0]
+        movie_nm = row['name'].tolist()[0]
+        movie_dt = row['scripts'].tolist()[0]
+        movie_gr = row['genre'].tolist()[0]
+        poster_path_str = row['profile_img'].tolist()[0]
+    except:
+        movie_id = "No Data for This Movie ID."
+        movie_nm = "No Data for This Movie Name."
+        movie_dt = "There is no data for this movie id. You can search for other movies."
+        movie_gr = "ERROR"
+        poster_path = "No Data"
+    try: 
+        poster_path = f"https://image.tmdb.org/t/p/original{poster_path_str}"
+        ExternalImageModel.objects.create(image_url=poster_path)
+    except: 
+        pass
+    
+    try:
+        external_image = ExternalImageModel.objects.get(pk=pk).image_url
+        print(external_image)
+    except:
+        external_image = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
+        # external_image = "https://image.tmdb.org/t/p/original/1.jpg"
 
     context = {
+        'movie_id' : movie_id,
+        'movie_nm' : movie_nm,
+        'movie_dt' : movie_dt,
+        'movie_gr' : movie_gr,
         'external_image' : external_image
     }
 
