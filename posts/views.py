@@ -1,3 +1,8 @@
+def dataframe_confirm(dataframe, column):
+    try : return_value = dataframe.iloc[0][column]
+    except : return_value = "ERROR"
+    return return_value
+
 def main(request):
     from django.shortcuts import render, redirect
     user = request.user
@@ -10,11 +15,13 @@ def main(request):
 
     return render(request, 'posts/main.html')
 
+# 조회할 데이터 : 단일 영화의 전역 정보
 def external_image_detail(request, pk):
     from django.shortcuts import render
     from .models import ExternalImageModel
     from configparser import ConfigParser
     import boto3
+    import json
     import pandas as pd
     import pyarrow.parquet as pq
     from io import BytesIO
@@ -26,7 +33,7 @@ def external_image_detail(request, pk):
 
     s3 = boto3.client('s3', aws_access_key_id=access,
     aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-14/')
     
     combined_df = pd.DataFrame()
     for obj in objects.get('Contents'):
@@ -40,37 +47,43 @@ def external_image_detail(request, pk):
         new_df = pd.concat([combined_df, df])
 
     row = new_df[new_df['id'] == pk]
-    try:
-        movie_id = row['id'].tolist()[0]
-        movie_nm = row['name'].tolist()[0]
-        movie_dt = row['scripts'].tolist()[0]
-        movie_gr = row['genre'].tolist()[0]
-        poster_path_str = row['profile_img'].tolist()[0]
-    except:
-        movie_id = "No Data for This Movie ID."
-        movie_nm = "No Data for This Movie Name."
-        movie_dt = "There is no data for this movie id. You can search for other movies."
-        movie_gr = "ERROR"
-        poster_path = "No Data"
+
+    movie_id = dataframe_confirm(row, 'id')
+    movie_nm = dataframe_confirm(row, 'original_title')
+    movie_dt = dataframe_confirm(row, 'overview')
+    movie_gr = dataframe_confirm(row, 'genres')
+    # poster_path_str = dataframe_confirm(row, 'posters')
+    poster_path_str = dataframe_confirm(row, 'backdrops')[0]['file_path']
+
+    # read genre json file
+    json_path = "/home/neivekim76/demo/json/genre.json"
+    with open(json_path, 'r') as file:
+        data = json.load(file)
+    json_genre = data["genres"]
+
+    # parse genre
+    genre_string = ""
+    for genre_id in movie_gr:
+        for genre_reference in json_genre:
+            if genre_id == genre_reference['id']:
+                genre_string += f"{genre_reference['name']}, "
+
+
     try: 
         poster_path = f"https://image.tmdb.org/t/p/original{poster_path_str}"
-        ExternalImageModel.objects.create(image_url=poster_path)
-    except: 
-        pass
-    
-    try:
-        external_image = ExternalImageModel.objects.get(pk=pk).image_url
-        print(external_image)
-    except:
-        external_image = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
-        # external_image = "https://image.tmdb.org/t/p/original/1.jpg"
+        external_image, created = ExternalImageModel.objects.get_or_create(pk=pk, defaults={'image_url': poster_path})
+        url = external_image.image_url
+
+    except Exception as e: 
+        print(f"An error occurred: {str(e)}")
+        url = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
 
     context = {
         'movie_id' : movie_id,
         'movie_nm' : movie_nm,
         'movie_dt' : movie_dt,
-        'movie_gr' : movie_gr,
-        'external_image' : external_image
+        'movie_gr' : genre_string[:-2],
+        'external_image' : url
     }
 
     return render(request, 'posts/external_image_detail.html', context)
