@@ -1,21 +1,143 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Details</title>
-</head>
-<body>
-    <h1>Movie Details</h1>
-
-    <ul>
-        {% for movie in movie_details %}
-            <li>
-                <h2>{{ movie.movie_title }}</h2>
-                <img src="{{ movie.movie_poster }}" alt="{{ movie.movie_title }} Poster">
-            </li>
-        {% endfor %}
-    </ul>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> Movie Dict </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'startbootstrap-modern-business-gh-pages/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <!-- 우측 상단 타이틀 설정 -->
+                    <a class="navbar-brand" href="/main">♻️ 슬기로운 문화 생활</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">영화정보</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="/movie">주차별 박스오피스</a></li>
+                                    <li><a class="dropdown-item" href="/movie">일반 영화</a></li>
+                                    <li><a class="dropdown-item" href="/movie">???</a></li>    
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">                          
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">공연정보</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="blog-home.html">주차별 공연</a></li>
+                                    <li><a class="dropdown-item" href="blog-home.html">지역별 공연</a></li>
+                                    <li><a class="dropdown-item" href="blog-post.html">이주의 공연</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">     
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">회원정보</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="/userinfo/">상세보기</a></li>
+                                    <li><a class="dropdown-item" href="/users/logout/">로그아웃</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <!-- Blog preview section-->
+            <section class="bg py-5">
+                <div class="container px-5 my-5">
+                    <!-- 검색어 입력 필드 -->
+                    <div class="search-container">
+                        <form method="GET" style="display: inline-block; background-color: #f2f2f2; border: 1px solid #ccc; padding: 10px;
+                        border-radius: 5px;">
+                            <div class="search" style="display: flex;
+                            justify-content: center;
+                            align-items: center;">
+                                <input type="text" name="search" placeholder="영화 검색" class="search-input">
+                                <button type="submit" class="search-button"> 검색 </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Main -->
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="text-center">
+                                <h2> ~~ 님을 위한 오늘의 영화 추천 </h2>
+                                <p class="lead fw-normal text-muted mb-5"> 취향에 맞추어 준비해보았어요 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
+                        {% for idx,movie in movie_list.iterrows %}
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2"> {{ movie.id }} </div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="{{ movie.id }}"><h5 class="card-title mb-3"> <strong> {{ movie.original_title }} </strong> </h5> <p class="text-muted"> {{ movie.release_date }} </p> </a>
+                                    <p class="card-text mb-0"> {{ movie.overview }} </p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                            <div class="small">
+                                                <div class="fw-bold">Kelly Rowan</div>
+                                                <div class="text-muted">March 12, 2023 &middot; 6 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Call to action-->
+                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                            <div class="mb-4 mb-xl-0">
+                                <div class="fs-3 fw-bold text-white">New products, delivered to you.</div>
+                                <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
+                            </div>
+                            <div class="ms-xl-4">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
+                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+                                </div>
+                                <div class="small text-white-50">We care about privacy, and will never share your data.</div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'startbootstrap-modern-business-gh-pages/js/scripts.js' %}"></script>
+    </body>
 </html>

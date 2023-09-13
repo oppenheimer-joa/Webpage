@@ -98,7 +98,7 @@ DATABASES = {
 }
 
 AWS_REGION = "ap-northeast-2"
-AWS_STORAGE_BUCKET_NAME = "sms-basket"
+AWS_STORAGE_BUCKET_NAME = "sms-warehouse"
 AWS_ACCESS_KEY_ID = s3_access
 AWS_SECRET_ACCESS_KEY = s3_secret
 AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_REGION}.amazonaws.com"
