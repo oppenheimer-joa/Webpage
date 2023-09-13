@@ -1,0 +1,88 @@
+mixin footer(options)
+
+    footer.footer.pt-10.pb-5.mt-auto(class=options.footerBg, class=options.footerStyle)
+
+        if block
+            block
+        else
+            .container.px-5
+                .row.gx-5
+                    .col-lg-3
+                        .footer-brand
+                            | SB UI Kit Pro
+                        .mb-3 Design made easy
+                        .icon-list-social.mb-5
+                            a.icon-list-social-link(href='#!')
+                                i.fab.fa-instagram
+                            a.icon-list-social-link(href='#!')
+                                i.fab.fa-facebook
+                            a.icon-list-social-link(href='#!')
+                                i.fab.fa-github
+                            a.icon-list-social-link(href='#!')
+                                i.fab.fa-twitter
+
+                    .col-lg-9
+                        .row.gx-5
+                            .col-lg-3.col-md-6.mb-5.mb-lg-0
+                                .text-uppercase-expanded.text-xs.mb-4 Product
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='#!') Landing
+                                    li.mb-2
+                                        a(href='#!') Pages
+                                    li.mb-2
+                                        a(href='#!') Sections
+                                    li.mb-2
+                                        a(href='#!') Documentation
+                                    li
+                                        a(href='#!') Changelog
+                            .col-lg-3.col-md-6.mb-5.mb-lg-0
+                                .text-uppercase-expanded.text-xs.mb-4 Technical
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='#!') Documentation
+                                    li.mb-2
+                                        a(href='#!') Changelog
+                                    li.mb-2
+                                        a(href='#!') Theme Customizer
+                                    li
+                                        a(href='#!') UI Kit
+                            .col-lg-3.col-md-6.mb-5.mb-md-0
+                                .text-uppercase-expanded.text-xs.mb-4 Includes
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='#!') Utilities
+                                    li.mb-2
+                                        a(href='#!') Components
+                                    li.mb-2
+                                        a(href='#!') Layouts
+                                    li.mb-2
+                                        a(href='#!') Code Samples
+                                    li.mb-2
+                                        a(href='#!') Products
+                                    li.mb-2
+                                        a(href='#!') Affiliates
+                                    li
+                                        a(href='#!') Updates
+                            .col-lg-3.col-md-6
+                                .text-uppercase-expanded.text-xs.mb-4 Legal
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='#!') Privacy Policy
+                                    li.mb-2
+                                        a(href='#!') Terms and Conditions
+                                    li
+                                        a(href='#!') License
+                                
+                hr.my-5
+
+                .row.gx-5.align-items-center
+
+                    .col-md-6.small
+                        | Copyright &copy; Your Website 2023
+                    .col-md-6.text-md-end.small
+                        a(href='#!') Privacy Policy
+                        | 
+                        | &middot;
+                        | 
+                        a(href='#!') Terms &amp; Conditions

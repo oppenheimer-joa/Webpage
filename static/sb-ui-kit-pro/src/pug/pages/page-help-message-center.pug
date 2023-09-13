@@ -1,0 +1,193 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Message Center'
+
+append css
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container px-5',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-gradient-primary-to-secondary',
+        pageHeaderStyle: 'page-header-ui-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-light'
+    })
+
+        .page-header-ui-content.pt-10
+            .container.px-5.text-center
+                .row.gx-5.justify-content-center
+                    .col-lg-8
+                        h1.page-header-ui-title.mb-3 Message Center
+                        p.page-header-ui-text Open tickets and receive responses
+
+    //- * * * * * * * * * * * * * *
+    //- * * Support Ticket List * *
+    //- * * * * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'pt-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container.px-5
+
+            .input-group.input-group-lg.mb-5
+                button.btn.btn-primary.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Case ID
+                .dropdown-menu.animated--fade-in-up
+                    a.dropdown-item(href='#!') Transaction ID
+                    a.dropdown-item(href='#!') Invoice ID
+                    a.dropdown-item(href='#!') Name
+                    a.dropdown-item(href='#!') Email
+                input.form-control(type='text', aria-label='Text input with dropdown button', placeholder='Search for a case...')
+
+            .row.gx-5
+
+                .col-lg-4.col-xl-3.mb-5
+
+                    .card
+                        .list-group.list-group-flush.small
+                            a.list-group-item.list-group-item-action.p-3(href='#!')
+                                i.fas.fa-plus.fa-fw.me-2.text-gray-400
+                                | Make New Ticket
+                            a.list-group-item.list-group-item-action.p-3(href='#!')
+                                i.fas.fa-file-alt.fa-fw.me-2.text-gray-400
+                                | View Open Tickets
+                            a.list-group-item.list-group-item-action.p-3(href='#!')
+                                i.fas.fa-archive.fa-fw.me-2.text-gray-400
+                                | View Closed Tickets
+                            a.list-group-item.list-group-item-action.p-3(href='#!')
+                                i.fas.fa-star.fa-fw.me-2.text-gray-400
+                                | View Starred Tickets
+                            a.list-group-item.list-group-item-action.p-3(href='#!')
+                                i.far.fa-handshake.fa-fw.me-2.text-gray-400
+                                | Managed Services
+
+                .col-lg-8.col-xl-9
+
+                    .card.mb-3
+                        .list-group.list-group-flush
+                            a.list-group-item.list-group-item-action.py-4(href='#!')
+                                .d-flex.justify-content-between
+                                    .me-4.d-flex
+                                        .icon-stack.icon-stack.bg-green-soft.text-green.flex-shrink-0.me-4
+                                            i(data-feather='check')
+                                        div
+                                            h6
+                                                | Case #290225
+                                            p.card-text
+                                                | Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.
+                                    .small.text-gray-400.flex-shrink-0.text-end
+                                        | 12:13 PM
+                                        br
+                                        .badge.bg-green-soft.rounded-pill.text-green Approved
+                            a.list-group-item.list-group-item-action.py-4(href='#!')
+                                .d-flex.justify-content-between
+                                    .me-4.d-flex
+                                        .icon-stack.icon-stack.bg-red-soft.text-red.flex-shrink-0.me-4
+                                            i(data-feather='x')
+                                        div
+                                            h6 Case #290234
+                                            p.card-text
+                                                | Your request has been declined. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.
+                                    .small.text-gray-400.flex-shrink-0.text-end
+                                        | 10:26 PM
+                                        br
+                                        .badge.bg-red-soft.rounded-pill.text-red Declined
+                            a.list-group-item.list-group-item-action.py-4(href='#!')
+                                .d-flex.justify-content-between
+                                    .me-4.d-flex
+                                        .icon-stack.icon-stack.bg-green-soft.text-green.flex-shrink-0.me-4
+                                            i(data-feather='check')
+                                        div
+                                            h6 Case #290194
+                                            p.card-text 
+                                                | Your request has been approved. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.
+                                    .small.text-gray-400.flex-shrink-0.text-end
+                                        | Monday
+                                        br
+                                        .badge.bg-green-soft.rounded-pill.text-green Approved
+                            a.list-group-item.list-group-item-action.py-4(href='#!')
+                                .d-flex.justify-content-between
+                                    .me-4.d-flex
+                                        .icon-stack.icon-stack.bg-yellow-soft.text-yellow.flex-shrink-0.me-4
+                                            i(data-feather='file-text')
+                                        div
+                                            h6 Case #290127
+                                            p.card-text
+                                                | Your request has been approved. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.
+                                    .small.text-gray-400.flex-shrink-0.text-end
+                                        | 2 weeks ago
+                                        br
+                                        .badge.bg-yellow-soft.rounded-pill.text-yellow Pending
+                            a.list-group-item.list-group-item-action.py-4(href='#!')
+                                .d-flex.justify-content-between
+                                    .me-4.d-flex
+                                        .icon-stack.icon-stack.bg-yellow-soft.text-yellow.flex-shrink-0.me-4
+                                            i(data-feather='file-text')
+                                        div
+                                            h6 Case #290078
+                                            p.card-text
+                                                | Your request has been approved. Thank you for using our service. This case is now being marked as closed. If you would like to reopen this case, please reply to this message.
+                                    .small.text-gray-400.flex-shrink-0.text-end
+                                        | 2 weeks ago
+                                        br
+                                        .badge.bg-yellow-soft.rounded-pill.text-yellow Pending
+                            a.list-group-item.list-group-item-action.py-4(href='#!')
+                                .text-center.small View Archived Cases
+
+                    .text-end.mb-5
+                        a.btn.btn.btn-primary-soft.text-primary.fw-500(href='#!')
+                            i.fas.fa-file-pdf.me-1
+                            | Download case report
+
+                    .card.z-1
+                        .card-body.text-center.py-5
+                            h2.mb-3 We're here to help
+                            a.btn.btn-primary.fw-500(href='#!') Open a New Ticket
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });

@@ -1,0 +1,199 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Rental'
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-dark',
+        navbarBtnColor: 'btn-primary',
+        navbarContainer: 'container px-5',
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover overlay overlay-light overlay-80',
+        pageHeaderBgImg: 'background-image: url("https://source.unsplash.com/R-LK3sqLiBw/1600x1200")',
+        pageHeaderStyle: 'page-header-ui-light',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .page-header-ui-content.py-5.position-relative
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-xl-8.col-lg-10.text-center
+                        h1.page-header-ui-title Rent your home or extra room
+                        p.page-header-ui-text.mb-5 Opening your home to vacationers is a great way to earn some extra income, and this is a great way to get started!
+                        a.btn.btn-primary.fw-500.me-2(href='#!') Get Started
+                        a.btn.btn-link.fw-500(href='#!') Learn More
+
+    //- * * * * * * * * * * *
+    //- * * Intro Section * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container.px-5
+            .row.gx-5.mb-5
+                .col-lg-4.mb-5
+                    a(href='#!').card.lift.h-100
+                        img.card-img-top(src='https://source.unsplash.com/2d4lAQAlbDA/800x500', alt='...')
+                        .card-body
+                            h4.card-title.mb-2 Outdoor Patio
+                            p.card-text
+                                | Our property features a beautiful, private outdoor area with seating and a pool.
+                        .card-footer.bg-transparent.border-top.d-flex.align-items-center.justify-content-between
+                            .small.text-primary
+                                | See more
+                            .small.text-primary
+                                i(data-feather='arrow-right')
+                .col-lg-4.mb-5
+                    a(href='#!').card.lift.h-100
+                        img.card-img-top(src='https://source.unsplash.com/MP0bgaS_d1c/800x500', alt='...')
+                        .card-body
+                            h4.card-title.mb-2 Full Kitchen
+                            p.card-text
+                                | A fully stocked kitchen with all modern amenities provides a peaceful cooking environment.
+                        .card-footer.bg-transparent.border-top.d-flex.align-items-center.justify-content-between
+                            .small.text-primary
+                                | See more
+                            .small.text-primary
+                                i(data-feather='arrow-right')
+                .col-lg-4.mb-5
+                    a(href='#!').card.lift.h-100
+                        img.card-img-top(src='https://source.unsplash.com/iAftdIcgpFc/800x500', alt='...')
+                        .card-body
+                            h4.card-title.mb-2 Comfortable Bedding
+                            p.card-text
+                                | With three newly updated bedrooms you will be sleeping soundly during your stay.
+                        .card-footer.bg-transparent.border-top.d-flex.align-items-center.justify-content-between
+                            .small.text-primary
+                                | See more
+                            .small.text-primary
+                                i(data-feather='arrow-right')
+            .text-center.mb-4
+                h2 Your questions, answered.
+
+            //- Help Accordion
+            #accordionFaq.accordion
+                .accordion-item
+                    h2#headingOne.accordion-header
+                        button.accordion-button.py-4(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                            | Is there a minimum number of nights?
+                    #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionFaq')
+                        .accordion-body
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facere placeat dolor tempora dicta! Provident, vero voluptas! Culpa at, dolor repellat tenetur sunt, nobis repudiandae odit veniam, a placeat quasi.
+                .accordion-item
+                    h2#headingTwo.accordion-header
+                        button.accordion-button.py-4.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                            | How close is the nearest grocery store?
+                    #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionFaq')
+                        .accordion-body
+                            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate praesentium ab placeat! Nostrum magnam iste maiores corporis laborum aspernatur! Itaque optio qui voluptatibus sequi numquam sit deleniti iure nihil dolorem?
+                .accordion-item
+                    h2#headingThree.accordion-header
+                        button.accordion-button.py-4.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                            | Is there a discount for longer term rental periods?
+                    #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionFaq')
+                        .accordion-body
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt placeat libero perferendis nostrum? Voluptate, eius incidunt alias adipisci tempore cupiditate. Pariatur repellendus tenetur autem libero dignissimos eos dicta impedit consectetur.
+
+    //- * * * * * * * * * * * *
+    //- * * Call to Action  * *
+    //- * * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-img-cover overlay overlay-light overlay-80',
+        sectionBgImg: 'background-image: url("https://source.unsplash.com/BlIhVfXbi9s/1600x800")',
+        sectionPadding: 'py-15',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .container.px-5.z-1
+            .mt-5
+                .display-4.mb-3.text-dark Ready to book?
+                a.btn.btn-primary.fw-500(href='#!') Search Availability
+
+    //- * * * * * * * * * * *
+    //- * * Testimonials  * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container.px-5
+            .row.gx-5
+                .col-lg-6.mb-5.mb-lg-0.divider-right
+                    .testimonial.p-lg-5
+                        .mb-3.text-yellow
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                        p.testimonial-quote.text-primary
+                            | "I was impressed with how beautiful and clean this property was. The owner definitely goes the extra mile to help their guests!"
+                        .testimonial-name
+                            | Adam Hall
+                        .testimonial-position
+                            | Lisbon, Portugal
+                .col-lg-6
+                    .testimonial.p-lg-5
+                        .mb-3.text-yellow
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                        p.testimonial-quote.text-primary
+                            | "Amazing location, convenient parking, and a lots of amenities and extras. I will definitely be returning here whenever I'm in town."
+                        .testimonial-name
+                            | Lia Peterson
+                        .testimonial-position
+                            | Sacramento, CA, USA
+
+    hr.my-0
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-white',
+        footerStyle: 'footer-light'
+    })
