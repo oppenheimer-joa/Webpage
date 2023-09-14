@@ -7,6 +7,7 @@ import pandas as pd
 import boto3
 from io import BytesIO
 import pyarrow.parquet as pq
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
     
 def dictionary(request):
@@ -18,8 +19,7 @@ def dictionary(request):
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
     objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-14/')
-
-
+    
     movie_details = pd.DataFrame(columns=[
         'id', 'cast', 'crew', 'backdrop_path', 'belongs_to_collection',
         'budget', 'genres', 'homepage', 'imdb_id', 'original_language',
@@ -40,6 +40,17 @@ def dictionary(request):
         parquet_df = parquet_table.to_pandas()
         movie_details = pd.concat([movie_details, parquet_df], ignore_index=True)
 
+    movie_list = movie_details.to_dict('records')
+    paginator = Paginator(movie_list, 1)
+    # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
+    page = request.GET.get('page', 1)
+    try:
+        pages = paginator.page(page)
+    except PageNotAnInteger:
+        pages = paginator.page(1)
+    except EmptyPage:
+        pages = paginator.page(1)
+        
     # 장르 endpoint 가 붙으면
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
     objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='genre/2023-07-14/')
@@ -69,9 +80,10 @@ def dictionary(request):
             movie_details = movie_details[movie_details['overview'].str.contains(search)]
         if search_type == '감독' :
             movie_details = movie_details
-    return render(request, 'sms_site/dictionary.html',{"movie_list": movie_details,
+    return render(request, 'sms_site/dictionary.html',{"movie_list": movie_list,
                                                        "search":search,
-                                                       "search_type":search_type})
+                                                       "search_type":search_type,
+                                                       'pages': pages})
 
 
 def genre_list(request):
