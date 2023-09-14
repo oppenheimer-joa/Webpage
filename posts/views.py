@@ -13,7 +13,7 @@ def main(request):
     if not is_authenticated:
         return redirect('/users/login')
 
-    return render(request, 'posts/main.html')
+    return render(request, 'posts/DEMO-main.html')
 
 # 조회할 데이터 : 단일 영화의 전역 정보
 def external_image_detail(request, pk):
