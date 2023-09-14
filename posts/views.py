@@ -13,7 +13,19 @@ def main(request):
     if not is_authenticated:
         return redirect('/users/login')
 
-    return render(request, 'posts/DEMO-main.html')
+    return render(request, 'posts/DEMO-select.html')
+
+def movies(request):
+    from django.shortcuts import render, redirect
+    user = request.user
+    is_authenticated = user.is_authenticated
+    print('user:', user)
+    print('is_authenticated:', is_authenticated)
+
+    if not is_authenticated:
+        return redirect('/users/login')
+
+    return render(request, 'posts/DEMO-movies.html')
 
 # 조회할 데이터 : 단일 영화의 전역 정보
 def external_image_detail(request, pk):

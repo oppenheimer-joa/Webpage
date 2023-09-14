@@ -10,6 +10,7 @@ from . import views
 # add urlpatterns - p201
 urlpatterns = [
     path('', main),
+    path('movies/', views.movies, name='movies'),
     path('details/<int:pk>/', views.external_image_detail, name='external_image_detail'),
 ]
 
