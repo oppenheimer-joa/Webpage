@@ -18949,3 +18949,43 @@ section {
     font-weight: 500;
     color: #696f79;
 }
+.ComponentHead__button_tab--YoR6Z[aria-selected=true] {
+    color: var(--bs-teal);
+    display: flex;
+    overflow: hidden;
+}
+/* aside bar */
+aside.filter-sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px; /* 기존 스타일과 겹치지 않도록 마진을 조절 */
+}
+
+aside.filter-sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside.filter-sidebar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+aside.filter-sidebar select,
+aside.filter-sidebar input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+aside.filter-sidebar button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

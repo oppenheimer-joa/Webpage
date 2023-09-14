@@ -20,7 +20,8 @@ urlpatterns = [
     # performance info
     ## path('performance/', include('performance.urls')),
     # user info
-    path('userinfo/', include('userpage.urls'))
+    path('userinfo/', include('userpage.urls')),
+    path('performance/', performance)
 
     
     

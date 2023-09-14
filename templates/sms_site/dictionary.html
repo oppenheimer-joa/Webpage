@@ -187,7 +187,6 @@
                                             <option value="director"> 감독 </option>
                                         </select>
                                         <div class="col flex-grow-1">
-                                            <label class="sr-only" for="inputEmail">제목 / 내용 / 인물 별로 검색해보셍</label>
                                             <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="검색어를 입력해주세요" />
                                         </div>
                                         <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
@@ -368,7 +367,7 @@
     genreDivs.forEach(div => {
         div.addEventListener("click", function() {
             const genre = div.getAttribute("movie-genre");
-            const url = `/movie/${genre}`;
+            const url = `/movie?genre=${genre}`;
 
             window.location.href = url;
             div.setAttribute("aria-selected", "true");
@@ -380,10 +379,18 @@
     sortDivs.forEach(div => {
         div.addEventListener("click", function() {
             const sortby = div.getAttribute("sort-by");
-            const url = `/movie/?sort=${sortby}`;
 
-            window.location.href = url;
+            // 현재 URL 가져오기
+            const url = new URL(window.location.href);
+
+            // "sort" 매개 변수를 가져오고, 새로운 값으로 대체
+            url.searchParams.set("sort", sortby);
+
+            // 새 URL로 이동
+            window.location.href = url.toString();
+
             div.setAttribute("aria-selected", "true");
         });
     });
+
 </script>
