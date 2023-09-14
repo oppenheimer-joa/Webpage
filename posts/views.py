@@ -1,6 +1,8 @@
 def dataframe_confirm(dataframe, column):
     try : return_value = dataframe.iloc[0][column]
-    except : return_value = "ERROR"
+    except Exception as e :
+        print(e)
+        return_value = "ERROR"
     return return_value
 
 def main(request):
@@ -38,8 +40,6 @@ def movies_detail(request, pk):
     import pyarrow.parquet as pq
     from io import BytesIO
 
-
-
     parser = ConfigParser()
     parser.read("/home/neivekim76/config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
@@ -47,7 +47,7 @@ def movies_detail(request, pk):
 
     s3 = boto3.client('s3', aws_access_key_id=access,
     aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-14/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/1960-01-01/')
     
     combined_df = pd.DataFrame()
     for obj in objects.get('Contents'):
@@ -68,7 +68,7 @@ def movies_detail(request, pk):
     movie_gr = dataframe_confirm(row, 'genres')
     poster_path_str = dataframe_confirm(row, 'posters')
     date = dataframe_confirm(row, 'release_date')
-    backdrop_path_str = dataframe_confirm(row, 'backdrops')[0]['file_path']
+    backdrop_path_str = dataframe_confirm(row, 'backdrop_path')
 
     # read genre json file
     json_path = "/home/neivekim76/demo/json/genre.json"
