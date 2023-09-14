@@ -11,7 +11,7 @@ from . import views
 urlpatterns = [
     path('', main),
     path('movies/', views.movies, name='movies'),
-    path('details/<int:pk>/', views.external_image_detail, name='external_image_detail'),
+    path('movies/<int:pk>/', views.movies_detail, name='movies_detail'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

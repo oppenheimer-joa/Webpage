@@ -1,0 +1,744 @@
+{% load static %}
+
+<!-- [공통/하양] 헤더 구조 : 시작 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
+
+        
+        <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
+
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="layoutDefault">
+            <div id="layoutDefault_content">
+                <main>
+                    <!-- Navbar-->
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+                        <div class="container px-5">
+                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto me-lg-5">
+                                    <!-- 문화 컨텐츠 카테고리 -->
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            문화 컨텐츠
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row g-0">
+                                                <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <div class="mb-3">내가 관심있는 컨텐츠의 정보를 한 눈에 확인해보세요.</div>
+                                                            <a class="btn btn-white btn-sm text-primary fw-500" href="index.html">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <!-- 영화 카테고리 -->
+                                                            <h6 class="dropdown-header text-primary">영화</h6>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">영화 목록</a>
+                                                            <a class="dropdown-item" href="landing-app-mobile.html">박스오피스</a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">영화제</a>
+                                                            <div class="dropdown-divider border-0"></div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">공연</h6>
+                                                            <a class="dropdown-item" href="landing-multipurpose.html">공연 목록</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">지역별 공연 현황</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- 나의 문화생활 카테고리 -->
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            나의 문화생활
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row g-0">
+                                                <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <div class="mb-3">문화생활과 커뮤니티. 서로의 이야기들을 공유하고 즐거움을 찾아보는 시간을 가져요.</div>
+                                                            <a class="btn btn-white btn-sm text-primary fw-500" href="index.html">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <!-- 영화 카테고리 -->
+                                                            <h6 class="dropdown-header text-primary">영화</h6>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">내가 찜한 영화</a>
+                                                            <a class="dropdown-item" href="landing-app-mobile.html">나의 별점</a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">나의 리뷰</a>
+                                                            <div class="dropdown-divider border-0"></div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">공연</h6>
+                                                            <a class="dropdown-item" href="landing-multipurpose.html">내가 찜한 공연</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">나의 별점</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">나의 리뷰</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- 마이페이지 카테고리 -->
+                                    <!-- 로그인/로그아웃 상태에 따라 메뉴 변경 -->
+                                    <li class="nav-item dropdown dropdown-lg no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            마이페이지
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up" aria-labelledby="navbarDropdownPages">
+                                            <div class="row g-0">
+                                                <div class="col-lg-4 p-lg-5">
+                                                    <h6 class="dropdown-header text-primary">회원정보</h6>
+                                                    <a class="dropdown-item" href="page-basic.html">Basic</a>
+                                                    <a class="dropdown-item" href="page-company-about.html">About</a>
+                                                    <a class="dropdown-item" href="page-company-pricing.html">Pricing</a>
+                                                    <a class="dropdown-item" href="page-company-contact.html">Contact</a>
+                                                    <a class="dropdown-item" href="page-company-team.html">Team</a>
+                                                    <a class="dropdown-item" href="page-company-terms.html">Terms</a>
+                                                    <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- • • • 카테고리 -->
+                                    <li class="nav-item dropdown no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            • • •
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
+                                            <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-ui-kit-pro/quickstart" target="_blank">
+                                                <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="book-open"></i></div>
+                                                <div>
+                                                    <div class="small text-gray-500">Documentation</div>
+                                                    사이트 공식 이용 가이드
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-ui-kit-pro/components" target="_blank">
+                                                <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="code"></i></div>
+                                                <div>
+                                                    <div class="small text-gray-500">고객 지원</div>
+                                                    고객 상담 | FAQ | Q&A
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-ui-kit-pro/changelog" target="_blank">
+                                                <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="file-text"></i></div>
+                                                <div>
+                                                    <div class="small text-gray-500">소개</div>
+                                                    개요 | 팀 소개 | 패치노트 | API
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- [공통] 헤더 구조 : 끝 -->
+
+
+
+                    <!-- Page Header-->
+                    <!-- 배경 이미지 영화 백드롭으로 변경 -->
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60" style="background-image: url('{{ external_image }}')">
+                        <div class="page-header-ui-content position-relative">
+                            <div class="container px-5">
+                                <div class="row gx-5 justify-content-center align-items-center">
+                                    <div class="col-lg-6" data-aos="fade-right">
+                                        <h1 class="page-header-ui-title">{{ movie_nm }}</h1>
+                                        <span class="badge bg-dark text-white ms-1">{{ movie_gr }} | {{ date }}</span>
+                                        <p class="page-header-ui-text mb-lg-0">{{ movie_dt }}</p>
+                                    </div>
+                                    <div class="col-lg-6 z-1" data-aos="fade-left">
+                                        <div class="device-wrapper mx-auto mb-n15">
+                                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                                <!-- 포스터 이미지로 변경 -->
+                                                <div class="screen"><img class="img-fluid z-1" src="{{ poster }}" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </header>
+
+                    
+                    <!-- 출연진 표시 구역 -->
+                    <section class="bg-transparent py-10">
+                        <div class="container px-5">
+
+                            <section class="bg-light py-10">
+                                <div class="container px-5">
+                                    <h2 class="mb-4 text-center">영화 출연진 목록</h2>
+                                    <div class="mb-5 text">
+                                        <div class="text-xs text-uppercase-expanded mb-2"</div>
+                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">ACTORS</div>
+                                            <p class="lead mb-0">출연진 목록</p>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$115</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/tG36rvCeqng/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Gray Bicycle</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$29</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/nHOz7sp5nHE/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Hanimex Camera</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 3 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$999</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/GkFQEOubrCo/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Macbook Pro</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 4 hours ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$19</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/3bdSGpKVAmk/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Assorted Skin Care</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 29 minutes ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$59</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/w9IHmVSNBfU/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Brown Ukulele</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 3 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$249</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/bpg-ngqrPc8/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Leather Sofa</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 hours ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$219</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/fZuleEfeA1Q/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Green Suede Sofa</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/rjhAiP3cj9E/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Metal Chairs</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 5 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/5ba6j8d_oXY/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Wireless Earbuds</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 month ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$34,999</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/ESoE_buQvNQ/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Muscle Car</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 1 week ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$69</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/zuE9jsaVHuA/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Hardwood Dresser</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 weeks ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$9,999</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/WuRsjF4iZK0/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Classic Motorcycle</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 week ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-5 text">
+                                        <div class="text-xs text-uppercase-expanded mb-2"</div>
+                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">CREWS</div>
+                                            <p class="lead mb-0">제작진 목록</p>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$115</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/tG36rvCeqng/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Gray Bicycle</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$29</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/nHOz7sp5nHE/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Hanimex Camera</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 3 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$999</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/GkFQEOubrCo/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Macbook Pro</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 4 hours ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$19</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/3bdSGpKVAmk/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Assorted Skin Care</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 29 minutes ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$59</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/w9IHmVSNBfU/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Brown Ukulele</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 3 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$249</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/bpg-ngqrPc8/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Leather Sofa</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 hours ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$219</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/fZuleEfeA1Q/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Green Suede Sofa</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/rjhAiP3cj9E/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Metal Chairs</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 5 days ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/5ba6j8d_oXY/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Wireless Earbuds</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 month ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$34,999</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/ESoE_buQvNQ/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Muscle Car</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 1 week ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$69</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/zuE9jsaVHuA/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Hardwood Dresser</div>
+                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 weeks ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="#!">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$9,999</div>
+                                                <img class="card-img-top" src="https://source.unsplash.com/WuRsjF4iZK0/800x500" alt="..." />
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0">Classic Motorcycle</div>
+                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 week ago</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </section>
+
+                    </section>
+                                        <!-- 가로 구분선 -->
+                    <hr class="my-0" />
+
+
+                    <!-- 가로 구분선
+                    <hr class="my-0" /> -->
+
+
+                    <!-- 영화 정보 표시 구역 -->
+
+                    <section class="bg-white py-10">
+                        <div class="container px-5">
+                            <h2 class="mb-4 text-center">Achievements</h2>
+                            <div class="row gx-5 text-center">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="layers"></i></div>
+                                    <h3>100,000,000$</h3>
+                                    <p class="mb-0">만큼의 누적 매출액을 달성했어요.</p>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="smartphone"></i></div>
+                                    <h3>25건</h3>
+                                    <p class="mb-0">만큼의 사용자 평가가 기록되었어요.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="code"></i></div>
+                                    <h3>Complete documentation</h3>
+                                    <p class="mb-0">All of the layouts, page sections, components, and utilities are fully covered in this products docs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 가로 구분선 -->
+                    <hr class="my-0" />
+                    <section class="bg-transparent py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5">
+                                <h2 class="mb-0">유저 코멘트</h2>
+                                <p class="mb-0">가장 많은 사용자 추천을 받은 코멘트를 보여드려요.</p>
+
+                                <!-- 세로 구분선 구분자 클래스 -->
+                                <div class="col-lg-6 mb-5 mb-lg-0 divider-right">
+
+                                    <div class="testimonial p-lg-5">
+                                        <div class="mb-3 text-yellow">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="testimonial-quote text-primary">"I was impressed with how beautiful and clean this property was. The owner definitely goes the extra mile to help their guests!"</p>
+                                        <div class="testimonial-name">Adam Hall</div>
+                                        <div class="testimonial-position">Lisbon, Portugal</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="testimonial p-lg-5">
+                                        <div class="mb-3 text-yellow">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="testimonial-quote text-primary">"Amazing location, convenient parking, and a lots of amenities and extras. I will definitely be returning here whenever I'm in town."</p>
+                                        <div class="testimonial-name">Lia Peterson</div>
+                                        <div class="testimonial-position">Sacramento, CA, USA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <!-- <a class="card post-preview post-preview-featured lift mb-5 overflow-hidden" href="#!"></a> -->
+
+                        <div class="row gx-5">
+                            <div class="col-lg-7 col-xl-8">
+                                <div class="card mb-0 overflow-hidden">
+                                    <div class="card-header">Add Reply</div>
+                                    <div class="card-body">
+                                        <textarea class="form-control mb-2" rows="4"></textarea>
+                                        <button class="btn btn-primary btn-sm me-2">Add Reply</button>
+                                        <button class="btn btn-light btn-sm me-2">
+                                            <i class="fas fa-paperclip me-2"></i>
+                                            Attach a File
+                                        </button>
+                                        <button class="btn btn-light btn-sm">
+                                            <i class="fas fa-archive me-2"></i>
+                                            Mark as Resolved
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5 col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6>Opinion</h6>
+                                        <hr />
+                                        {% for list in postlist %}
+                                        <ul>
+                                            <div class="avatar avatar-lg"><img class="avatar-img" src="assets/img/illustrations/profiles/profile-1.png" /></div>
+                                            <div class="ms-3">
+                                                <a class="text-dark" href="#!"><h6 class="mb-1">{{ list.content }}</h6></a>
+                                                <div class="small text-gray-500">
+                                                    by
+                                                    <a class="text-gray-500" href="#!">{{ list.postname }}</a>
+                                                </div>
+                                            </div>
+                                            <!-- <li>{{ list.postname }}</li>
+                                            <li>{{ list.contents }}</li> -->
+                                        </ul>
+                                        {% endfor %}
+                                        <!-- <div class="d-flex mb-4">
+                                            <div class="avatar avatar-lg"><img class="avatar-img" src="assets/img/illustrations/profiles/profile-1.png" /></div>
+                                            <div class="ms-3">
+                                                <a class="text-dark" href="#!"><h6 class="mb-1">Bootstrap is the best CSS framework, hands down</h6></a>
+                                                <div class="small text-gray-500">
+                                                    by
+                                                    <a class="text-gray-500" href="#!">Valerie Luna</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-4">
+                                            <div class="avatar avatar-lg"><img class="avatar-img" src="assets/img/illustrations/profiles/profile-2.png" /></div>
+                                            <div class="ms-3">
+                                                <a class="text-dark" href="#!"><h6 class="mb-1">Bootstrap is the best CSS framework, hands down</h6></a>
+                                                <div class="small text-gray-500">
+                                                    by
+                                                    <a class="text-gray-500" href="#!">Ewan Rogers</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-4">
+                                            <div class="avatar avatar-lg"><img class="avatar-img" src="assets/img/illustrations/profiles/profile-3.png" /></div>
+                                            <div class="ms-3">
+                                                <a class="text-dark" href="#!"><h6 class="mb-1">Bootstrap is the best CSS framework, hands down</h6></a>
+                                                <div class="small text-gray-500">
+                                                    by
+                                                    <a class="text-gray-500" href="#!">Alicia Allen</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-4">
+                                            <div class="avatar avatar-lg"><img class="avatar-img" src="assets/img/illustrations/profiles/profile-4.png" /></div>
+                                            <div class="ms-3">
+                                                <a class="text-dark" href="#!"><h6 class="mb-1">Bootstrap is the best CSS framework, hands down</h6></a>
+                                                <div class="small text-gray-500">
+                                                    by
+                                                    <a class="text-gray-500" href="#!">Kolby Brock</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="avatar avatar-lg"><img class="avatar-img" src="assets/img/illustrations/profiles/profile-5.png" /></div>
+                                            <div class="ms-3">
+                                                <a class="text-dark" href="#!"><h6 class="mb-1">Bootstrap is the best CSS framework, hands down</h6></a>
+                                                <div class="small text-gray-500">
+                                                    by
+                                                    <a class="text-gray-500" href="#!">William Cole</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-waves text-dark">
+                            <!-- Wave SVG Border-->
+                            <svg class="wave" style="pointer-events: none" fill="currentColor" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+                                <defs>
+                                    <style>
+                                        .a {
+                                            fill: none;
+                                        }
+                                        .b {
+                                            clip-path: url(#a);
+                                        }
+                                        .d {
+                                            opacity: 0.5;
+                                            isolation: isolate;
+                                        }
+                                    </style>
+                                </defs>
+                                <clippath id="a"><rect class="a" width="1920" height="75"></rect></clippath>
+                                <g class="b"><path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path></g>
+                                <g class="b"><path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path></g>
+                                <g class="b"><path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path></g>
+                                <g class="b"><path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path></g>
+                            </svg>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+                    <div class="container px-5">
+                        <div class="row gx-5">
+                            <div class="col-lg-3">
+                                <div class="footer-brand">SB UI Kit Pro</div>
+                                <div class="mb-3">Design made easy</div>
+                                <div class="icon-list-social mb-5">
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-instagram"></i></a>
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-facebook"></i></a>
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-github"></i></a>
+                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row gx-5">
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Product</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Landing</a></li>
+                                            <li class="mb-2"><a href="#!">Pages</a></li>
+                                            <li class="mb-2"><a href="#!">Sections</a></li>
+                                            <li class="mb-2"><a href="#!">Documentation</a></li>
+                                            <li><a href="#!">Changelog</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Technical</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Documentation</a></li>
+                                            <li class="mb-2"><a href="#!">Changelog</a></li>
+                                            <li class="mb-2"><a href="#!">Theme Customizer</a></li>
+                                            <li><a href="#!">UI Kit</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Includes</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Utilities</a></li>
+                                            <li class="mb-2"><a href="#!">Components</a></li>
+                                            <li class="mb-2"><a href="#!">Layouts</a></li>
+                                            <li class="mb-2"><a href="#!">Code Samples</a></li>
+                                            <li class="mb-2"><a href="#!">Products</a></li>
+                                            <li class="mb-2"><a href="#!">Affiliates</a></li>
+                                            <li><a href="#!">Updates</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Legal</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">Privacy Policy</a></li>
+                                            <li class="mb-2"><a href="#!">Terms and Conditions</a></li>
+                                            <li><a href="#!">License</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-md-6 small">Copyright &copy; Your Website 2023</div>
+                            <div class="col-md-6 text-md-end small">
+                                <a href="#!">Privacy Policy</a>
+                                &middot;
+                                <a href="#!">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        
+        <script src="{% static 'sb-ui-kit-pro/dist/js/scripts.js' %}"></script>
+
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true,
+            });
+        </script>
+    </body>
+</html>

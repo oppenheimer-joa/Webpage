@@ -28,8 +28,8 @@ def movies(request):
     return render(request, 'posts/DEMO-movies.html')
 
 # 조회할 데이터 : 단일 영화의 전역 정보
-def external_image_detail(request, pk):
-    from django.shortcuts import render
+def movies_detail(request, pk):
+    from django.shortcuts import render, get_object_or_404, redirect
     from .models import ExternalImageModel
     from configparser import ConfigParser
     import boto3
@@ -37,6 +37,8 @@ def external_image_detail(request, pk):
     import pandas as pd
     import pyarrow.parquet as pq
     from io import BytesIO
+
+
 
     parser = ConfigParser()
     parser.read("/home/neivekim76/config/config.ini")
@@ -64,8 +66,9 @@ def external_image_detail(request, pk):
     movie_nm = dataframe_confirm(row, 'original_title')
     movie_dt = dataframe_confirm(row, 'overview')
     movie_gr = dataframe_confirm(row, 'genres')
-    # poster_path_str = dataframe_confirm(row, 'posters')
-    poster_path_str = dataframe_confirm(row, 'backdrops')[0]['file_path']
+    poster_path_str = dataframe_confirm(row, 'posters')
+    date = dataframe_confirm(row, 'release_date')
+    backdrop_path_str = dataframe_confirm(row, 'backdrops')[0]['file_path']
 
     # read genre json file
     json_path = "/home/neivekim76/demo/json/genre.json"
@@ -80,22 +83,26 @@ def external_image_detail(request, pk):
             if genre_id == genre_reference['id']:
                 genre_string += f"{genre_reference['name']}, "
 
+    try: 
+        url_poster = f"https://image.tmdb.org/t/p/original{poster_path_str}"
+    except Exception as e: 
+        url_poster = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
+
 
     try: 
-        poster_path = f"https://image.tmdb.org/t/p/original{poster_path_str}"
-        external_image, created = ExternalImageModel.objects.get_or_create(pk=pk, defaults={'image_url': poster_path})
-        url = external_image.image_url
-
+        url_backdrop = f"https://image.tmdb.org/t/p/original{backdrop_path_str}"
     except Exception as e: 
-        print(f"An error occurred: {str(e)}")
-        url = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
+        url_backdrop = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
+
 
     context = {
         'movie_id' : movie_id,
         'movie_nm' : movie_nm,
         'movie_dt' : movie_dt,
         'movie_gr' : genre_string[:-2],
-        'external_image' : url
+        'poster' : url_poster,
+        'external_image' : url_backdrop,
+        'date' : date
     }
 
-    return render(request, 'posts/external_image_detail.html', context)
+    return render(request, 'posts/DEMO-movies-detail.html', context)
