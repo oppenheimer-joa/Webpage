@@ -225,6 +225,7 @@
                                 </div>
                             </div>
                             <div class="row gx-5">
+                                <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
                                 {% for movie in pages %}
                                 <div class="col-lg-3 mb-5">
                                     <div class="card h-100 shadow border-0">
@@ -252,6 +253,7 @@
                                 </div>
                                 {% endfor %}
                             </div>
+
                             <!-- 페이지네이션 UI -->
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination pagination-blog justify-content-center">
@@ -284,7 +286,9 @@
                                     {% endif %}
                                 </ul>
                             </nav>
+
                         </div>
+                        
                         <div class="svg-border-angled text-dark">
                             <!-- Angled SVG Border-->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>

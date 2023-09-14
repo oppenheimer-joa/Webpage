@@ -40,6 +40,9 @@ def dictionary(request):
         parquet_df = parquet_table.to_pandas()
         movie_details = pd.concat([movie_details, parquet_df], ignore_index=True)
 
+
+    # 페이지 기능 구현
+    # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
     movie_list = movie_details.to_dict('records')
     paginator = Paginator(movie_list, 1)
     # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
@@ -80,6 +83,7 @@ def dictionary(request):
             movie_details = movie_details[movie_details['overview'].str.contains(search)]
         if search_type == '감독' :
             movie_details = movie_details
+    # 리턴값에 'pages': pages 추가 
     return render(request, 'sms_site/dictionary.html',{"movie_list": movie_list,
                                                        "search":search,
                                                        "search_type":search_type,
