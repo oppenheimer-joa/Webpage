@@ -177,48 +177,18 @@
                     </nav>
                     <!-- Page Header-->
                     <section class="bg-light py-10">
-                        
+                        <div>
+                            {% if no_filter %}
+                            <div> {{ no_filter }} </div>
+                            {% endif %}
+                        </div>
                         <div class="container px-5">
-                            <h2 class="mb-4"> Genre Categories  </h2>
-                            <div class="row gx-5">
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Action">
-                                        <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fa-solid fa-person-running" style="color: #ededed;"></i></div>
-                                        <div class="small text-gray-600"> Action </div>
+                            <div class="GenreListView__tag_wrap--HrxE5">
+                                <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
+                                    {% for genre_name in genre_list %}
+                                    <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="false"> #{{ genre_name }} </button>
+                                    {% endfor %}
                                 </div>
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Adventure">
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fas fa-home"></i></div>
-                                    <div class="small text-gray-600"> Adventure </div>                                    
-                                </div>
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Animation">
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fas fa-gift"></i></div>
-                                    <div class="small text-gray-600"> Animation </div>
-                                </div>
-                                <!-- 여기부터 장르 연결 수정 이어 해야 함-->
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Comedy">
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fas fa-mobile-alt"></i></div>
-                                    <div class="small text-gray-600"> Comedy </div>
-                                </div>
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Crime">
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fas fa-couch"></i></div>
-                                    <div class="small text-gray-600"> Crime </div>
-                                </div>
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Documentary"> 
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fas fa-briefcase"></i></div>
-                                    <div class="small text-gray-600"> Documentary </div>
-                                </div>
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Drama">
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fa-solid fa-heart" style="color: #ededed;"></i></div>
-                                    <div class="small text-gray-600"> Drama </div>
-                                </div>
-                                <div class="col-lg-1 col-md-6 mb-5 mb-lg-0" movie-genre="Family">
-                                    <div class="icon-stack icon-stack-xl bg-green text-white mb-2"><i class="fas fa-shopping-cart"></i></div>
-                                    <div class="small text-gray-600"> Family </div>
-                                </div>
-                            </div>
-                            <div>
-                                {% if no_filter %}
-                                <h3> {{ no_filter }} </h3>
-                                {% endif %}
                             </div>
                         </div>
                     </section>
@@ -359,11 +329,11 @@
     </body>
 </html>
 <script>
-    const genreDivs = document.querySelectorAll(".mb-lg-0");
+    const genreDivs = document.querySelectorAll(".genre");
     genreDivs.forEach(div => {
         div.addEventListener("click", function() {
             const genre = div.getAttribute("movie-genre");
-            const url = `/movie/${genre}`;
+            const url = `/genre/${genre}`;
 
             window.location.href = url;
         });

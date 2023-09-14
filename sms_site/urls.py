@@ -4,8 +4,7 @@ from sms_site.views import *
 
 urlpatterns = [
     # path('', dictionary),
-    path('', home),
+    path('', dictionary, name='dictionary'),
     path('genre/', genre_list),
-    path('movie/', dictionary, name='dictionary'),
-    path('movie/<str:genre>/', movie_filter_by_genre, name='moviegenre')
+    path('<str:genre>/', movie_filter_by_genre, name='movie_filter_by_genre')
 ]

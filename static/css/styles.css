@@ -5400,6 +5400,7 @@ textarea.form-control-lg {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
+  height: 100%
 }
 
 .card-img,
@@ -18457,7 +18458,7 @@ section {
 }
 
 .svg-border-angled {
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 .svg-border-angled svg {
   position: absolute;
@@ -18859,20 +18860,24 @@ section {
 }
 
 .select_component {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: whitesmoke;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 16px;
-    width: 20%;
+    padding: 5px; /* 선택 상자 내부 여백 */
+    font-size: 14px; /* 폰트 크기 */
+    text-align: center;
+    border: 1px solid #ebebeb; /* 테두리 스타일 */
+    border-radius: 5px; /* 테두리 둥글게 */
+    background-color: #00ba94;
+    background-color: #ebebeb; /* 배경색 */
+    width: 80px; /* 선택 상자의 너비 */
+    transition: border-color 0.3s;
 }
 
-.select_component:focus {
-    outline: none;
+/* 선택 상자 활성화 시 스타일 변경 */
+.select_component option {
+    outline: none; /* 포커스 스타일 제거 */
+    border-color: none; /* 활성화 테두리 색상 */
+    box-shadow: rgba(0, 0, 0, 0.5); /* 활성화 시 그림자 효과 */
+    text-decoration: none;
 }
-
 .custom-arrow {
     position: absolute;
     top: 50%;
@@ -18885,5 +18890,62 @@ section {
     border-top: 2px solid #333; /* 셀렉트 박스 화살표 색상 */
     pointer-events: none;
 }
-
-
+.GenreListView__tag_wrap--HrxE5 {
+    margin:30px;
+}
+.TagGroup__tag_group--uUJza {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.TagGroup__type_l--tJOoo {
+    margin:  3px 3px 3px;
+    max-height: 141px;
+    overflow: hidden;
+}
+.TagGroup__tag--xu0OH {
+    font-size: 16px;
+    line-height: 37px;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    margin: 1px 20px 15px 1px;
+    padding: 1px 12px;
+    border:none;
+    border-radius: 4px; /* 둥근 테두리 설정 */
+}
+.TagGroup__tag--xu0OH[aria-selected=true] {
+    background: var(--bs-teal);
+    color: #fdfaf9;
+    font-size: 16px;
+    line-height: 37px;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    margin: 2px 22px 17px 3px;
+    padding: 1px 12px;
+    border:none;
+    border-radius: 4px;
+}
+.ComponentHead__tab_control--R1TyL {
+    justify-content: space-between;
+    position: relative;
+    left: 82%;
+    outline: none;
+    display: inline-flex;
+    margin-left: 15px;
+}
+.ComponentHead__button_tab--YoR6Z {
+    text-align: right;
+    border: 0;
+    background: rgba(0,0,0,0);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #696f79;
+}
