@@ -21,7 +21,8 @@ urlpatterns = [
     ## path('performance/', include('performance.urls')),
     # user info
     path('userinfo/', include('userpage.urls')),
-    path('performance/', performance)
+    path('performance/', performance),
+    path('', include('people.urls'))
 
     
     

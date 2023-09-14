@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Directory - SB UI Kit Pro</title>
+        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
@@ -18,16 +18,15 @@
             <div id="layoutDefault_content">
                 <main>
                     <!-- Navbar-->
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-gradient-primary-to-secondary navbar-dark fixed-top">
                         <div class="container px-5">
-                            <a class="navbar-brand text-dark" href="index.html">SB UI Kit Pro</a>
+                            <a class="navbar-brand text-white" href="index.html">슬기로운 문화생활</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
-                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                                     <li class="nav-item dropdown dropdown-xl no-caret">
                                         <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Landings
+                                            문화 컨텐츠
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
@@ -35,7 +34,7 @@
                                                 <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
                                                     <div class="d-flex h-100 w-100 align-items-center justify-content-center">
                                                         <div class="text-white text-center z-1">
-                                                            <div class="mb-3">Multipurpose landing pages for a variety of projects.</div>
+                                                            <div class="mb-3">내가 관심있는 컨텐츠의 정보를 한 눈에 확인해 보세요.</div>
                                                             <a class="btn btn-white btn-sm text-primary fw-500" href="index.html">View All</a>
                                                         </div>
                                                     </div>
@@ -43,39 +42,57 @@
                                                 <div class="col-lg-7 p-lg-5">
                                                     <div class="row">
                                                         <div class="col-lg-6">
-                                                            <h6 class="dropdown-header text-primary">Applications</h6>
-                                                            <a class="dropdown-item" href="landing-app-mobile.html">Mobile App</a>
-                                                            <a class="dropdown-item" href="landing-app-desktop.html">Desktop App</a>
-                                                            <div class="dropdown-divider border-0"></div>
-                                                            <h6 class="dropdown-header text-primary">Business</h6>
-                                                            <a class="dropdown-item" href="landing-multipurpose.html">Multipurpose</a>
-                                                            <a class="dropdown-item" href="landing-agency.html">Agency</a>
-                                                            <a class="dropdown-item" href="landing-press.html">Press</a>
-                                                            <a class="dropdown-item" href="landing-directory.html">Directory</a>
-                                                            <a class="dropdown-item" href="landing-rental.html">Rental</a>
-                                                            <a class="dropdown-item" href="landing-real-estate.html">Real Estate</a>
-                                                            <a class="dropdown-item" href="landing-classifieds.html">Classifieds</a>
-                                                            <div class="dropdown-divider border-0"></div>
-                                                            <h6 class="dropdown-header text-primary">Lead Generation</h6>
-                                                            <a class="dropdown-item" href="landing-lead-capture.html">Lead Capture</a>
+                                                            <h6 class="dropdown-header text-primary">영화</h6>
+                                                            <a class="dropdown-item" href="landing-app-mobile.html">영화 목록
+                                                                <span class="badge bg-primary-soft text-primary ms-1">New!</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">박스오피스</a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">영화제</a>
                                                             <div class="dropdown-divider border-0 d-lg-none"></div>
                                                         </div>
                                                         <div class="col-lg-6">
-                                                            <h6 class="dropdown-header text-primary">Personal</h6>
-                                                            <a class="dropdown-item" href="landing-resume.html">Resume</a>
-                                                            <a class="dropdown-item" href="landing-portfolio.html">Portfolio</a>
-                                                            <div class="dropdown-divider border-0"></div>
-                                                            <h6 class="dropdown-header text-primary">Header Styles</h6>
-                                                            <a class="dropdown-item" href="header-basic.html">Basic</a>
-                                                            <a class="dropdown-item" href="header-basic-signup.html">Basic (Signup)</a>
-                                                            <a class="dropdown-item" href="header-graphic.html">Graphic</a>
-                                                            <a class="dropdown-item" href="header-graphic-signup.html">Graphic (Signup)</a>
-                                                            <a class="dropdown-item" href="header-video.html">
-                                                                Video Header
+                                                            <h6 class="dropdown-header text-primary">공연</h6>
+                                                            <a class="dropdown-item" href="landing-multipurpose.html">공연 목록</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">지역별 공연 현황</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            나의 문화생활
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row g-0">
+                                                <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <div class="mb-3">문화생활과 커뮤니티. 서로의 이야기들을 공유하고 즐거움을 찾아보는 시간을 가져요.</div>
+                                                            <a class="btn btn-white btn-sm text-primary fw-500" href="index.html">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">영화</h6>
+                                                            <a class="dropdown-item" href="landing-app-mobile.html">내가 찜한 영화
                                                                 <span class="badge bg-primary-soft text-primary ms-1">New!</span>
                                                             </a>
-                                                            <a class="dropdown-item" href="header-inner-page.html">Inner Page</a>
-                                                            <a class="dropdown-item" href="header-nav-only.html">Nav Only</a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">나의 별점</a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">나의 리뷰</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">공연</h6>
+                                                            <a class="dropdown-item" href="landing-multipurpose.html">내가 찜한 공연</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">나의 별점</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">나의 리뷰</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -84,13 +101,13 @@
                                     </li>
                                     <li class="nav-item dropdown dropdown-xl no-caret">
                                         <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Pages
+                                            마이페이지
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up" aria-labelledby="navbarDropdownPages">
                                             <div class="row g-0">
                                                 <div class="col-lg-4 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Company</h6>
+                                                    <h6 class="dropdown-header text-primary">회원정보</h6>
                                                     <a class="dropdown-item" href="page-basic.html">Basic Page</a>
                                                     <a class="dropdown-item" href="page-company-about.html">About</a>
                                                     <a class="dropdown-item" href="page-company-pricing.html">Pricing</a>
@@ -98,47 +115,13 @@
                                                     <a class="dropdown-item" href="page-company-team.html">Team</a>
                                                     <a class="dropdown-item" href="page-company-terms.html">Terms</a>
                                                     <div class="dropdown-divider border-0"></div>
-                                                    <h6 class="dropdown-header text-primary">Support</h6>
-                                                    <a class="dropdown-item" href="page-help-center.html">Help Center</a>
-                                                    <a class="dropdown-item" href="page-help-knowledgebase.html">Knowledgebase</a>
-                                                    <a class="dropdown-item" href="page-help-message-center.html">Message Center</a>
-                                                    <a class="dropdown-item" href="page-help-support-ticket.html">Support Ticket</a>
-                                                    <div class="dropdown-divider border-0 d-lg-none"></div>
-                                                </div>
-                                                <div class="col-lg-4 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Careers</h6>
-                                                    <a class="dropdown-item" href="page-careers-overview.html">Careers List</a>
-                                                    <a class="dropdown-item" href="page-careers-listing.html">Position Details</a>
-                                                    <div class="dropdown-divider border-0"></div>
-                                                    <h6 class="dropdown-header text-primary">Blog</h6>
-                                                    <a class="dropdown-item" href="page-blog-overview.html">Overview</a>
-                                                    <a class="dropdown-item" href="page-blog-post.html">Post</a>
-                                                    <a class="dropdown-item" href="page-blog-archive.html">Archive</a>
-                                                    <div class="dropdown-divider border-0"></div>
-                                                    <h6 class="dropdown-header text-primary">Portfolio</h6>
-                                                    <a class="dropdown-item" href="page-portfolio-grid.html">Grid</a>
-                                                    <a class="dropdown-item" href="page-portfolio-large-grid.html">Large Grid</a>
-                                                    <a class="dropdown-item" href="page-portfolio-masonry.html">Masonry</a>
-                                                    <a class="dropdown-item" href="page-portfolio-case-study.html">Case Study</a>
-                                                    <a class="dropdown-item" href="page-portfolio-project.html">Project</a>
-                                                    <div class="dropdown-divider border-0 d-lg-none"></div>
-                                                </div>
-                                                <div class="col-lg-4 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Error</h6>
-                                                    <a class="dropdown-item" href="page-error-400.html">400 Error</a>
-                                                    <a class="dropdown-item" href="page-error-401.html">401 Error</a>
-                                                    <a class="dropdown-item" href="page-error-404-1.html">404 Error (Option 1)</a>
-                                                    <a class="dropdown-item" href="page-error-404-2.html">404 Error (Option 2)</a>
-                                                    <a class="dropdown-item" href="page-error-500.html">500 Error</a>
-                                                    <a class="dropdown-item" href="page-error-503.html">503 Error</a>
-                                                    <a class="dropdown-item" href="page-error-504.html">504 Error</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown no-caret">
                                         <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Documentation
+                                            • • •
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
@@ -146,121 +129,87 @@
                                                 <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="book-open"></i></div>
                                                 <div>
                                                     <div class="small text-gray-500">Documentation</div>
-                                                    Usage instructions and reference
+                                                    사이트 공식 이용 가이드
                                                 </div>
                                             </a>
                                             <div class="dropdown-divider m-0"></div>
                                             <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-ui-kit-pro/components" target="_blank">
                                                 <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="code"></i></div>
                                                 <div>
-                                                    <div class="small text-gray-500">Components</div>
-                                                    Code snippets and reference
+                                                    <div class="small text-gray-500">고객 지원</div>
+                                                    고객 상담 | FAQ | Q&A
                                                 </div>
                                             </a>
                                             <div class="dropdown-divider m-0"></div>
                                             <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-ui-kit-pro/changelog" target="_blank">
                                                 <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="file-text"></i></div>
                                                 <div>
-                                                    <div class="small text-gray-500">Changelog</div>
-                                                    Updates and changes
+                                                    <div class="small text-gray-500">소개</div>
+                                                    개요 | 팀 소개 | 패치노트 | API
                                                 </div>
                                             </a>
                                         </div>
                                     </li>
                                 </ul>
-                                <a class="btn fw-500 ms-lg-4 btn-teal" href="https://shop.startbootstrap.com/sb-ui-kit-pro">
-                                    Buy Now
-                                    <i class="ms-2" data-feather="arrow-right"></i>
-                                </a>
                             </div>
                         </div>
                     </nav>
-                    <!-- Page Header-->
 
-                    <header class="page-header-ui-content position-relative">
-                        <div>
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-xl-6 col-lg-8 text-center">
-                                    <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
-                                        <select class="select_component" name="type">
-                                            <option selected value="title"> 제목 </option>
-                                            <option value="director"> 감독 </option>
-                                        </select>
-                                        <div class="col flex-grow-1">
-                                            <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="검색어를 입력해주세요" />
-                                        </div>
-                                        <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
-                                    </form>
+
+                    <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-light bg-white">
+                        <div class="page-header-ui-content">
+                            <div class="container px-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-xl-8 col-lg-10 text-center">
+                                        <img class="mb-4" src="https://image.tmdb.org/t/p/original{{ person_info.profile_img }}" style="width: 15rem" />
+                                        <h1 class="page-header-ui-title">{{ person_info.name }}</h1>
+                                        <p class="page-header-ui-text">{{ person_info.birth }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
                     </header>
-
-                    <section class="bg-white pt-5 pb-10">
-                            <div class="container px-5">
-                                {% if selected_genre %}
-                                <h2 class="mb-4" style="color: #00ba94;"> {{ selected_genre }} <span style="color:#888"> ({{ movie_list.shape.0 }}건) </span> </h2>
-                                {% else %}
-                                <h2 class="mb-4"> Select Genre Categories  </h2>
-                                {% endif %}
-                                <!-- genre tag -->
-                                <div>
-                                    <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == False %}true{% else %}false{% endif %}" movie-genre="">#ALL</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Action' %}true{% else %}false{% endif %}" movie-genre="Action">#Action</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Adventure' %}true{% else %}false{% endif %}" movie-genre="Adventure">#Adventure</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Animation' %}true{% else %}false{% endif %}" movie-genre="Animation">#Animation</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Comedy' %}true{% else %}false{% endif %}" movie-genre="Comedy">#Comedy</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Crime' %}true{% else %}false{% endif %}" movie-genre="Crime">#Crime</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Documentary' %}true{% else %}false{% endif %}" movie-genre="Documentary">#Documentary</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Drama' %}true{% else %}false{% endif %}" movie-genre="Drama">#Drama</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Family' %}true{% else %}false{% endif %}" movie-genre="Family">#Family</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Fantasy' %}true{% else %}false{% endif %}" movie-genre="Fantasy">#Fantasy</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'History' %}true{% else %}false{% endif %}" movie-genre="History">#History</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Horror' %}true{% else %}false{% endif %}" movie-genre="Horror">#Horror</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Music' %}true{% else %}false{% endif %}" movie-genre="Music">#Music</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Mystery' %}true{% else %}false{% endif %}" movie-genre="Mystery">#Mystery</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Science_Fiction' %}true{% else %}false{% endif %}" movie-genre="Science_Fiction">#Science_Fiction</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'TV_Movie' %}true{% else %}false{% endif %}" movie-genre="TV_Movie">#TV_Movie</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Thriller' %}true{% else %}false{% endif %}" movie-genre="Thriller">#Thriller</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'War' %}true{% else %}false{% endif %}" movie-genre="War">#War</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Western' %}true{% else %}false{% endif %}" movie-genre="Western">#Western</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <section class="bg-light py-10">
                         <div class="container px-5">
-                            <div>
-                                {% if no_filter %}
-                                <h3 style="text-align: center; margin-top: 40px;"> {{ no_filter }} </h3>
-                                {% else %}
-                                <div role="tablist" class="ComponentHead__tab_control--R1TyL">
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="recent">최신순</button>
-                                    <span> · </span>
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="popular">인기순</button>
-                                    <span> · </span>
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="rates">별점순</button>
+                            <div class="row gx-5 text-center">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-red text-white mb-4"><i data-feather="edit-3"></i></div>
+                                    <h3>히스토리</h3>
+                                    <p class="mb-0">이 곳에 데뷔 연차수 정보를 표기합니다.</p>
                                 </div>
-                                {% endif %}
-                            </div>
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="mb-5 text-center">
-                                        {% if search %}
-                                        <h3> <p class="page-header-ui-text mb-5"> {{ search_type }} 기준 "<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
-                                        <p class="lead mb-0">Here are some of the most popular new movie in your area.</p>
-                                        {% endif %}
-                                    </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-yellow text-white mb-4"><i data-feather="layout"></i></div>
+                                    <h3>필모그래피</h3>
+                                    <p class="mb-0">이 곳에 참여한 작품 수 정보를 표기합니다.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-stack icon-stack-xl bg-blue text-white mb-4"><i data-feather="droplet"></i></div>
+                                    <h3>기타 정보</h3>
+                                    <p class="mb-0">이 곳에 기타 정보들을 입력합니다.</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="svg-border-rounded text-white">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                    <section class="bg-white py-10">
+                        <div class="container px-5">
                             <div class="row gx-5">
                                 <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
                                 {% for movie in pages %}
                                 <div class="col-lg-3 mb-5">
                                     <div class="card h-100 shadow border-0">
-                                        <a href="/main/movies/{{ movie.id }}">
+                                        <a href="{{ movie.id }}">
                                         <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="..." />
                                         </a>
-                                        <div class="card-body p-3">
+                                        <div class="card-body p-4">
                                             <h4 class="card-title mb-0" style="display: inline; margin: 0;"> {{ movie.original_title }} </h4> <span style="font-size: 15px; color: #888; margin-left: 10px;"> {{ movie.runtime }} minutes</span>
                                             <div class="text-yellow">
                                                 <i class="fas fa-star"></i>
@@ -270,17 +219,17 @@
                                                 <i class="fas fa-star-half-alt"></i>
                                             </div>
                                             <div class="small mb-2">(12 Reviews)</div>
-                                            <div>
+                                            <div class="small"> {{ movie.overview }} </div>
+                                        </div>
+                                        
+                                        <div class="card-footer text-center text-xs">
                                             <i class="fas fa-store-alt me-1"></i>
                                             {{ movie.release_date }}
-                                            </div>
-                                            
                                         </div>
                                     </div>
                                 </div>
                                 {% endfor %}
                             </div>
-
                             <!-- 페이지네이션 UI -->
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination pagination-blog justify-content-center">
@@ -315,10 +264,41 @@
                             </nav>
 
                         </div>
-                        
-                        <div class="svg-border-angled text-dark">
-                            <!-- Angled SVG Border-->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                    <section class="bg-light py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <h2>Contact me</h2>
+                                    <p class="mb-5">I am available for contract work, when you're ready - let me know!</p>
+                                    <div class="row gx-5">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-stack icon-stack-lg bg-orange text-white mb-3"><i data-feather="mail"></i></div>
+                                                    <div class="small"><a href="#!">hello@example.com</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-stack icon-stack-lg bg-green text-white mb-3"><i data-feather="smartphone"></i></div>
+                                                    <div class="small">555-123-4567</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-dark">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
                         </div>
                     </section>
                 </main>
@@ -398,35 +378,3 @@
         <script src="{% static 'js/scripts.js'%}"></script>
     </body>
 </html>
-<script>
-    const genreDivs = document.querySelectorAll(".TagGroup__tag--xu0OH");
-    genreDivs.forEach(div => {
-        div.addEventListener("click", function() {
-            const genre = div.getAttribute("movie-genre");
-            const url = `/movie?genre=${genre}`;
-
-            window.location.href = url;
-            div.setAttribute("aria-selected", "true");
-        });
-    });
-</script>
-<script>
-    const sortDivs = document.querySelectorAll(".ComponentHead__button_tab--YoR6Z");
-    sortDivs.forEach(div => {
-        div.addEventListener("click", function() {
-            const sortby = div.getAttribute("sort-by");
-
-            // 현재 URL 가져오기
-            const url = new URL(window.location.href);
-
-            // "sort" 매개 변수를 가져오고, 새로운 값으로 대체
-            url.searchParams.set("sort", sortby);
-
-            // 새 URL로 이동
-            window.location.href = url.toString();
-
-            div.setAttribute("aria-selected", "true");
-        });
-    });
-
-</script>
