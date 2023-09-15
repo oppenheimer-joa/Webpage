@@ -181,46 +181,31 @@
                     </header>
 
                     <div style="padding: 0px 12px; margin-top: 18px;">
-                        <aside>
-                            <h2>Filter</h2>
-                            <!-- 공연종류 선택 -->
-                            <div>
-                                <h2 for="performanceType">공연종류</h2>
-                                <div class="row gx-15 align-items-center">
+                        <!-- 공연종류 선택 -->
+                        <aside style="text-align: center;">
+                            <div style="display: flex; flex-direction: row;">
+                                <h2 for="performanceType" style="flex: 2;">공연종류</h2>
+                                <div class="row gx-15 align-items-center" style="flex: 8;">
                                     <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == False %}true{% else %}false{% endif %}" pf-genre="">#전체</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '연극' %}true{% else %}false{% endif %}" pf-genre="연극">#연극</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '뮤지컬' %}true{% else %}false{% endif %}" pf-genre="뮤지컬">#뮤지컬</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '서양음악(클래식)' %}true{% else %}false{% endif %}" pf-genre="서양음악(클래식)">#서양음악(클래식)</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '한국음악(국악)' %}true{% else %}false{% endif %}" pf-genre="한국음악(국악)">#한국음악(국악)</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '대중무용' %}true{% else %}false{% endif %}" pf-genre="대중무용">#대중무용</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '서커스/마술' %}true{% else %}false{% endif %}" pf-genre="서커스/마술">#서커스/마술</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '복합' %}true{% else %}false{% endif %}" pf-genre="복합">#복합</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '아동' %}true{% else %}false{% endif %}" pf-genre="아동">#아동</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '대학로' %}true{% else %}false{% endif %}" pf-genre="대학로">#대학로</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '내한' %}true{% else %}false{% endif %}" pf-genre="내한">#내한</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '배리어프리' %}true{% else %}false{% endif %}" pf-genre="배리어프리">#배리어프리</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '축제' %}true{% else %}false{% endif %}" pf-genre="축제">#축제</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == False %}true{% else %}false{% endif %}" pf-genre=""> #전체 </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'theater' %}true{% else %}false{% endif %}" pf-genre="theater"> #연극 </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'musical' %}true{% else %}false{% endif %}" pf-genre="musical"> #뮤지컬 </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'classic' %}true{% else %}false{% endif %}" pf-genre="classic"> #서양음악(클래식) </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'korean' %}true{% else %}false{% endif %}" pf-genre="korean"> #한국음악(국악) </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'popular' %}true{% else %}false{% endif %}" pf-genre="popular"> #대중무용/대중음악 </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == '서커스/마술' %}true{% else %}false{% endif %}" pf-genre="서커스/마술"> #서커스/마술 </button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'extra' %}true{% else %}false{% endif %}" pf-genre="extra"> #복합 </button>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <h2 for="period">기간</h2>
-                                <input type="date" id="startDate" placeholder="YYYY-MM-DD>
-                                <input type="date" id="endDate" placeholder="YYYY-MM-DD">
-                            </div>
-                    
-                            <!-- 연령대 선택 -->
                             <div style="display: flex; flex-direction: row;">
-                                <h2 for="ageGroup" style="flex: 2;">연령대</h2>
-                                <select id="ageGroup" style="flex: 8;">
-                                    <option value="all">전체</option>
-                                    <option value="child">어린이</option>
-                                    <option value="adult">성인</option>
-                                    <option value="senior">노인</option>
-                                </select>
+                                <h2 for="period" style="flex: 2;">기간</h2>
+                                <div style="flex: 8;">
+                                    <input type="date" id="startDate" placeholder="YYYY-MM-DD">
+                                    <input type="date" id="endDate" placeholder="YYYY-MM-DD">
+                                </div>
                             </div>
-                            
+                          
                     
                             <!-- 필터 적용 버튼 -->
                             <button id="applyFilter">필터 적용</button>
@@ -228,63 +213,55 @@
                     </div>
 
                     <section class="bg-white pt-5 pb-10">
-                            <div class="container px-5">
+                        <div>
+                            {% if no_filter %}
+                            <h3 style="text-align: center; margin-top: 40px;"> {{ no_filter }} </h3>
+                            {% else %}
+                            <div role="tablist" class="ComponentHead__tab_control--R1TyL">
+                                <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="recent">최신순</button>
+                                <span> · </span>
+                                <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="popular">인기순</button>
+                                <span> · </span>
+                                <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="rates">별점순</button>
                             </div>
-                        <div class="container px-5">
-                            <div>
-                                {% if no_filter %}
-                                <h3 style="text-align: center; margin-top: 40px;"> {{ no_filter }} </h3>
-                                {% else %}
-                                <div role="tablist" class="ComponentHead__tab_control--R1TyL">
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="recent">최신순</button>
-                                    <span> · </span>
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="popular">인기순</button>
-                                    <span> · </span>
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="rates">별점순</button>
+                            {% endif %}
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="mb-5 text-center">
+                                    {% if search %}
+                                    <h3> <p class="page-header-ui-text mb-5"> {{ search_type }} 기준 "<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
+                                    <p class="lead mb-0">Here are some of the most popular new movie in your area.</p>
+                                    {% endif %}
                                 </div>
-                                {% endif %}
-                            </div>
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="mb-5 text-center">
-                                        {% if search %}
-                                        <h3> <p class="page-header-ui-text mb-5"> {{ search_type }} 기준 "<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
-                                        <p class="lead mb-0">Here are some of the most popular new movie in your area.</p>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row gx-5">
-                                {% for idx,pf in pf_list.iterrows %}
-                                <div class="col-lg-2 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <a href="{{ pf.id }}">
-                                        <img class="card-img-top" src="{{ pf.poster }}" alt="..." />
-                                        </a>
-                                        <div class="card-body p-3">
-                                            <h4 class="card-title mb-0" style="display: inline; margin: 0; text-overflow: ellipsis;"> {{ pf.prfnm }} </h4> <span style="font-size: 15px; color: #888; margin-left: 10px;"> {{ pf.prfruntime }} </span>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <div class="small mb-2"></div>
-                                            <div>
-                                            <i class="fas fa-store-alt me-1"></i>
-                                            {{ pf.release_date }}
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                {% endfor %}
                             </div>
                         </div>
-                        <div class="svg-border-angled text-dark">
-                            <!-- Angled SVG Border-->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        <div class="container px-5">
+                        <h2 class="mb-4">Recent postings</h2>
+                        <div class="row gx-5">
+                            {% for idx,pf in pf_list.iterrows %}
+                            <div class="col-lg-2 mb-5">
+                                <div class="card h-100 shadow border-0" style="object-fit: contain;">
+                                    <div class="img-container" style="object-fit: contain;">
+                                        <a href="/pf/{{ pf.mt20id }}">
+                                        <img class="card-img-top" src="{{ pf.poster }}" alt="..." style="object-fit: contain;" />
+                                        </a>
+                                    </div>
+                                    <div class="card-flag card-flag-dark card-flag-top-right card-flag-l"> {{ pf.genrenm }} </div>
+                                    <div class="card-body p-3">
+                                        <div class="card-title small mb-0" style="overflow: hidden; text-overflow: ellipsis;"> {{ pf.prfnm }} </div>
+                                        <div class="text-xs text-gray-500">Readcaster, CO · 2 days ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="mb-10">
+                            <a class="text-arrow-icon" href="#!">
+                                See more deals near you
+                            </a>
+                        </div>
+                    </div>
                         </div>
                     </section>
                 </main>
@@ -364,3 +341,34 @@
         <script src="{% static 'js/scripts.js'%}"></script>
     </body>
 </html>
+<script>
+    const genreDivs = document.querySelectorAll(".TagGroup__tag--xu0OH");
+    genreDivs.forEach(div => {
+        div.addEventListener("click", function() {
+            const genre = div.getAttribute("pf-genre");
+            const url = `/pf?genre=${genre}`;
+
+            window.location.href = url;
+            div.setAttribute("aria-selected", "true");
+        });
+    });
+</script>
+<script>
+    const sortDivs = document.querySelectorAll(".ComponentHead__button_tab--YoR6Z");
+    sortDivs.forEach(div => {
+        div.addEventListener("click", function() {
+            const sortby = div.getAttribute("sort-by");
+
+            // 현재 URL 가져오기
+            const url = new URL(window.location.href);
+
+            // "sort" 매개 변수를 가져오고, 새로운 값으로 대체
+            url.searchParams.set("sort", sortby);
+
+            // 새 URL로 이동
+            window.location.href = url.toString();
+
+            div.setAttribute("aria-selected", "true");
+        });
+    });
+</script>

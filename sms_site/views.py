@@ -7,8 +7,10 @@ import pandas as pd
 import boto3
 from io import BytesIO
 import pyarrow.parquet as pq
+import ast
 
-    
+global pf_details
+
 def dictionary(request):
     # genre list 변수
     genre_list = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary',
@@ -145,6 +147,9 @@ def movie_filter_by_genre(request):
 
 
 def performance(request):
+    # request GET
+    genre = request.GET.get('genre', '')
+
     # s3 연동
     parser = ConfigParser()
     parser.read("./config/config.ini")
@@ -152,10 +157,19 @@ def performance(request):
     secret = parser.get("AWS", "S3_SECRET")
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
     
-    # movie 정보 가져오기
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023')
-    pf_details = pd.DataFrame()
+    # 장르 검색
+    if genre != "" : ## 찾으려는 genre 값이 있을 경우
+
+        genre_objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-09-11/genreCode={genre}')
+        genre_df = pd.DataFrame()
+
+    # pf 정보 가져오기
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-09-11/genreCode={genre}')
     
+    pf_details = pd.DataFrame()
+    # 100 개만 가져오기
+    i = 0
+
     for obj in objects.get('Contents'):
         file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
         if file_path.find('parquet') == -1:
@@ -165,7 +179,28 @@ def performance(request):
         parquet_table = pq.read_table(parquet_data)
         parquet_df = parquet_table.to_pandas()
         pf_details = pd.concat([pf_details, parquet_df], ignore_index=True)
-    return render(request, 'sms_site/performance.html',{'pf_list':pf_details})
+        i += 1
+        if i >= 10 :
+            break
+    request.session['performance_df'] = pf_details.to_json(orient='records')
+    return render(request, 'sms_site/pf.html',{'pf_list':pf_details})
+
+
+def pf_detail(request,id):
+    pf_details = pd.read_json(request.session['performance_df'], orient='records')
+    pf_details_id = pf_details[pf_details['mt20id'] == id].iloc[0]
+    pf_details_id = pf_details_id.fillna("정보 없음")
+    print(pf_details_id['tksites'])
+    tklists = ast.literal_eval(pf_details_id['tksites'])
+    print(tklists)
+    ticket_lists = {}
+    # 리스트 내의 각 dictionary를 하나로 합침
+    for d in tklists:
+        ticket_lists.update(d)
+    print(ticket_lists)
+    return render(request, "sms_site/pf_detail.html", {"pf_info": pf_details_id,
+                                                       "styurls": pf_details_id['styurls'],
+                                                       "tksites": ticket_lists})
 
 def home(request):
     return render(request, "sms_site/home.html")
