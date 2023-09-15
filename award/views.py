@@ -61,8 +61,17 @@ def award_detail(request, festa_name, year):
         pages = paginator.page(1)
     except EmptyPage:
         pages = paginator.page(1)
+        
+    if festa_name == 'academy':
+        festa = 'ACADEMY'
+    elif festa_name == 'cannes':
+        festa = 'CANNES'
+    elif festa_name == 'venice':
+        festa = 'VENICE'
+    elif festa_name == 'busan':
+        festa = 'BUSAN'
 
-    context = {'award':specific_year_awards, 'festa_name':festa_name, 'year':year, 'pages':pages}
+    context = {'award':specific_year_awards, 'festa_name':festa, 'year':year, 'pages':pages}
     
     return render(request, 'award/award_detail.html', context)
 

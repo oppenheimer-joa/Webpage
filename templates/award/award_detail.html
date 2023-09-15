@@ -155,13 +155,13 @@
                         </div>
                     </nav>
                     <!-- Page Header-->
-                    <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+                    <header class="page-header-ui page-header-ui-dark" style="background-image: url('{% static 'Img/LOGOS/bg.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="page-header-ui-content">
                             <div class="container px-5 text-center">
                                 <div class="row gx-5 justify-content-center">
                                     <div class="col-lg-8">
                                         <h1 class="page-header-ui-title mb-3">{{ festa_name }}</h1>
-                                        <p class="page-header-ui-text mb-0">{{ year }}</p>
+                                        <p class="page-header-ui-text mb-0" style="font-size: 36px; opacity: 1;">{{ year }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +178,11 @@
                                 {% for award in pages %}
                                 <div class="col-lg-3 mb-5">
                                     <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="{{ award.award_image }}" alt="..." />
+                                        {% if award.award_image %}
+                                            <img class="card-img-top" src="{{ award.award_image }}" alt="..." />
+                                        {% else %}
+                                            <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
+                                        {% endif %}
                                         <div class="card-body p-4">
                                             <h4 class="card-title mb-0" style="display: inline; margin: 0;"> {{ award.award_winner }} </h4>
                                             <div class="middle"> {{ award.award_category }} </div>
