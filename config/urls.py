@@ -22,7 +22,8 @@ urlpatterns = [
     # user info
     path('userinfo/', include('userpage.urls')),
     path('performance/', performance),
-    path('', include('people.urls'))
+    path('', include('people.urls')),
+    path('', include('award.urls'))
 
     
     

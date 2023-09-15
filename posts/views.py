@@ -41,7 +41,7 @@ def movies_detail(request, pk):
     from io import BytesIO
 
     parser = ConfigParser()
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
 

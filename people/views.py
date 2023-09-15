@@ -18,7 +18,7 @@ def dictionary(request):
     secret = parser.get("AWS", "S3_SECRET")
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/people_info/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people/')
     
     people_details = pd.DataFrame(columns=[
         'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
@@ -41,8 +41,9 @@ def dictionary(request):
     # 페이지 기능 구현
     # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
     people_list = people_details.to_dict('records')
-    paginator = Paginator(people_list, 1)
-    # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
+    # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 (Paginator(people_list, 5))
+    paginator = Paginator(people_list, 20)
+    # 초기 시작 페이지 설정
     page = request.GET.get('page', 1)
     try:
         pages = paginator.page(page)
@@ -66,7 +67,7 @@ def people_info(request, id):
     secret = parser.get("AWS", "S3_SECRET")
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/people_info/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people/')
     
     people_details = pd.DataFrame(columns=[
         'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
@@ -123,7 +124,7 @@ def people_info(request, id):
                 }
                 filtered_movies.append(filtered_movie)
     # 페이지 기능 구현
-    paginator = Paginator(filtered_movies, 4)
+    paginator = Paginator(filtered_movies, 20)
     # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
     page = request.GET.get('page', 1)
     try:
