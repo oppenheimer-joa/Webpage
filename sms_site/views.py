@@ -145,7 +145,27 @@ def movie_filter_by_genre(request):
 
 
 def performance(request):
-    return render(request, 'sms_site/performance.html')
+    # s3 연동
+    parser = ConfigParser()
+    parser.read("./config/config.ini")
+    access = parser.get("AWS", "S3_ACCESS")
+    secret = parser.get("AWS", "S3_SECRET")
+    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
+    
+    # movie 정보 가져오기
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023')
+    pf_details = pd.DataFrame()
+    
+    for obj in objects.get('Contents'):
+        file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
+        if file_path.find('parquet') == -1:
+            continue
+        s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
+        parquet_data = BytesIO(s3_object['Body'].read())
+        parquet_table = pq.read_table(parquet_data)
+        parquet_df = parquet_table.to_pandas()
+        pf_details = pd.concat([pf_details, parquet_df], ignore_index=True)
+    return render(request, 'sms_site/performance.html',{'pf_list':pf_details})
 
 def home(request):
     return render(request, "sms_site/home.html")
