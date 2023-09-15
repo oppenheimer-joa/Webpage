@@ -61,7 +61,7 @@ def dictionary(request):
         
     # 장르 endpoint 가 붙으면
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='genre/2023-07-14/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_genre/1960-01-01/')
 
     genre_df = pd.DataFrame()
 

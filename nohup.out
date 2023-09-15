@@ -1,0 +1,621 @@
+Watching for file changes with StatReloader
+Not Found: /
+[15/Sep/2023 01:41:16] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 01:41:19] "GET /main/ HTTP/1.1" 200 23878
+[15/Sep/2023 01:41:19] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 200 1942
+[15/Sep/2023 01:41:19] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 200 410049
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:41:19] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:41:19] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:41:19] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:41:19] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:41:22] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:41:22] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:41:22] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:41:22] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:41:22] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:41:30] "GET /main/movies/ HTTP/1.1" 200 42385
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:41:30] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:41:30] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:41:30] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:41:30] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /main/movies/assets/img/backgrounds/bg-dropdown-xl.jpg
+[15/Sep/2023 01:41:36] "GET /main/movies/assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 3860
+[15/Sep/2023 01:41:45] "GET /movie/ HTTP/1.1" 200 66490
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:41:46] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:41:46] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:41:46] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:41:46] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:41:53] "GET /movie/?page=1 HTTP/1.1" 200 66110
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:41:53] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:41:53] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:41:53] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:41:53] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 01:45:23] "GET /main/ HTTP/1.1" 200 23878
+[15/Sep/2023 01:45:23] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 304 0
+[15/Sep/2023 01:45:23] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:23] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:23] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:23] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:23] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:40] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:40] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 01:45:40] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:40] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:40] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 01:45:41] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 01:45:41] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:41] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 01:45:41] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:41,774] - Broken pipe from ('222.108.81.83', 56624)
+[15/Sep/2023 01:45:41] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:41] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:42] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:42,119] - Broken pipe from ('222.108.81.83', 56633)
+[15/Sep/2023 01:45:42] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 01:45:42] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:42] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 01:45:42] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 01:45:42] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 01:45:43] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 01:45:43,230] - Broken pipe from ('222.108.81.83', 56640)
+[15/Sep/2023 01:45:43] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 01:45:43] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 05:37:26] code 400, message Bad request version ('À\x14À')
+[15/Sep/2023 05:37:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[15/Sep/2023 06:54:26] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 06:57:09,299] - Broken pipe from ('162.142.125.213', 57564)
+Not Found: /
+[15/Sep/2023 06:57:10] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 06:57:10,615] - Broken pipe from ('162.142.125.213', 39654)
+Not Found: /
+[15/Sep/2023 06:57:10] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 06:57:11] code 505, message Invalid HTTP version (2.0)
+[15/Sep/2023 06:57:11] "PRI * HTTP/2.0" 505 -
+Not Found: /
+[15/Sep/2023 08:00:41] "GET / HTTP/1.1" 404 3088
+Not Found: /
+[15/Sep/2023 11:09:10] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 12:15:25,982] - Broken pipe from ('167.94.138.51', 44402)
+Not Found: /
+[15/Sep/2023 12:15:27] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 12:15:27,328] - Broken pipe from ('167.94.138.51', 46080)
+Not Found: /
+[15/Sep/2023 12:15:27] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 12:15:28] code 505, message Invalid HTTP version (2.0)
+[15/Sep/2023 12:15:28] "PRI * HTTP/2.0" 505 -
+[15/Sep/2023 13:07:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Sep/2023 13:07:22] "    Z                          " 400 -
+Not Found: /
+[15/Sep/2023 14:00:55] "GET / HTTP/1.1" 404 3088
+Not Found: /
+[15/Sep/2023 14:00:56] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 14:01:04] "GET /main HTTP/1.1" 301 0
+[15/Sep/2023 14:01:04] "GET /main/ HTTP/1.1" 302 0
+[15/Sep/2023 14:01:04] "GET /users/login HTTP/1.1" 301 0
+[15/Sep/2023 14:01:04] "GET /users/login/ HTTP/1.1" 200 925
+[15/Sep/2023 14:01:04] "GET /static/instagram/style.css HTTP/1.1" 200 20590
+[15/Sep/2023 14:01:12] "POST /users/login/ HTTP/1.1" 302 0
+[15/Sep/2023 14:01:12] "GET /main HTTP/1.1" 301 0
+[15/Sep/2023 14:01:12] "GET /main/ HTTP/1.1" 200 23878
+[15/Sep/2023 14:01:12] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 200 1942
+[15/Sep/2023 14:01:12] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 200 410049
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 14:01:12] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 14:01:12] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 14:01:12] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 14:01:12] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /main/assets/img/backgrounds/bg-dropdown-xl.jpg
+[15/Sep/2023 14:01:15] "GET /main/assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 3839
+Not Found: /main/landing-app-desktop.html
+[15/Sep/2023 14:01:17] "GET /main/landing-app-desktop.html HTTP/1.1" 404 3788
+Internal Server Error: /userinfo/
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/storages/backends/s3.py", line 435, in _open
+    f = S3File(name, mode, self)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/storages/backends/s3.py", line 128, in __init__
+    self.obj.load(**params)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/boto3/resources/factory.py", line 564, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/boto3/resources/action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/botocore/client.py", line 980, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/userpage/views.py", line 29, in userdetail
+    'user_movie1' : get_data(**user_movie1),
+  File "/home/neivekim76/git/organization/sms/Webpage/userpage/views.py", line 16, in get_data
+    json_file = storage.open(f'TMDB/detail/{movie_dt}/{file_name}')
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/storages/backends/s3.py", line 438, in _open
+    raise FileNotFoundError('File does not exist: %s' % name)
+FileNotFoundError: File does not exist: TMDB/detail/2023-07-14/TMDB_movieDetails_872585_2023-07-14.json
+[15/Sep/2023 14:01:22] "GET /userinfo/ HTTP/1.1" 500 109774
+[15/Sep/2023 14:01:27] "GET /main/movies/ HTTP/1.1" 200 42385
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/ACTION.png HTTP/1.1" 200 643636
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/FANTASY.png HTTP/1.1" 200 825335
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/DRAMA.png HTTP/1.1" 200 750621
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/COMEDY.png HTTP/1.1" 200 446288
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/CRIME.png HTTP/1.1" 200 475773
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/ANIME.png HTTP/1.1" 200 689838
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 14:01:27] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/DOCU.png HTTP/1.1" 200 487615
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 14:01:27] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 14:01:27] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 14:01:27] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/FAMILY.png HTTP/1.1" 200 748408
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/HISTORY.png HTTP/1.1" 200 458208
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/HORROR.png HTTP/1.1" 200 463180
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/MUSIC.png HTTP/1.1" 200 416356
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/THRILLER.png HTTP/1.1" 200 569712
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/ROMANCE.png HTTP/1.1" 200 667144
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/MYSTERY.png HTTP/1.1" 200 736743
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/WAR.png HTTP/1.1" 200 697303
+[15/Sep/2023 14:01:27] "GET /static/Img/IMAGES/SCIENCE.png HTTP/1.1" 200 637720
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py", line 68, in dictionary
+    for obj in objects.get('Contents'):
+TypeError: 'NoneType' object is not iterable
+[15/Sep/2023 14:01:35] "GET /movie/ HTTP/1.1" 500 81321
+[15/Sep/2023 14:02:02] "GET /main/ HTTP/1.1" 302 0
+[15/Sep/2023 14:02:02] "GET /users/login/ HTTP/1.1" 200 925
+[15/Sep/2023 14:02:02] "GET /static/instagram/style.css HTTP/1.1" 200 20590
+[15/Sep/2023 14:02:07] "POST /users/login/ HTTP/1.1" 302 0
+[15/Sep/2023 14:02:07] "GET /main HTTP/1.1" 301 0
+[15/Sep/2023 14:02:07] "GET /main/movies/ HTTP/1.1" 200 42385
+[15/Sep/2023 14:02:07] "GET /main/ HTTP/1.1" 200 23878
+[15/Sep/2023 14:02:07] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 304 0
+[15/Sep/2023 14:02:07] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 14:02:07] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 14:02:13] "GET /main/movies/ HTTP/1.1" 200 42385
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 14:02:13] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 14:02:13] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 14:02:13] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 14:02:13] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py", line 68, in dictionary
+    for obj in objects.get('Contents'):
+TypeError: 'NoneType' object is not iterable
+[15/Sep/2023 14:02:24] "GET /movie/ HTTP/1.1" 500 81918
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py", line 68, in dictionary
+    for obj in objects.get('Contents'):
+TypeError: 'NoneType' object is not iterable
+[15/Sep/2023 14:02:25] "GET /movie/ HTTP/1.1" 500 81644
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py", line 68, in dictionary
+    for obj in objects.get('Contents'):
+TypeError: 'NoneType' object is not iterable
+[15/Sep/2023 14:03:39] "GET /movie/ HTTP/1.1" 500 81345
+/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 01:41:06
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_1067298_2023-07-14/_SUCCESS
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_1067298_2023-07-14/part-00000-a8a07c0f-0691-4c06-81b2-087894c934cf-c000.snappy.parquet
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_346698_2023-07-14/_SUCCESS
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_346698_2023-07-14/part-00000-da474693-65d9-4f4f-bae2-43b617b31bde-c000.snappy.parquet
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_872585_2023-07-14/_SUCCESS
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_872585_2023-07-14/part-00000-d7c9936f-8570-44cc-8bed-22325105c0fb-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_1067298_2023-07-14/_SUCCESS
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_1067298_2023-07-14/part-00000-a8a07c0f-0691-4c06-81b2-087894c934cf-c000.snappy.parquet
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_346698_2023-07-14/_SUCCESS
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_346698_2023-07-14/part-00000-da474693-65d9-4f4f-bae2-43b617b31bde-c000.snappy.parquet
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_872585_2023-07-14/_SUCCESS
+s3://sms-warehouse/genre/2023-07-14/TMDB_movie_872585_2023-07-14/part-00000-d7c9936f-8570-44cc-8bed-22325105c0fb-c000.snappy.parquet
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: AnonymousUser
+is_authenticated: False
+form.is_valid(): True
+form.cleaned_data: {'username': 'nayeon', 'password': 'playdata24'}
+user: nayeon
+is_authenticated: True
+user: nayeon
+is_authenticated: True
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+user: AnonymousUser
+is_authenticated: False
+form.is_valid(): True
+form.cleaned_data: {'username': 'admin', 'password': 'playdata24'}
+user: nayeon
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: nayeon
+is_authenticated: True
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+Watching for file changes with StatReloader
+Not Found: /
+[15/Sep/2023 14:34:29] "GET / HTTP/1.1" 404 3088
+Not Found: /favicon.ico
+[15/Sep/2023 14:34:46] "GET /favicon.ico HTTP/1.1" 404 3139
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /http:/api.ipify.org/
+[15/Sep/2023 14:34:52] "GET http://api.ipify.org/?format=json HTTP/1.1" 400 66201
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /www.shadowserver.org:443
+[15/Sep/2023 14:34:54] "CONNECT www.shadowserver.org:443 HTTP/1.1" 400 66404
+[15/Sep/2023 14:48:00] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+[15/Sep/2023 14:48:00] "Z¥     " 400 -
+[15/Sep/2023 14:51:12] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 14:51:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 14:51:13] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 14:51:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 14:51:54] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 14:51:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 14:10:04
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/sms_site/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 15:18:03
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[15/Sep/2023 15:18:19] "GET /main/ HTTP/1.1" 200 23878
+[15/Sep/2023 15:18:20] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 304 0
+[15/Sep/2023 15:18:20] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:20] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:20] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:20] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:20] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /movei
+[15/Sep/2023 15:18:25] "GET /movei HTTP/1.1" 404 3121
+[15/Sep/2023 15:18:25] "GET /movie/ HTTP/1.1" 200 66490
+[15/Sep/2023 15:18:28] "GET /movie/ HTTP/1.1" 200 66490
+[15/Sep/2023 15:18:28] "GET /static/css/styles.css HTTP/1.1" 200 413496
+[15/Sep/2023 15:18:28] "GET /static/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:28] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:28] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:28] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:28] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 15:18:31] "GET /main/movies/1150313/ HTTP/1.1" 200 57987
+Not Found: /main/movies/1150313/js/scripts.js
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 15:18:32] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 15:18:32] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+[15/Sep/2023 15:18:32] "GET /main/movies/1150313/js/scripts.js HTTP/1.1" 404 3800
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:32] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 15:18:32] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:32] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 15:18:32] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:32] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:32] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 15:18:39] "GET /movie/?page=1 HTTP/1.1" 200 66110
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:39] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:39] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:39] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:39] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 15:18:46] "GET /movie/?page=32 HTTP/1.1" 200 36759
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:46] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:46] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:46] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:46] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 15:18:48] "GET /movie/?page=31 HTTP/1.1" 200 66190
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:48] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:48] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:48] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:48] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 15:18:50] "GET /main/movies/413921 HTTP/1.1" 301 0
+[15/Sep/2023 15:18:50] "GET /main/movies/413921/ HTTP/1.1" 200 58022
+Not Found: /main/movies/413921/js/scripts.js
+[15/Sep/2023 15:18:50] "GET /main/movies/413921/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 15:18:50] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 15:18:50] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /main/movies/413921/assets/img/favicon.png
+[15/Sep/2023 15:18:50] "GET /main/movies/413921/assets/img/favicon.png HTTP/1.1" 404 3824
