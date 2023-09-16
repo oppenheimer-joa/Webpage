@@ -3,7 +3,7 @@ import configparser, boto3
 
 def create_s3client():
     config = configparser.ConfigParser()
-    config.read('config/config.ini')
+    config.read('./config/config.ini')
     access = config.get("AWS", "S3_ACCESS")
     secret = config.get("AWS", "S3_SECRET")
 

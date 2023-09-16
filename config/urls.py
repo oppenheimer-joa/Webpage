@@ -17,8 +17,9 @@ urlpatterns = [
     path('', include('userpage.urls')),
     path('admin/', admin.site.urls),
 
-    path('', performance),
-    path('', include('people.urls'))
+    # path('', performance),
+    path('', include('people.urls')),
+    path('', include('award.urls'))
 ]
 
 urlpatterns += static(
