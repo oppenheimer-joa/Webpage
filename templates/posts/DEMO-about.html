@@ -9,7 +9,6 @@
         <meta name="author" content="" />
         <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
         <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
@@ -17,16 +16,14 @@
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-                    <!-- Navbar-->
-                    
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-gradient-primary-to-secondary navbar-light">
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
-                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
                                     <li class="nav-item dropdown dropdown-xl no-caret">
-                                        <a class="nav-link dropdown-toggle text-white id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             문화 컨텐츠
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
@@ -96,7 +93,7 @@
                                         </div>
                                     </li> -->
                                     <li class="nav-item dropdown dropdown-xl no-caret">
-                                        <a class="nav-link dropdown-toggle text-white" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             마이페이지
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
@@ -127,7 +124,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown no-caret">
-                                        <a class="nav-link dropdown-toggle text-white" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             • • •
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
@@ -148,7 +145,7 @@
                                                 </div>
                                             </a>
                                             <div class="dropdown-divider m-0"></div>
-                                            <a class="dropdown-item py-3" href="about">
+                                            <a class="dropdown-item py-3" href="/about/">
                                                 <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="file-text"></i></div>
                                                 <div>
                                                     <div class="small text-gray-500">소개</div>
@@ -162,175 +159,81 @@
                         </div>
                     </nav>
 
-
-                    <!-- 헤더 구조 : 시작 -->
-                    <header class="page-header-ui page-header-ui-light bg-white">
-                        <div class="page-header-ui-content">
-                            <div class="container px-5">
+                    <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+                        <div class="page-header-ui-content pt-10">
+                            <div class="container px-5 text-center">
                                 <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-8 col-lg-10 text-center mb-4" data-aos="fade">
-                                        <h1 class="page-header-ui-title">공연 및 영화 정보를 한 눈에.</h1>
-                                        <p class="page-header-ui-text">팀 슬문생은 코로나로 인해 침체기를 맞은 문화 산업의 회복을 꿈꾸고 있어요.</p>
-
-                                        <!-- href 매핑 필요 -->
-                                        <a class="btn btn-primary fw-500 me-2" href="/login/">시작하기</a>
-
-                                        <a class="btn btn-link fw-500" href="#endpoint">더 알아보기</a>
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-ui-title mb-3">소개</h1>
+                                        <p class="page-header-ui-text">슬기로운 문화생활 프로젝트에 대해서 소개해요.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="svg-border-rounded text-light">
+                        <div class="svg-border-rounded text-white">
+                            <!-- Rounded SVG Border-->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
                         </div>
                     </header>
-                    <!-- 헤더 구조 : 끝 -->
-
-
-                    <section class="bg-light pb-10 pt-1">
+                    <section class="bg-white py-10">
                         <div class="container px-5">
-                            <div class="device-laptop text-gray-200 mt-n10" data-aos="fade-up">
-                                <svg class="device-container" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="83.911 298.53 426.962 243.838"><path d="M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z"></path></svg>
-                                
-                                <!-- "{% static '/images/sms_background.png' %}" -->
-                                <img class="device-screenshot" src="{% static 'sb-ui-kit-pro/dist/assets/img/demo/app-desktop-demo-screenshot.jpg' %}" />
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-10">
 
+                                    <h4 class="mb-4">
+                                        <div class="icon-stack bg-primary text-white me-2"><i data-feather="smile"></i></div>
+                                        빅 데이터와 플랫폼을 한 걸음부터.
+                                    </h4>
+                                    <p class="mb-5">프로젝트 '슬기로운 문화생활'은 대용량의 빅 데이터를 수집, 적재 및 가공하여 클라이언트에게 서비싱을 하기 위한 목적으로 시작되었어요. 다양한 API 서비스들로부터 데이터를 수집하고, 오픈 소스를 활용하여 가공하고, 외부 프로그램을 사용한 시스템 모니터링을 진행하고 있어요.</p>
+                                    <h4 class="mb-4">
+                                        <div class="icon-stack bg-primary text-white me-2"><i data-feather="trending-up"></i></div>
+                                        조금씩이지만 꾸준히. 성장 프로젝트.
+                                    </h4>
+                                    <p>'슬기로운 문화생활'은 단기간에 종료되는 프로젝트가 아니에요. 자동화된 데이터 수집 파이프라인을 통해 데이터의 규모를 확장하고, 활용 및 서비스 방향성에 대한 지속적인 고민 및 업데이트를 진행하고 있어요.</p>
+                                    <hr class="my-5" />
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h2 class="mb-0">소개 항목</h2>
+                                        <div class="badge bg-primary-soft text-primary badge-marketing">3 Openings</div>
+                                    </div>
+                                    <hr class="mb-0" />
+                                    <ul class="list-group list-group-flush list-group-careers">
+                                        <li class="list-group-item">
+                                            <a href="/about/outline/">개요</a>
+                                            <div class="small">Remote - US (San Francisco, CA)</div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="/about/team/">팀 소개</a>
+                                            <div class="small">San Francisco, CA (HQ)</div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="/about/release/">패치노트</a>
+                                            <div class="small">Dallas, TX</div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="/about/api/">API</a>
+                                            <div class="small">Dallas, TX</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="bg-light pb-10 pt-0">
-                        <div class="svg-border-rounded text-white" id="endpoint">
+                        <div class="svg-border-rounded text-dark">
                             <!-- Rounded SVG Border-->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
                         </div>
                     </section>
-
-                    <!-- 사이트 특징 소개 영역 : 시작 -->
-                    <section class="bg-white py-10">
-                        <div class="container px-5">
-                            <div class="row gx-5 text-center">
-                                <div class="col-lg-4 mb-5 mb-lg-0">
-                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="layers"></i></div>
-                                    <h3>자그마치 60년. 방대한 영화 데이터.</h3>
-                                    <p class="mb-0">Our customizable, block-based build system makes creating your next project fast and easy!</p>
-                                </div>
-                                <div class="col-lg-4 mb-5 mb-lg-0">
-                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="smartphone"></i></div>
-                                    <h3>고민 없이 밖으로. 지역별 문화 컨텐츠 소개.</h3>
-                                    <p class="mb-0">Featuring carefully crafted, mobile-first components, your end product will function beautifully on any device!</p>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="code"></i></div>
-                                    <h3>문화, 그리고 커뮤니티.</h3>
-                                    <p class="mb-0">All of the layouts, page sections, components, and utilities are fully covered in this products docs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- 사이트 특징 소개 영역 : 끝 -->
-
-                    <!-- 사이트 간단 소개 및 인트로 : 시작 -->
-                    <section class="bg-white py-10">
-                        <div class="container px-5">
-                            <div class="row gx-5 align-items-center justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="badge bg-primary-soft text-primary badge-marketing rounded-pill mb-3">시작하기!</div>
-                                    <div class="mb-5">
-                                        <h2>슬문생에서 여러분의 문화 생활을 시작해보세요.</h2>
-                                        <p class="lead">슬문생 사이트에서 즐기실 수 있는 컨텐츠들을 안내해 드려요. </p>
-                                    </div>
-                                    <div class="row gx-5">
-                                        <!-- 카테고리 소개 -->
-                                        <div class="col-md-6 mb-4">
-                                            <h6>문화 컨텐츠</h6>
-                                            <p class="mb-2 small">We've crafted landing page examples for many popular business and product types.</p>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <h6>나의 문화생활</h6>
-                                            <p class="mb-2 small mb-0">Use our pre-built page examples to quickly create inner pages to your website.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row gx-5">
-                                        <div class="col-md-6 mb-4">
-                                            <h6>자체 시각화 컨텐츠</h6>
-                                            <p class="mb-2 small mb-0">Our flex box based layout options make your site beautifully responsive and adaptable to any device.</p>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <h6>고객지원 및 응답</h6>
-                                            <p class="small mb-0">All of the sections on each page are modular, so you can drop them into an existing page, or start with a new one!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-9 col-lg-6" data-aos="slide-left">
-                                    <div class="mb-4">
-                                                                                                                                                        <!-- "{% static '/images/sms_background.png' %}" -->
-                                        <div class="content-skewed content-skewed-left"><img class="img-fluid content-skewed-item shadow-lg rounded-3" src="{% static 'sb-ui-kit-pro/dist/assets/img/demo/app-desktop-demo-screenshot.jpg' %}" /></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- 사이트 간단 소개 및 인트로 : 끝 -->
- 
-                    <!-- 인트로 관련 질의 응답 : 시작 -->
-                    <section class="bg-dark pb-10 pt-15">
-                        <div class="container px-5">
-                            <div class="row gx-5 mb-10 mt-5">
-                                <div class="col-lg-6 mb-5">
-                                    <div class="d-flex h-100">
-                                        <div class="icon-stack flex-shrink-0 bg-teal text-white"><i class="fas fa-question"></i></div>
-                                        <div class="ms-4">
-                                            <h5 class="text-white">회원 가입이 필요한가요?</h5>
-                                            <p class="text-white-50">SB UI Kit Pro is a fully coded, responsive, Bootstrap based UI toolkit for developers.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5">
-                                    <div class="d-flex h-100">
-                                        <div class="icon-stack flex-shrink-0 bg-teal text-white"><i class="fas fa-question"></i></div>
-                                        <div class="ms-4">
-                                            <h5 class="text-white">내가 사는 지역의 공연 정보도 알 수 있나요?</h5>
-                                            <p class="text-white-50">Build anything you want to using this UI kit! It is flexible, multipurpose, and full of tools for you to use during development.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5 mb-lg-0">
-                                    <div class="d-flex h-100">
-                                        <div class="icon-stack flex-shrink-0 bg-teal text-white"><i class="fas fa-question"></i></div>
-                                        <div class="ms-4">
-                                            <h5 class="text-white">자체 컨텐츠는 어떤 것들이 있나요?</h5>
-                                            <p class="text-white-50">All of Start Bootstrap's premium products will come with updates for feature additions, bugfixes, and other small updates.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="icon-stack flex-shrink-0 bg-teal text-white"><i class="fas fa-question"></i></div>
-                                        <div class="ms-4">
-                                            <h5 class="text-white">고객 지원은 어떻게 받을 수 있나요?</h5>
-                                            <p class="text-white-50">Our HTML based pro products are build with framework integration in mind. The compiled code is HTML and CSS, which is able to integrate with any framework.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- 인트로 관련 질의 응답 : 끝 -->
-
                 </main>
             </div>
-
-            <hr class="my-0" />
-
             <div id="layoutDefault_footer">
-                <footer class="footer pt-10 pb-5 mt-auto bg-transparent footer-brand">
+                <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
                     <div class="container px-5">
                         <div class="row gx-5">
                             <div class="col-lg-3">
                                 <div class="footer-brand">슬기로운 문화생활</div>
                                 <div class="mb-3">공연 및 영화 데이터 플랫폼</div>
                                 <div class="icon-list-social mb-5">
-                                    <a class="icon-list-social-link" href="#!"><i class="fab fa-github"></i></a>
+                                    <a class="icon-list-social-link" href="/main/"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-9">
@@ -339,7 +242,7 @@
                                         <div class="text-uppercase-expanded text-xs mb-4">문화 컨텐츠</div>
                                         <ul class="list-unstyled mb-0">
                                             <li class="mb-2"><a href="/movie/">영화 목록</a></li>
-                                            <li class="mb-2"><a href="/people/">영화 인물 목록</a></li>                                            
+                                            <li class="mb-2"><a href="/people/">영화 인물 목록</a></li>
                                             <li class="mb-2"><a href="/boxoffice/">박스오피스</a></li>
                                             <li class="mb-2"><a href="/awards/">영화제</a></li>
                                             <li class="mb-2"><a href="/prf/">공연 목록</a></li>
@@ -376,7 +279,7 @@
                         </div>
 
                         <hr class="my-5" />
-                        
+
                         <div class="row gx-5 align-items-center">
                             <div class="col-md-6 small">Copyright &copy; 슬기로운 문화생활 2023</div>
                             <div class="col-md-6 text-md-end small">

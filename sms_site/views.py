@@ -31,7 +31,7 @@ def dictionary(request):
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
     
     # movie 정보 가져오기
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/1960-01-01')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/')
     movie_details = pd.DataFrame()
     
     for obj in objects.get('Contents'):
@@ -51,7 +51,7 @@ def dictionary(request):
     movie_list = movie_details.to_dict('records')
     paginator = Paginator(movie_list, 20)
     # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
-    page = request.GET.get('page', 20)
+    page = request.GET.get('page', 1)
     try:
         pages = paginator.page(page)
     except PageNotAnInteger:
@@ -61,7 +61,7 @@ def dictionary(request):
         
     # 장르 endpoint 가 붙으면
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_genre/1960-01-01/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_genre/')
 
     genre_df = pd.DataFrame()
 
@@ -101,7 +101,7 @@ def movie_filter_by_genre(request):
     secret = parser.get("AWS", "S3_SECRET")
     
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='genre/2023-07-14/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_genre/')
 
     genre_df = pd.DataFrame()
     genre_list = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary',
@@ -123,7 +123,7 @@ def movie_filter_by_genre(request):
         movie_id_in_genre = genre_df['id'].tolist()
         movie_id_in_genre = list(map(int,movie_id_in_genre))
 
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-14/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/')
     movie_details = pd.DataFrame()
 
     for obj in objects.get('Contents'):

@@ -8,27 +8,19 @@ from config.views import index
 from sms_site.views import *
 
 urlpatterns = [
-    # default page
-    # path('', include('sms_site.urls')),       ## 나중에 시작 페이지랑 연결
-    # login & account
-    path('users/', include('users.urls')),
-    path('admin/', admin.site.urls),
+    path('', include('users.urls')),
     # main page
-    path('main/', include('posts.urls')),    ## 나중에 메인 페이지랑 연결  include
+    path('', include('posts.urls')), 
     # movie info
-    path('movie/', include('sms_site.urls')),
-    # performance info
-    ## path('performance/', include('performance.urls')),
-    # user info
-    path('userinfo/', include('userpage.urls')),
-    path('performance/', performance),
-    path('', include('people.urls'))
+    path('', include('sms_site.urls')),
 
-    
-    
+    path('', include('userpage.urls')),
+    path('admin/', admin.site.urls),
+
+    path('', performance),
+    path('', include('people.urls'))
 ]
 
-# add urlpatterns - p188
 urlpatterns += static(
     prefix=settings.MEDIA_URL,
     document_root=settings.MEDIA_ROOT

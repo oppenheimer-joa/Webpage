@@ -619,3 +619,2565 @@ Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
 [15/Sep/2023 15:18:50] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
 Not Found: /main/movies/413921/assets/img/favicon.png
 [15/Sep/2023 15:18:50] "GET /main/movies/413921/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 15:58:33] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[15/Sep/2023 15:58:33] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /
+[15/Sep/2023 16:24:31] "GET / HTTP/1.1" 404 3083
+Not Found: /favicon.ico
+[15/Sep/2023 16:24:32] "GET /favicon.ico HTTP/1.1" 404 3139
+[15/Sep/2023 16:27:06] code 400, message Bad request syntax ('MGLNDD_34.64.160.47_8000')
+[15/Sep/2023 16:27:06] "MGLNDD_34.64.160.47_8000" 400 -
+[15/Sep/2023 16:35:19] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[15/Sep/2023 16:35:19] "  /*à     Cookie: mstshash=Administr" 400 -
+[15/Sep/2023 16:37:16] code 400, message Bad request version ('À\x14À')
+[15/Sep/2023 16:37:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 16:37:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03åH\x9c\x07ÌÍ\x84áVºÍ@ëM³ï¸±¶".\x12\x01ZX%Ç\'GKcÎ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[15/Sep/2023 16:37:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[15/Sep/2023 16:37:17] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 16:37:18] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x95Ç¨Ç\x08íáß.¶\x17¨\x81\x0e«ö²pC¾+¸~F9ì\x08X\x08.§=\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[15/Sep/2023 16:37:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /api/islogged
+[15/Sep/2023 16:37:18] "GET /api/islogged HTTP/1.1" 404 3142
+[15/Sep/2023 16:57:56] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 16:57:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[15/Sep/2023 16:57:57] "GET / HTTP/1.1" 404 3088
+[15/Sep/2023 16:57:57] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 16:57:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 16:57:58] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 16:57:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 16:57:58] code 400, message Bad request version ('\x80,µ6a²Bé4²§¢Ý')
+[15/Sep/2023 16:57:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 16:57:59] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 16:57:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 16:57:59] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 16:57:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 16:58:01] code 400, message Bad request version ('À\x13À')
+[15/Sep/2023 16:58:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Sep/2023 17:20:14] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[15/Sep/2023 17:20:14] "  /*à     Cookie: mstshash=Administr" 400 -
+[15/Sep/2023 18:02:11] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[15/Sep/2023 18:02:11] "  /*à     Cookie: mstshash=Administr" 400 -
+[15/Sep/2023 18:53:52] "GET /main/ HTTP/1.1" 200 23878
+[15/Sep/2023 18:53:53] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 304 0
+[15/Sep/2023 18:53:53] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:53:53] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:53:53] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:53:53] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:53:53] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:53:58] "GET /main/movies/ HTTP/1.1" 200 42385
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/ACTION.png HTTP/1.1" 200 643636
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/COMEDY.png HTTP/1.1" 200 446288
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/CRIME.png HTTP/1.1" 200 475773
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:53:58] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/FANTASY.png HTTP/1.1" 200 825335
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/DOCU.png HTTP/1.1" 200 487615
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/ANIME.png HTTP/1.1" 200 689838
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:53:58] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:53:58] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:53:58] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/HISTORY.png HTTP/1.1" 200 458208
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/FAMILY.png HTTP/1.1" 200 748408
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/DRAMA.png HTTP/1.1" 200 750621
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/ROMANCE.png HTTP/1.1" 200 667144
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/SCIENCE.png HTTP/1.1" 200 637720
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/HORROR.png HTTP/1.1" 200 463180
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/MUSIC.png HTTP/1.1" 200 416356
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/MYSTERY.png HTTP/1.1" 200 736743
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/THRILLER.png HTTP/1.1" 200 569712
+[15/Sep/2023 18:53:58] "GET /static/Img/IMAGES/WAR.png HTTP/1.1" 200 697303
+[15/Sep/2023 18:54:39] "GET /movie/ HTTP/1.1" 200 66490
+[15/Sep/2023 18:54:39] "GET /static/css/styles.css HTTP/1.1" 304 0
+[15/Sep/2023 18:54:39] "GET /static/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:54:39] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:54:39] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:54:39] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:54:39] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:54:43] "GET /movie/?page=19 HTTP/1.1" 200 66250
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:54:43] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:54:43] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:54:43] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:54:43] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:54:45] "GET /main/movies/112178/ HTTP/1.1" 200 57848
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:54:45] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+[15/Sep/2023 18:54:45] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:54:45] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:54:45] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:54:45] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:54:45] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:54:45] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:54:45] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /main/movies/112178/js/scripts.js
+[15/Sep/2023 18:54:45] "GET /main/movies/112178/js/scripts.js HTTP/1.1" 404 3797
+[15/Sep/2023 18:54:55] "GET /movie/?page=1 HTTP/1.1" 200 66110
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:54:55] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:54:55] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:54:55] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:54:55] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:55:04] "GET /movie/?page=32 HTTP/1.1" 200 36759
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:55:04] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:55:04] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:55:04] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:55:04] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:55:06] "GET /main/movies/459463 HTTP/1.1" 301 0
+[15/Sep/2023 18:55:06] "GET /main/movies/459463/ HTTP/1.1" 200 57669
+Not Found: /main/movies/459463/js/scripts.js
+[15/Sep/2023 18:55:06] "GET /main/movies/459463/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:55:06] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:55:06] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:55:06] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:55:06] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:55:06] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:55:06] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:55:06] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:55:06] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /main/movies/459463/assets/img/favicon.png
+[15/Sep/2023 18:55:06] "GET /main/movies/459463/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:55:15] "GET /movie/?page=31 HTTP/1.1" 200 66190
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:55:15] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:55:15] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:55:15] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:55:15] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:55:22] "GET /movie/?page=30 HTTP/1.1" 200 66567
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:55:22] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:55:22] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:55:22] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:55:22] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:55:47] "GET /main/movies/410340 HTTP/1.1" 301 0
+[15/Sep/2023 18:55:47] "GET /main/movies/410340/ HTTP/1.1" 200 57564
+Not Found: /main/movies/410340/js/scripts.js
+[15/Sep/2023 18:55:47] "GET /main/movies/410340/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:55:47] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:55:47] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:55:47] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:55:47] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:55:47] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:55:47] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:55:47] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:55:47] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /main/movies/410340/assets/img/favicon.png
+[15/Sep/2023 18:55:48] "GET /main/movies/410340/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:55:54] "GET /movie/?page=29 HTTP/1.1" 200 66367
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:55:54] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:55:54] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:55:54] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:55:54] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:56:06] "GET /movie/?page=28 HTTP/1.1" 200 66311
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:56:06] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:56:06] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:56:06] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:56:06] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:56:12] "GET /main/movies/364520 HTTP/1.1" 301 0
+[15/Sep/2023 18:56:12] "GET /main/movies/364520/ HTTP/1.1" 200 57536
+Not Found: /main/movies/364520/js/scripts.js
+[15/Sep/2023 18:56:13] "GET /main/movies/364520/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:56:13] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+[15/Sep/2023 18:56:13] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:56:13] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:56:13] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:56:13] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:56:13] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:56:13] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:56:13] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /main/movies/364520/assets/img/favicon.png
+[15/Sep/2023 18:56:13] "GET /main/movies/364520/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:56:29] "GET /movie/?page=27 HTTP/1.1" 200 66337
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:56:29] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:56:29] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:56:29] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:56:29] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:56:33] "GET /main/movies/355258 HTTP/1.1" 301 0
+[15/Sep/2023 18:56:34] "GET /main/movies/355258/ HTTP/1.1" 200 57699
+Not Found: /main/movies/355258/js/scripts.js
+[15/Sep/2023 18:56:34] "GET /main/movies/355258/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:56:34] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:56:34] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:56:34] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:56:34] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:56:34] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:56:34] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:56:34] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+[15/Sep/2023 18:56:34] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /main/movies/355258/assets/img/favicon.png
+[15/Sep/2023 18:56:34] "GET /main/movies/355258/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:56:36] "GET /main/movies/354876 HTTP/1.1" 301 0
+[15/Sep/2023 18:56:36] "GET /main/movies/354876/ HTTP/1.1" 200 57643
+Not Found: /main/movies/354876/js/scripts.js
+[15/Sep/2023 18:56:36] "GET /main/movies/354876/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:56:36] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:56:36] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:56:36] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:56:36] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:56:36] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:56:36] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:56:36] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:56:36] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /main/movies/354876/assets/img/favicon.png
+[15/Sep/2023 18:56:37] "GET /main/movies/354876/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:56:39] "GET /main/movies/346696 HTTP/1.1" 301 0
+[15/Sep/2023 18:56:39] "GET /main/movies/346696/ HTTP/1.1" 200 57646
+Not Found: /main/movies/346696/js/scripts.js
+[15/Sep/2023 18:56:39] "GET /main/movies/346696/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:56:39] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:56:39] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+[15/Sep/2023 18:56:39] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:56:39] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:56:39] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:56:39] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:56:39] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:56:39] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /main/movies/346696/assets/img/favicon.png
+[15/Sep/2023 18:56:40] "GET /main/movies/346696/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:56:54] "GET /movie/?page=26 HTTP/1.1" 200 66439
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:56:54] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:56:54] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:56:54] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:56:54] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:56:55] "GET /main/movies/320099 HTTP/1.1" 301 0
+[15/Sep/2023 18:56:55] "GET /main/movies/320099/ HTTP/1.1" 200 57463
+Not Found: /main/movies/320099/js/scripts.js
+[15/Sep/2023 18:56:55] "GET /main/movies/320099/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:56:55] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:56:55] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:56:55] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:56:55] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:56:55] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:56:55] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:56:55] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:56:55] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /main/movies/320099/assets/img/favicon.png
+[15/Sep/2023 18:56:56] "GET /main/movies/320099/assets/img/favicon.png HTTP/1.1" 404 3824
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 15:18:18
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+[15/Sep/2023 18:57:03] "GET /movie/?page=25 HTTP/1.1" 200 66249
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:03] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:57:03] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:03] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:57:03] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:57:04] "GET /main/movies/305891 HTTP/1.1" 301 0
+[15/Sep/2023 18:57:04] "GET /main/movies/305891/ HTTP/1.1" 200 57556
+Not Found: /main/movies/305891/js/scripts.js
+[15/Sep/2023 18:57:04] "GET /main/movies/305891/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:57:05] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:57:05] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:05] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:05] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:57:05] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:57:05] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:57:05] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:57:05] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /main/movies/305891/assets/img/favicon.png
+[15/Sep/2023 18:57:05] "GET /main/movies/305891/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:57:08] "GET /main/movies/307619 HTTP/1.1" 301 0
+[15/Sep/2023 18:57:08] "GET /main/movies/307619/ HTTP/1.1" 200 57691
+Not Found: /main/movies/307619/js/scripts.js
+[15/Sep/2023 18:57:08] "GET /main/movies/307619/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:57:08] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:57:08] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:08] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:57:08] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:57:08] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:08] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:57:08] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:57:08] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /main/movies/307619/assets/img/favicon.png
+[15/Sep/2023 18:57:08] "GET /main/movies/307619/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:57:23] "GET /movie/?page=24 HTTP/1.1" 200 66279
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:23] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:57:23] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:57:23] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:23] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:57:24] "GET /main/movies/284652 HTTP/1.1" 301 0
+[15/Sep/2023 18:57:25] "GET /main/movies/284652/ HTTP/1.1" 200 57618
+Not Found: /main/movies/284652/js/scripts.js
+[15/Sep/2023 18:57:25] "GET /main/movies/284652/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:57:25] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:25] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:57:25] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:57:25] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:57:25] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:57:25] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:57:25] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:57:25] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /main/movies/284652/assets/img/favicon.png
+[15/Sep/2023 18:57:25] "GET /main/movies/284652/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:57:35] "GET /main/movies/289607 HTTP/1.1" 301 0
+[15/Sep/2023 18:57:36] "GET /main/movies/289607/ HTTP/1.1" 200 57613
+Not Found: /main/movies/289607/js/scripts.js
+[15/Sep/2023 18:57:36] "GET /main/movies/289607/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:57:36] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:36] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:36] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:57:36] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:57:36] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+[15/Sep/2023 18:57:36] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:57:36] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:57:36] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /main/movies/289607/assets/img/favicon.png
+[15/Sep/2023 18:57:36] "GET /main/movies/289607/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:57:50] "GET /main/movies/304584 HTTP/1.1" 301 0
+[15/Sep/2023 18:57:50] "GET /main/movies/304584/ HTTP/1.1" 200 57555
+Not Found: /main/movies/304584/js/scripts.js
+[15/Sep/2023 18:57:50] "GET /main/movies/304584/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:57:50] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:57:50] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:50] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:57:50] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:57:50] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:50] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:57:50] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:57:50] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /main/movies/304584/assets/img/favicon.png
+[15/Sep/2023 18:57:51] "GET /main/movies/304584/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:57:59] "GET /movie/?page=23 HTTP/1.1" 200 66330
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:57:59] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:57:59] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:57:59] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:57:59] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:58:01] "GET /main/movies/266445 HTTP/1.1" 301 0
+[15/Sep/2023 18:58:01] "GET /main/movies/266445/ HTTP/1.1" 200 57933
+Not Found: /main/movies/266445/js/scripts.js
+[15/Sep/2023 18:58:01] "GET /main/movies/266445/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:58:01] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:58:01] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:58:01] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:58:01] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:58:01] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:58:01] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:58:01] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:58:01] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /main/movies/266445/assets/img/favicon.png
+[15/Sep/2023 18:58:01] "GET /main/movies/266445/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:58:05] "GET /main/movies/265557/ HTTP/1.1" 200 57708
+Not Found: /main/movies/265557/js/scripts.js
+[15/Sep/2023 18:58:05] "GET /main/movies/265557/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:58:05] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:58:05] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:58:05] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 18:58:05] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:58:05] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+[15/Sep/2023 18:58:05] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:58:05] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 18:58:05] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:58:19] "GET /main/movies/275931 HTTP/1.1" 301 0
+[15/Sep/2023 18:58:19] "GET /main/movies/275931/ HTTP/1.1" 200 57821
+Not Found: /main/movies/275931/js/scripts.js
+[15/Sep/2023 18:58:19] "GET /main/movies/275931/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:58:19] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:58:19] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:58:19] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:58:19] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:58:19] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+[15/Sep/2023 18:58:19] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:58:19] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:58:19] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /main/movies/275931/assets/img/favicon.png
+[15/Sep/2023 18:58:20] "GET /main/movies/275931/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:58:26] "GET /main/movies/282473 HTTP/1.1" 301 0
+[15/Sep/2023 18:58:26] "GET /main/movies/282473/ HTTP/1.1" 200 57705
+Not Found: /main/movies/282473/js/scripts.js
+[15/Sep/2023 18:58:26] "GET /main/movies/282473/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:58:26] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:58:26] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:58:26] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:58:26] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:58:26] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:58:26] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:58:26] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:58:26] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /main/movies/282473/assets/img/favicon.png
+[15/Sep/2023 18:58:26] "GET /main/movies/282473/assets/img/favicon.png HTTP/1.1" 404 3824
+[15/Sep/2023 18:58:31] "GET /movie/?page=22 HTTP/1.1" 200 66466
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:58:31] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:58:31] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+[15/Sep/2023 18:58:31] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 18:58:31] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:58:38] "GET /main/movies/258003/ HTTP/1.1" 200 57595
+Not Found: /main/movies/258003/js/scripts.js
+[15/Sep/2023 18:58:38] "GET /main/movies/258003/js/scripts.js HTTP/1.1" 404 3797
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 18:58:38] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 3262
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 18:58:38] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 18:58:38] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 3238
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 18:58:38] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 3235
+[15/Sep/2023 18:58:38] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 18:58:38] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+[15/Sep/2023 18:58:38] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 18:58:38] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+[15/Sep/2023 20:04:36] "GET /main/ HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:04:36] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3235
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:04:36] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3241
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:04:36] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3244
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:04:36] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3262
+Not Found: /favicon.ico
+[15/Sep/2023 20:04:38] "GET /favicon.ico HTTP/1.1" 404 3139
+Not Found: /main/assets/img/backgrounds/bg-dropdown-xl.jpg
+[15/Sep/2023 20:04:49] "GET /main/assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 3839
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+user: admin
+is_authenticated: True
+Watching for file changes with StatReloader
+[15/Sep/2023 20:05:36] "GET / HTTP/1.1" 200 66490
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:05:36] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 3410
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:05:36] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 3401
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:05:36] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 3407
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:05:36] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 3428
+Not Found: /assets/img/favicon.png
+[15/Sep/2023 20:05:37] "GET /assets/img/favicon.png HTTP/1.1" 404 3338
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:05:34
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:07:51
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:08:11
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:08:14
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:08:29
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:08:49
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:08:59
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:09:50
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:10:19
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:10:43
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:13:41
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')),    ## 나중에 메인 페이지랑 연결  include
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 13, in <module>
+    path('dir/', views.movies, name='dir'),
+AttributeError: module 'posts.views' has no attribute 'movies'
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')),    ## 나중에 메인 페이지랑 연결  include
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 13, in <module>
+    path('dir/', views.movies, name='dir'),
+AttributeError: module 'posts.views' has no attribute 'movies'
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')),    ## 나중에 메인 페이지랑 연결  include
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 13, in <module>
+    path('dir/', views.movies, name='dir'),
+AttributeError: module 'posts.views' has no attribute 'movies'
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:14:08
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:14:32
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:14:36
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')),    ## 나중에 메인 페이지랑 연결  include
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 14, in <module>
+    path('movie/<int:pk>/', views.movie_detail, name='movie_detail'),
+AttributeError: module 'posts.views' has no attribute 'movie_detail'
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:14:48
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:15:04
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:16:43
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/sms_site/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:16:48
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:18:41
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/userpage/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:21:05
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/userpage/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:21:13
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/userpage/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:21:23
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[15/Sep/2023 20:24:42] "GET / HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:24:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:24:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:24:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:24:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /users/logout/
+[15/Sep/2023 20:24:49] "GET /users/logout/ HTTP/1.1" 404 4198
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:22:48
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:25:21
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Not Found: /users/logout/
+[15/Sep/2023 20:25:34] "GET /users/logout/ HTTP/1.1" 404 4198
+Not Found: /users/
+[15/Sep/2023 20:25:38] "GET /users/ HTTP/1.1" 404 4177
+[15/Sep/2023 20:25:45] "GET / HTTP/1.1" 200 23878
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:25:45] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:25:45] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:25:45] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:25:45] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /users/logout/
+[15/Sep/2023 20:25:48] "GET /users/logout/ HTTP/1.1" 404 4198
+Not Found: /userinfo/
+[15/Sep/2023 20:25:53] "GET /userinfo/ HTTP/1.1" 404 4186
+Not Found: /users/logout/
+[15/Sep/2023 20:25:59] "GET /users/logout/ HTTP/1.1" 404 4198
+Not Found: /users/logout/
+[15/Sep/2023 20:26:55] "GET /users/logout/ HTTP/1.1" 404 4198
+[15/Sep/2023 20:26:59] "GET / HTTP/1.1" 200 23870
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:26:59] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:26:59] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:26:59] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:26:59] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /main/movies/
+[15/Sep/2023 20:27:00] "GET /main/movies/ HTTP/1.1" 404 4195
+[15/Sep/2023 20:27:55] "GET / HTTP/1.1" 200 23868
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:27:55] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:27:55] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:27:55] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:27:55] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /movies/
+[15/Sep/2023 20:27:56] "GET /movies/ HTTP/1.1" 404 4180
+Not Found: /movies/
+[15/Sep/2023 20:28:02] "GET /movies/ HTTP/1.1" 404 4180
+[15/Sep/2023 20:28:04] "GET / HTTP/1.1" 200 23867
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:28:04] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:28:04] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:28:04] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:28:04] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:28:06] "GET /movie/ HTTP/1.1" 200 66490
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:28:06] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:28:06] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:28:06] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:28:06] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /movie/assets/img/favicon.png
+[15/Sep/2023 20:28:06] "GET /movie/assets/img/favicon.png HTTP/1.1" 404 4243
+[15/Sep/2023 20:28:12] "GET /movie/?genre=Action HTTP/1.1" 200 66490
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:28:12] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:28:12] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:28:12] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:28:12] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:28:13] "GET /movie/?genre= HTTP/1.1" 200 66490
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:28:13] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:28:13] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:28:13] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:28:13] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /main/movies/1150313/
+[15/Sep/2023 20:28:15] "GET /main/movies/1150313/ HTTP/1.1" 404 4219
+[15/Sep/2023 20:29:53] "GET /movie/?genre= HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:29:53] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:29:53] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:29:53] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:29:53] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:29:54] "GET /movie/1150313 HTTP/1.1" 301 0
+[15/Sep/2023 20:29:54] "GET /movie/1150313/ HTTP/1.1" 200 57987
+Not Found: /movie/1150313/js/scripts.js
+[15/Sep/2023 20:29:55] "GET /movie/1150313/js/scripts.js HTTP/1.1" 404 4240
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 20:29:55] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 4297
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 20:29:55] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:29:55] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 20:29:55] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+[15/Sep/2023 20:29:55] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:29:55] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:29:55] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 4291
+[15/Sep/2023 20:29:55] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /movie/1150313/assets/img/favicon.png
+[15/Sep/2023 20:29:56] "GET /movie/1150313/assets/img/favicon.png HTTP/1.1" 404 4267
+[15/Sep/2023 20:30:04] "GET /movie/116887 HTTP/1.1" 301 0
+[15/Sep/2023 20:30:04] "GET /movie/116887/ HTTP/1.1" 200 57820
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+Not Found: /movie/116887/js/scripts.js
+[15/Sep/2023 20:30:04] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 4297
+[15/Sep/2023 20:30:04] "GET /movie/116887/js/scripts.js HTTP/1.1" 404 4237
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 20:30:04] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:04,367] - Broken pipe from ('222.108.81.83', 63955)
+[15/Sep/2023 20:30:04] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:04] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 20:30:04] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:04] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 4291
+[15/Sep/2023 20:30:04] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:04] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /movie/116887/assets/img/favicon.png
+[15/Sep/2023 20:30:05] "GET /movie/116887/assets/img/favicon.png HTTP/1.1" 404 4264
+[15/Sep/2023 20:30:11] "GET /movie/?type=title&search= HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:11] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:11] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:11] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:11] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:12] "GET /movie/1156089 HTTP/1.1" 301 0
+[15/Sep/2023 20:30:12] "GET /movie/1156089/ HTTP/1.1" 200 57485
+Not Found: /movie/1156089/js/scripts.js
+[15/Sep/2023 20:30:12] "GET /movie/1156089/js/scripts.js HTTP/1.1" 404 4240
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[15/Sep/2023 20:30:12] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:12] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Thin.otf
+[15/Sep/2023 20:30:12] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Light.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:12] "GET /assets/fonts/metropolis/Metropolis-Thin.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:12] "GET /assets/fonts/metropolis/Metropolis-Light.otf HTTP/1.1" 404 4291
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[15/Sep/2023 20:30:12] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:30:12] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:12] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 4315
+Not Found: /movie/1156089/assets/img/favicon.png
+[15/Sep/2023 20:30:13] "GET /movie/1156089/assets/img/favicon.png HTTP/1.1" 404 4267
+[15/Sep/2023 20:30:18] "GET /movie/?genre= HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:18] "GET /movie/?genre=Action HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:18] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:30:19] "GET /movie/?genre=Adventure HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:19] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:19] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:19] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:19] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:19] "GET /movie?genre=Animation HTTP/1.1" 301 0
+[15/Sep/2023 20:30:20] "GET /movie/?genre=Animation HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:20] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:20] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:20] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:20] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:20] "GET /movie?genre=Comedy HTTP/1.1" 301 0
+[15/Sep/2023 20:30:21] "GET /movie/?genre=Comedy HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:21] "GET /movie?genre=Crime HTTP/1.1" 301 0
+[15/Sep/2023 20:30:21] "GET /movie/?genre=Crime HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:21] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:21] "GET /movie?genre=Documentary HTTP/1.1" 301 0
+[15/Sep/2023 20:30:22] "GET /movie/?genre=Documentary HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:22] "GET /movie/?genre=Drama HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:22] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:30:22] "GET /movie?genre=Family HTTP/1.1" 301 0
+[15/Sep/2023 20:30:23] "GET /movie/?genre=Family HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:23] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:23] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:23] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:23] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:23] "GET /movie?genre=War HTTP/1.1" 301 0
+[15/Sep/2023 20:30:23] "GET /movie/?genre=War HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:24] "GET /movie?genre=Thriller HTTP/1.1" 301 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:25:28
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+[15/Sep/2023 20:30:24] "GET /movie/?genre=Thriller HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:24] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:30:25] "GET /movie?genre=Science_Fiction HTTP/1.1" 301 0
+[15/Sep/2023 20:30:25] "GET /movie/?genre=Science_Fiction HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:25] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:25] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:25] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:25] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:25] "GET /movie?genre=Mystery HTTP/1.1" 301 0
+[15/Sep/2023 20:30:26] "GET /movie/?genre=Mystery HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:26] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:26] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:26] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:26] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:26] "GET /movie?genre=Music HTTP/1.1" 301 0
+[15/Sep/2023 20:30:26] "GET /movie/?genre=Music HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:30:27,049] - Broken pipe from ('222.108.81.83', 64007)
+[15/Sep/2023 20:30:27] "GET /movie/?genre=Horror HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:27] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:27] "GET /movie?genre=History HTTP/1.1" 301 0
+[15/Sep/2023 20:30:27] "GET /movie/?genre=History HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:28] "GET /movie/?genre=Western HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:28] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:30:29] "GET /movie/?genre=Western HTTP/1.1" 200 66370
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:29] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:29] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:30:29] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:30:29] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /movie/index.html
+[15/Sep/2023 20:30:40] "GET /movie/index.html HTTP/1.1" 404 4207
+[15/Sep/2023 20:30:53] "GET / HTTP/1.1" 200 23867
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:30:54] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:30:54] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:30:54] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:30:54] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/img/backgrounds/bg-dropdown-xl.jpg
+[15/Sep/2023 20:31:02] "GET /assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 4282
+Internal Server Error: /mypage/
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/storages/backends/s3.py", line 435, in _open
+    f = S3File(name, mode, self)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/storages/backends/s3.py", line 128, in __init__
+    self.obj.load(**params)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/boto3/resources/factory.py", line 564, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/boto3/resources/action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/botocore/client.py", line 980, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/userpage/views.py", line 29, in userdetail
+    'user_movie1' : get_data(**user_movie1),
+  File "/home/neivekim76/git/organization/sms/Webpage/userpage/views.py", line 16, in get_data
+    json_file = storage.open(f'TMDB/detail/{movie_dt}/{file_name}')
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/storages/backends/s3.py", line 438, in _open
+    raise FileNotFoundError('File does not exist: %s' % name)
+FileNotFoundError: File does not exist: TMDB/detail/2023-07-14/TMDB_movieDetails_872585_2023-07-14.json
+[15/Sep/2023 20:31:27] "GET /mypage/ HTTP/1.1" 500 110047
+[15/Sep/2023 20:32:14] "GET / HTTP/1.1" 200 23867
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:32:14] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:32:14] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:32:14] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:32:14] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:32:16] "GET /logout/ HTTP/1.1" 302 0
+[15/Sep/2023 20:32:16] "GET /login HTTP/1.1" 301 0
+[15/Sep/2023 20:32:16] "GET /login/ HTTP/1.1" 200 925
+[15/Sep/2023 20:32:16] "GET /static/instagram/style.css HTTP/1.1" 304 0
+[15/Sep/2023 20:32:21] "GET / HTTP/1.1" 302 0
+[15/Sep/2023 20:32:21] "GET /login/ HTTP/1.1" 200 925
+[15/Sep/2023 20:32:26] "GET / HTTP/1.1" 302 0
+[15/Sep/2023 20:32:26] "GET /login/ HTTP/1.1" 200 925
+/home/neivekim76/git/organization/sms/Webpage/config/urls.py changed, reloading.
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB/1960-01-01/part-00000-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB/1960-01-01/part-00001-cd867361-4228-4454-99da-218b62989c5b-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/_SUCCESS
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00000-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/1960-01-01/part-00001-f757f7ba-676d-4cdd-bfa3-8afa77e1e956-c000.snappy.parquet
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: AnonymousUser
+is_authenticated: False
+user: AnonymousUser
+is_authenticated: False
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:33:58
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:34:26
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[15/Sep/2023 20:34:41] "GET / HTTP/1.1" 200 32558
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:34:41] "GET /static/sb-ui-kit-pro/dist/assets/img/demo/app-desktop-demo-screenshot.jpg HTTP/1.1" 200 322232
+[15/Sep/2023 20:34:41] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:34:41] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:34:41] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:34:41] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:40:54] "GET / HTTP/1.1" 200 32564
+[15/Sep/2023 20:40:54] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 304 0
+[15/Sep/2023 20:40:54] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:40:54] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:40:54] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:40:54] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:40:54] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:41:03] "GET / HTTP/1.1" 200 32563
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:41:03] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+[15/Sep/2023 20:41:03] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:41:03] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:41:03] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:41:05] "GET /login/ HTTP/1.1" 200 925
+[15/Sep/2023 20:41:12] "POST /login/ HTTP/1.1" 302 0
+Not Found: /main
+[15/Sep/2023 20:41:12] "GET /main HTTP/1.1" 404 4171
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:34:31
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: AnonymousUser
+is_authenticated: False
+user: AnonymousUser
+is_authenticated: False
+user: AnonymousUser
+is_authenticated: False
+form.is_valid(): True
+form.cleaned_data: {'username': 'admin', 'password': 'playdata24'}
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:43:38
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[15/Sep/2023 20:44:43] "GET /main HTTP/1.1" 301 0
+[15/Sep/2023 20:44:43] "GET /main/ HTTP/1.1" 200 32563
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:44:44] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4293
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:44:44] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4302
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:44:44] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4320
+[15/Sep/2023 20:44:44] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4299
+[15/Sep/2023 20:44:50] "GET /login/ HTTP/1.1" 302 0
+[15/Sep/2023 20:44:50] "GET /main/ HTTP/1.1" 200 32563
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:44:50] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4302
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:44:50] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4299
+[15/Sep/2023 20:44:50] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4293
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:44:50] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4320
+[15/Sep/2023 20:44:52] "GET /login/ HTTP/1.1" 302 0
+[15/Sep/2023 20:44:52] "GET /main/ HTTP/1.1" 200 32563
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:44:52] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4299
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:44:52] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4302
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:44:52] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4293
+[15/Sep/2023 20:44:52] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4320
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:43:41
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:45:24
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:45:52
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:45:54
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Not Found: /main/
+[15/Sep/2023 20:45:58] "GET /main/ HTTP/1.1" 404 4174
+Not Found: /main/
+[15/Sep/2023 20:45:59] "GET /main/ HTTP/1.1" 404 4174
+[15/Sep/2023 20:46:02] "GET / HTTP/1.1" 200 32563
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:46:02] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:46:02] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:46:02] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:46:02] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:46:03] "GET /login/ HTTP/1.1" 302 0
+Not Found: /main/
+[15/Sep/2023 20:46:03] "GET /main/ HTTP/1.1" 404 4174
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:45:58
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+Watching for file changes with StatReloader
+[15/Sep/2023 20:46:44] "GET / HTTP/1.1" 200 32563
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:46:44] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:46:44] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:46:44] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:46:44] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+[15/Sep/2023 20:46:45] "GET /login/ HTTP/1.1" 302 0
+[15/Sep/2023 20:46:45] "GET /dir HTTP/1.1" 301 0
+[15/Sep/2023 20:46:45] "GET /dir/ HTTP/1.1" 200 42385
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/ACTION.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/FANTASY.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/ANIME.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/COMEDY.png HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[15/Sep/2023 20:46:45] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 4315
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/CRIME.png HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[15/Sep/2023 20:46:45] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 4297
+[15/Sep/2023 20:46:45] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 4294
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[15/Sep/2023 20:46:45] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 4288
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/DOCU.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/DRAMA.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/FAMILY.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/HISTORY.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/HORROR.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/MUSIC.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/MYSTERY.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/ROMANCE.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/SCIENCE.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/THRILLER.png HTTP/1.1" 304 0
+[15/Sep/2023 20:46:45] "GET /static/Img/IMAGES/WAR.png HTTP/1.1" 304 0
+Not Found: /dir/assets/img/favicon.png
+[15/Sep/2023 20:46:46] "GET /dir/assets/img/favicon.png HTTP/1.1" 404 4237
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:46:43
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+user: admin
+is_authenticated: True
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/users/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:49:32
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:49:39
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 12, in <module>
+    path('', home, name='home'),
+NameError: name 'home' is not defined
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:50:31
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 22
+    def directory(request):
+    ^
+IndentationError: expected an indented block
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:51:27
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:51:33
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:51:51
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2023 - 20:51:55
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 27
+    if not is_authenticated:
+    ^
+IndentationError: unexpected indent
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 28
+    if not is_authenticated:
+    ^
+IndentationError: unexpected indent
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 29
+    if not is_authenticated:
+    ^
+IndentationError: unexpected indent
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 27
+    if not is_authenticated:
+    ^
+IndentationError: unexpected indent
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 28
+    if not is_authenticated:
+    ^
+IndentationError: unexpected indent
+/home/neivekim76/git/organization/sms/Webpage/posts/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/config/urls.py", line 13, in <module>
+    path('', include('posts.urls')), 
+  File "/home/neivekim76/git/organization/sms/Webpage/django/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/urls.py", line 3, in <module>
+    from posts.views import *
+  File "/home/neivekim76/git/organization/sms/Webpage/posts/views.py", line 28
+    if not is_authenticated:
+    ^
+IndentationError: unexpected indent
