@@ -155,23 +155,23 @@
                         </div>
                     </nav>
                     <!-- Page Header-->
-                    <header class="page-header-ui page-header-ui-dark" style="background-image: url('{% static 'Img/LOGOS/bg.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                        <div class="page-header-ui-content">
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60" style="background-image: url('{% static 'Img/LOGOS/bg.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="page-header-ui-content position-relative">
                             <div class="container px-5 text-center">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-8">
+                                <div class="row gx-5 justify-content-center align-items-center">
+                                    <div class="col-lg-8" data-aos="fade-right">
                                         <h1 class="page-header-ui-title mb-3">{{ festa_name }}</h1>
                                         <p class="page-header-ui-text mb-0" style="font-size: 36px; opacity: 1;">{{ year }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="svg-border-rounded text-light">
-                            <!-- Rounded SVG Border-->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        <div class="svg-border-angled text-light">
+                            <!-- Angled SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
                         </div>
                     </header>
-                    <section class="bg-light pb-10">
+                    <section class="bg-light pb-10" style="margin-top: 50px;">
                         <div class="container px-5">
                             <div class="row gx-5">
                                 <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
