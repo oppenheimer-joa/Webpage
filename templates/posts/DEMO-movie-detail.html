@@ -169,7 +169,7 @@
                                 <div class="row gx-5 justify-content-center align-items-center">
                                     <div class="col-lg-6" data-aos="fade-right">
                                         <h1 class="page-header-ui-title">{{ movie_nm }}</h1>
-                                        <span class="badge bg-dark text-white ms-1">{{ movie_gr }} | {{ date }}</span>
+                                        <span class="badge bg-dark text-white ms-1"><!--{{ movie_gr }} | -->{{ date }}</span>
                                         <p class="page-header-ui-text mb-lg-0">{{ movie_dt }}</p>
                                     </div>
                                     <div class="col-lg-6 z-1" data-aos="fade-left">
@@ -195,262 +195,54 @@
                                 <div class="container px-5">
                                     <h2 class="mb-4 text-center">영화 출연진 목록</h2>
                                     <div class="mb-5 text">
-                                        <div class="text-xs text-uppercase-expanded mb-2"</div>
+                                        <div class="text-xs text-uppercase-expanded mb-2"></div>
                                             <div class="text-xs text-uppercase-expanded text-primary mb-2">ACTORS</div>
                                             <p class="lead mb-0">출연진 목록</p>
                                     </div>
                                     <div class="row gx-5">
+                                        <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
+                                        {% for person in cast.objerct_list %}
                                         <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$115</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/tG36rvCeqng/800x500" alt="..." />
+                                            <a class="card lift h-100" href="{% url "people_info" person.id %}">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
+                                                {% if person.profile_img %}
+                                                <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
+                                                {% else %}
+                                                    <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
+                                                {% endif %}
                                                 <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Gray Bicycle</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 days ago</div>
+                                                    <div class="card-title small mb-0"> {{ person.name }}</div>
+                                                    <div class="text-xs text-gray-500">{{ person.birth }}</div>
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$29</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/nHOz7sp5nHE/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Hanimex Camera</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 3 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$999</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/GkFQEOubrCo/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Macbook Pro</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 4 hours ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$19</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/3bdSGpKVAmk/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Assorted Skin Care</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 29 minutes ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$59</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/w9IHmVSNBfU/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Brown Ukulele</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 3 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$249</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/bpg-ngqrPc8/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Leather Sofa</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 hours ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$219</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/fZuleEfeA1Q/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Green Suede Sofa</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/rjhAiP3cj9E/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Metal Chairs</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 5 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/5ba6j8d_oXY/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Wireless Earbuds</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 month ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$34,999</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/ESoE_buQvNQ/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Muscle Car</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 1 week ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$69</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/zuE9jsaVHuA/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Hardwood Dresser</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 weeks ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$9,999</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/WuRsjF4iZK0/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Classic Motorcycle</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 week ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        {% endfor %}
                                     </div>
 
                                     <div class="mb-5 text">
-                                        <div class="text-xs text-uppercase-expanded mb-2"</div>
+                                        <div class="text-xs text-uppercase-expanded mb-2"></div>
                                             <div class="text-xs text-uppercase-expanded text-primary mb-2">CREWS</div>
                                             <p class="lead mb-0">제작진 목록</p>
                                     </div>
                                     <div class="row gx-5">
+                                        <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
+                                        {% for person in crew.objerct_list %}
                                         <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$115</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/tG36rvCeqng/800x500" alt="..." />
+                                            <a class="card lift h-100" href="{% url "people_info" person.id %}">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
+                                                {% if person.profile_img %}
+                                                <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
+                                                {% else %}
+                                                    <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
+                                                {% endif %}
                                                 <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Gray Bicycle</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 days ago</div>
+                                                    <div class="card-title small mb-0"> {{ person.name }}</div>
+                                                    <div class="text-xs text-gray-500">{{ person.birth }}</div>
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$29</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/nHOz7sp5nHE/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Hanimex Camera</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 3 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$999</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/GkFQEOubrCo/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Macbook Pro</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 4 hours ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$19</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/3bdSGpKVAmk/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Assorted Skin Care</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 29 minutes ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$59</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/w9IHmVSNBfU/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Brown Ukulele</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 3 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$249</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/bpg-ngqrPc8/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Leather Sofa</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 2 hours ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$219</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/fZuleEfeA1Q/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Green Suede Sofa</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/rjhAiP3cj9E/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Metal Chairs</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 5 days ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$89</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/5ba6j8d_oXY/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Wireless Earbuds</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 month ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$34,999</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/ESoE_buQvNQ/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Muscle Car</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 1 week ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$69</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/zuE9jsaVHuA/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Hardwood Dresser</div>
-                                                    <div class="text-xs text-gray-500">Waterlow, CO &middot; 2 weeks ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="#!">
-                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">$9,999</div>
-                                                <img class="card-img-top" src="https://source.unsplash.com/WuRsjF4iZK0/800x500" alt="..." />
-                                                <div class="card-body p-3">
-                                                    <div class="card-title small mb-0">Classic Motorcycle</div>
-                                                    <div class="text-xs text-gray-500">Readcaster, CO &middot; 1 week ago</div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        {% endfor %}
                                     </div>
-
-
                                 </div>
                             </section>
 

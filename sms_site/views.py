@@ -25,7 +25,7 @@ def dictionary(request):
 
     # s3 연동
     parser = ConfigParser()
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)

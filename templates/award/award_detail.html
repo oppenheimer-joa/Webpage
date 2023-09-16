@@ -99,8 +99,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="nav-item dropdown dropdown-xl no-caret">
-                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <li class="nav-item dropdown no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             마이페이지
                                             <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
@@ -151,32 +151,17 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <a class="btn fw-500 ms-lg-4 btn-teal" href="https://shop.startbootstrap.com/sb-ui-kit-pro">
-                                    Buy Now
-                                    <i class="ms-2" data-feather="arrow-right"></i>
-                                </a>
                             </div>
                         </div>
                     </nav>
                     <!-- Page Header-->
-                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('https://source.unsplash.com/hrlvr2ZlUNk/1500x700')">
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60" style="background-image: url('{% static 'Img/LOGOS/bg.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="page-header-ui-content position-relative">
-                            <div class="container px-5">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-8 col-lg-10 text-center">
-                                        <a href="/people"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 인물 사전 </h1> </a>
-                                        <p class="page-header-ui-text mb-5"> 그냥 검색해보셍 </p>
-                                    </div>
-                                </div>
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-6 col-lg-8 text-center">
-                                        <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
-                                            <div class="col flex-grow-1">
-                                                <label class="sr-only" for="inputEmail">검색어를 입력해주세요</label>
-                                                <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="검색어를 입력해주세요" />
-                                            </div>
-                                            <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
-                                        </form>
+                            <div class="container px-5 text-center">
+                                <div class="row gx-5 justify-content-center align-items-center">
+                                    <div class="col-lg-8" data-aos="fade-right">
+                                        <h1 class="page-header-ui-title mb-3">{{ festa_name }}</h1>
+                                        <p class="page-header-ui-text mb-0" style="font-size: 36px; opacity: 1;">{{ year }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -186,40 +171,25 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
                         </div>
                     </header>
-
-                    <section class="bg-white pt-5 pb-10">
+                    <section class="bg-light pb-10" style="margin-top: 50px;">
                         <div class="container px-5">
-                            <div> 
-                                <h6 style="text-align: right; color: #888; margin-right: 3%;"> 최신순 &nbsp; | &nbsp; 평점순 </h6>
-                            </div>
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="mb-5 text-center">
-                                        {% if search %}
-                                        <h3> <p class="page-header-ui-text mb-5"> {{ search_type }} 기준 "<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
-                                        <p class="lead mb-0">Here are some of the most popular people in your area.</p>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
                             <div class="row gx-5">
                                 <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
-                                {% for person in pages %}
+                                {% for award in pages %}
                                 <div class="col-lg-3 mb-5">
                                     <div class="card h-100 shadow border-0">
-                                        <a href="{{ person.id }}">
-                                        {% if person.profile_img %}
-                                            <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
+                                        {% if award.award_image %}
+                                            <img class="card-img-top" src="{{ award.award_image }}" alt="..." />
                                         {% else %}
                                             <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
                                         {% endif %}
-                                        </a>
                                         <div class="card-body p-4">
-                                            <h4 class="card-title mb-0" style="display: inline; margin: 0;"> {{ person.name }} </h4> 
-                                            <span style="font-size: 15px; color: #888; margin-left: 10px;"> {{ person.known_for_department }} </span>
-                                            <div class="small"> {{ person.birth }} </div>
+                                            <h4 class="card-title mb-0" style="display: inline; margin: 0;"> {{ award.award_winner }} </h4>
+                                            <div class="middle"> {{ award.award_category }} </div>
                                         </div>
-                                        
+                                        <div class="card-footer text-center text-lg">
+                                            {{ award.award_name }}
+                                        </div>
                                     </div>
                                 </div>
                                 {% endfor %}
@@ -257,12 +227,6 @@
                                     {% endif %}
                                 </ul>
                             </nav>
-
-                        </div>
-                        
-                        <div class="svg-border-angled text-dark">
-                            <!-- Angled SVG Border-->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
                         </div>
                     </section>
                 </main>

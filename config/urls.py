@@ -18,7 +18,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', performance),
-    path('', include('people.urls'))
+    path('', include('people.urls')),
+    path('', include('award.urls'))
 ]
 
 urlpatterns += static(
