@@ -194,24 +194,25 @@
                                     <div class="card rounded-3 text-dark">
                                         <div class="card-header py-4">어떤 점을 도와드릴까요?</div>
                                         <div class="card-body">
-                                            <form>
+                                            <form method="post" action="{% url 'send_email' %}">
+                                                {% csrf_token %}
                                                 <div class="row gx-5 mb-3">
                                                     <div class="col-md-6">
                                                         <label class="small text-gray-600" for="leadCapFirstName">이름 | First Name</label>
-                                                        <input class="form-control" id="leadCapFirstName" type="text" />
+                                                        <input class="form-control" id="leadCapFirstName" type="text" name="leadCapFirstName" />
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label class="small text-gray-600" for="leadCapLastName">성 | Last Name</label>
-                                                        <input class="form-control" id="leadCapLastName" type="text" />
+                                                        <input class="form-control" id="leadCapLastName" type="text" name="leadCapLastName" />
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="small text-gray-600" for="leadCapEmail">이메일 주소 | Email address</label>
-                                                    <input class="form-control" id="leadCapEmail" type="email" />
+                                                    <input class="form-control" id="leadCapEmail" type="email" name="leadCapEmail" />
                                                 </div>
                                                 <div class="mb-4">
                                                     <label class="small text-gray-600" for="leadCapCompany">문의 사항 | requests</label>
-                                                    <input class="form-control" id="leadCapCompany" type="text" />
+                                                    <input class="form-control" id="leadCapCompany" type="text" name="leadCapCompany" />
                                                 </div>
                                                 <div class="d-grid"><button class="btn btn-primary fw-500" type="submit">질문 전송하기</button></div>
                                             </form>
@@ -221,7 +222,6 @@
                             </div>
                         </div>
                         <div class="svg-border-rounded text-dark">
-                            <!-- Rounded SVG Border-->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
                         </div>
                     </section>

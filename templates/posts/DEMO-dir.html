@@ -173,10 +173,14 @@
                                     <div class="col-xl-6 col-lg-8 text-center">
                                         <form class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
                                             <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">카테고리</button>
-                                            <div class="dropdown-menu animated--fade-in-up">
-                                                <a class="dropdown-item" href="#!">영화 제목</a>
-                                                <a class="dropdown-item" href="#!">영화 인물</a>
-                                            </div>
+                                            <!-- <select class="select_component" name="type">
+                                                <option selected value="title"> 제목 </option>
+                                                <option value="director"> 감독 </option>
+                                            </select> -->
+                                            <select class="dropdown-menu animated--fade-in-up">
+                                                <option selected value="title" class="dropdown-item" href="#!">영화 제목</a>
+                                                <option selected value="people" class="dropdown-item" href="#!">영화 인물</a>
+                                            </select>
                                             <div class="col flex-grow-1">
                                                 <!-- <label class="sr-only" for="inputEmail">문화 컨텐츠 둘러보기...</label> -->
                                                 <input class="form-control form-control-solid" id="inputEmail" type="text" placeholder="문화 컨텐츠 검색하기..." />
@@ -224,55 +228,55 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
-                                    <a class="card lift" href="?genre=Comedy%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Comedy%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/COMEDY.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">코미디</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-0">
-                                    <a class="card lift" href="?genre=Comedy%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Comedy%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/CRIME.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">범죄</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
-                                    <a class="card lift" href="?genre=Documentary%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Documentary%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/DOCU.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">다큐멘터리</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
-                                    <a class="card lift" href="?genre=Drama%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Drama%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/DRAMA.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">드라마</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <a class="card lift" href="?genre=Family%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Family%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/FAMILY.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">가족</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-0">
-                                    <a class="card lift" href="?genre=History%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=History%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/HISTORY.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">역사</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
-                                    <a class="card lift" href="?genre=Horror%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Horror%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/HORROR.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">공포</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
-                                    <a class="card lift" href="?genre=Music%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Music%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/MUSIC.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">음악</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <a class="card lift" href="?genre=Mystery%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Mystery%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/MYSTERY.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">미스터리</h6></div>
                                     </a>
@@ -284,19 +288,19 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
-                                    <a class="card lift" href="?genre=Science_Fiction%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Science_Fiction%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/SCIENCE.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">과학</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
-                                    <a class="card lift" href="?genre=Thriller%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=Thriller%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/THRILLER.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">스릴러</h6></div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <a class="card lift" href="?genre=War%2F&sort=recent/">
+                                    <a class="card lift" href="/movie/?genre=War%2F&sort=recent/">
                                         <img class="card-img-top" src="{% static 'Img/IMAGES/WAR.png' %}" alt="..." />
                                         <div class="card-body text-center py-3"><h6 class="card-title mb-0">전쟁</h6></div>
                                     </a>
@@ -313,7 +317,7 @@
                                 <div class="col-lg-6">
                                     <div class="mb-5 text-center">
                                         <div class="text-xs text-uppercase-expanded text-primary mb-2">이 주의 추천 영화들</div>
-                                        <p class="lead mb-0">한주간 사용자 평점이 가장 높았던 영화들을 만나보세요.</p>
+                                        <p class="lead mb-0">슬문생 팀의 에디터가 엄선한 추천 영화들을 만나보세요.</p>
                                     </div>
                                 </div>
                             </div>
@@ -323,14 +327,6 @@
                                         <img class="card-img-top" src="https://source.unsplash.com/E6HjQaB7UEA/800x500" alt="..." />
                                         <div class="card-body text-center py-3">
                                             <h6 class="card-title mb-0">The Bamboo Ranch</h6>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <div class="small mb-2">(12 Reviews)</div>
                                             <div class="small">Upper West Ceon, Gram</div>
                                         </div>
                                         <div class="card-footer text-center text-xs">
@@ -344,14 +340,6 @@
                                         <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
                                         <div class="card-body text-center py-3">
                                             <h6 class="card-title mb-0">Lakeside Oyster</h6>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <div class="small mb-2">(8 Reviews)</div>
                                             <div class="small">East Fom, Kugan</div>
                                         </div>
                                         <div class="card-footer text-center text-xs">
@@ -365,14 +353,6 @@
                                         <img class="card-img-top" src="https://source.unsplash.com/sWEpcc0Rm0U/800x500" alt="..." />
                                         <div class="card-body text-center py-3">
                                             <h6 class="card-title mb-0">Wild Junction</h6>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <div class="small mb-2">(29 Reviews)</div>
                                             <div class="small">Shotles Wood, Drada</div>
                                         </div>
                                         <div class="card-footer text-center text-xs">
@@ -386,14 +366,6 @@
                                         <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
                                         <div class="card-body text-center py-3">
                                             <h6 class="card-title mb-0">Lakeside Oyster</h6>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <div class="small mb-2">(8 Reviews)</div>
                                             <div class="small">East Fom, Kugan</div>
                                         </div>
                                         <div class="card-footer text-center text-xs">
@@ -407,14 +379,6 @@
                                         <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
                                         <div class="card-body text-center py-3">
                                             <h6 class="card-title mb-0">Lakeside Oyster</h6>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <div class="small mb-2">(8 Reviews)</div>
                                             <div class="small">East Fom, Kugan</div>
                                         </div>
                                         <div class="card-footer text-center text-xs">
@@ -428,14 +392,6 @@
                                         <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
                                         <div class="card-body text-center py-3">
                                             <h6 class="card-title mb-0">Lakeside Oyster</h6>
-                                            <div class="text-yellow">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                            <div class="small mb-2">(8 Reviews)</div>
                                             <div class="small">East Fom, Kugan</div>
                                         </div>
                                         <div class="card-footer text-center text-xs">

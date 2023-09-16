@@ -130,6 +130,7 @@ def qna(request):
 
 def inq(request):
     from django.shortcuts import render, redirect
+    from django.core.mail import EmailMessage
 
     user = request.user
     is_authenticated = user.is_authenticated
@@ -137,6 +138,33 @@ def inq(request):
         return redirect('/login')
 
     return render(request, 'posts/DEMO-help-inq.html')
+
+
+# email
+
+def send_email(request):
+    from django.core.mail import send_mail
+    from django.shortcuts import render
+    from django.http import HttpResponse
+
+    if request.method == 'POST':
+        first_name = request.POST.get('leadCapFirstName')
+        last_name = request.POST.get('leadCapLastName')
+        email = request.POST.get('leadCapEmail')
+        company = request.POST.get('leadCapCompany')
+
+        # 이메일 내용 작성
+        message = f'이름: {first_name} {last_name}\n이메일 주소: {email}\n문의 사항: {company}'
+
+        try:
+            # 이메일 전송
+            send_mail('문의 사항', message, email, ['nichijou52@naver.com'])
+            return HttpResponse('이메일이 성공적으로 전송되었습니다.')
+        except Exception as e:
+            return HttpResponse('이메일 전송에 실패하였습니다.')
+
+    return render(request, 'posts/DEMO-help-inq.html')  # Replace 'your_template.html' with your actual template name
+
 
 
 # document
@@ -256,3 +284,4 @@ def movie_detail(request, pk):
     }
 
     return render(request, 'posts/DEMO-movie-detail.html', context)
+

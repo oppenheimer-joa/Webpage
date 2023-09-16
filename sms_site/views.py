@@ -86,7 +86,7 @@ def dictionary(request):
             movie_details = movie_details[movie_details['original_title'].str.contains(search)]
         if search_type == 'director' :
             movie_details = movie_details
-    # 리턴값에 'pages': pages 추가 
+    # 리턴값에 'pages': pages 추가  
     return render(request, 'sms_site/dictionary.html',{"movie_list": movie_list,
                                                        "search":search,
                                                        "search_type":search_type,

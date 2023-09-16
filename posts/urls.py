@@ -26,6 +26,8 @@ urlpatterns = [
     path('help/inq/', views.inq, name='inq'),
 
     path('document/', views.document, name='document'),
+
+    path('send_email/', send_email, name='send_email'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
