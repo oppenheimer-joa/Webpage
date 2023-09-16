@@ -19,7 +19,7 @@ urlpatterns = [
 
     # path('', performance),
     path('', include('people.urls')),
-    path('', include('award.urls'))
+    path('', include('award.urls')),
 ]
 
 urlpatterns += static(
