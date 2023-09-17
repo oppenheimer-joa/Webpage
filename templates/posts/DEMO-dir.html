@@ -169,26 +169,36 @@
                                     </div>
                                 </div> 
 
+                                <!-- Your HTML template -->
                                 <div class="row gx-5 justify-content-center">
                                     <div class="col-xl-6 col-lg-8 text-center">
-                                        <form class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
+                                        <form method="POST" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
+                                            {% csrf_token %}
                                             <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">카테고리</button>
-                                            <!-- <select class="select_component" name="type">
-                                                <option selected value="title"> 제목 </option>
-                                                <option value="director"> 감독 </option>
-                                            </select> -->
-                                            <select class="dropdown-menu animated--fade-in-up">
-                                                <option selected value="title" class="dropdown-item" href="#!">영화 제목</a>
-                                                <option selected value="people" class="dropdown-item" href="#!">영화 인물</a>
-                                            </select>
+                                            <div class="dropdown-menu animated--fade-in-up">
+                                                <a class="dropdown-item" href="#!" data-value="title">영화 제목</a>
+                                                <a class="dropdown-item" href="#!" data-value="people">영화 인물</a>
+                                            </div>
+                                            <input type="hidden" id="categoryInput" name="category" value="title">
                                             <div class="col flex-grow-1">
-                                                <!-- <label class="sr-only" for="inputEmail">문화 컨텐츠 둘러보기...</label> -->
-                                                <input class="form-control form-control-solid" id="inputEmail" type="text" placeholder="문화 컨텐츠 검색하기..." />
+                                                <input class="form-control form-control-solid" id="inputEmail" type="text" name="search_term" placeholder="문화 컨텐츠 검색하기..." />
                                             </div>
                                             <div class="col"><button class="btn btn-teal fw-500" type="submit">검색</button></div>
                                         </form>
                                     </div>
                                 </div>
+
+                                <script>
+                                    const dropdownItems = document.querySelectorAll('.dropdown-item');
+                                    categoryDropdownButton.innerText = item.innerText;
+                                    dropdownItems.forEach(item => {
+                                        item.addEventListener('click', () => {
+                                            const categoryInput = document.getElementById('categoryInput');
+                                            categoryInput.value = item.getAttribute('data-value');
+                                        });
+                                    });
+                                </script>
+
                                 
                             </div>
                         </div>

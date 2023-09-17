@@ -186,13 +186,28 @@ def document(request):
 
 def directory(request):
     from django.shortcuts import render, redirect
+    from .forms import SearchForm
     user = request.user
     is_authenticated = user.is_authenticated
     if not is_authenticated:
         return redirect('/login')
     
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            category = form.cleaned_data['category']
+            search_term = form.cleaned_data['search_term']
+
+            if category == 'title':
+                return redirect(f'/movie/?type={category}&search={search_term}')
+            elif category == 'people':
+                return redirect(f'/people/?search={search_term}')
+    else:
+        form = SearchForm()
+
     context = {
-        'user' : user
+        'user' : user,
+        'form' : form
     }
 
     return render(request, 'posts/DEMO-dir.html', context)
