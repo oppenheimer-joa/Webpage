@@ -4,7 +4,7 @@ from storages.backends.s3boto3 import S3Boto3Storage
 import json, requests
 from django.db.models import Q
 import pandas as pd
-import boto3
+import boto3, re
 from io import BytesIO
 import pyarrow.parquet as pq
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -13,18 +13,18 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def dictionary(request):
 
     parser = ConfigParser()
-    # parser.read("./config/config.ini")
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
+    # parser.read("/home/neivekim76/config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people_test')
     
     people_details = pd.DataFrame(columns=[
         'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
     ])
-
+    
     for obj in objects.get('Contents'):
         file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
         print(file_path)
@@ -62,13 +62,13 @@ def dictionary(request):
     
 def people_info(request, id):
     parser = ConfigParser()
-    # parser.read("./config/config.ini")
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
+    # parser.read("/home/neivekim76/config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people_test')
     
     people_details = pd.DataFrame(columns=[
         'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
@@ -87,16 +87,17 @@ def people_info(request, id):
         
     # 중복된 'id'를 가진 행 제거 (처음 발견되는 것만 남김)
     people_details.drop_duplicates(subset=['id'], keep='first', inplace=True)
-    
-    # 특정 ID 사람의 정보만 뽑기
-    selected_person = people_details.loc[people_details['id'] == int(id)]
 
+    # 특정 ID 사람의 정보만 뽑기
+    selected_person = people_details.loc[people_details['id'] == str(id)]
+    print(selected_person)
     # DataFrame을 딕셔너리로 변환
     if not selected_person.empty:
         selected_person_dict = selected_person.to_dict('records')[0]
     else:
         selected_person_dict = {}  # 해당 ID가 없을 경우 빈 딕셔너리를 사용
         
+    print(selected_person_dict)
     api_key = parser.get("TMDB", "API_KEY")
     base_url = f'https://api.themoviedb.org/3/person/{id}/movie_credits'
     headers = {
