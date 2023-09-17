@@ -320,6 +320,7 @@ def movie_detail(request, pk):
     crew_page = request.GET.get('crew_page', 1)
     print(cast_list)
     print(crew_list)
+    
     try:
         cast_pages = cast_paginator.page(cast_page)
     except (PageNotAnInteger, EmptyPage):
