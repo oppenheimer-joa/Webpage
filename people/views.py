@@ -19,7 +19,7 @@ def dictionary(request):
     secret = parser.get("AWS", "S3_SECRET")
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people_test/')
     
     people_details = pd.DataFrame(columns=[
         'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
