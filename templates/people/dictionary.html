@@ -387,7 +387,8 @@
     departmentDivs.forEach(div => {
         div.addEventListener("click", function() {
             const department = div.getAttribute("department");
-            const url = `/people?department=${department}`;
+            const encodedDepartment = encodeURIComponent(department);
+            const url = `/people?department=${encodedDepartment}`;
 
             window.location.href = url;
             div.setAttribute("aria-selected", "true");
