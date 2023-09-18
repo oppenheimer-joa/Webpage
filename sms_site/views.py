@@ -187,13 +187,17 @@ def performance(request):
         
         if prf_details.shape[0] == 0 :
             return render(request, 'sms_site/prf.html',{"no_filter": "조건에 맞는 결과가 없습니다",
+                                                        'search_type':search_type,
+                                                        'search':search,
                                                         "selected_genre": genre,
                                                         "selected_genre_nm": genre_dict[genre],
                                                         'pages': pages})
     if search != "": # search 값이 있으면
         if search_type == 'title' :
             prf_details = prf_details[prf_details['prfnm'].str.contains(search)]
-
+        if search_type == 'location' :
+            prf_details = prf_details[(prf_details['prfnm'].str.contains(search)) | (prf_details['fcltynm'].str.contains(search))]
+            
     if sort_by != "": # sort_by 값이 있으면
         if sort_by == 'open' :
             prf_details = prf_details.sort_values(by='prfpdfrom', ascending=False)
@@ -214,6 +218,8 @@ def performance(request):
         pages = paginator.page(1)
 
     return render(request, 'sms_site/prf.html',{'prf_list':prf_details,
+                                                'search_type':search_type,
+                                                'search':search,
                                                 "selected_genre": genre,
                                                 "selected_genre_nm": genre_dict[genre],
                                                 'pages': pages})
