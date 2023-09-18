@@ -152,7 +152,7 @@ def performance(request):
     # cache 가 없으면
     # prf 정보 가져오기
     if prf_details is None :
-        objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-07-')
+        objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-07-1')
         prf_details = pd.DataFrame()
 
         for obj in objects.get('Contents'):
@@ -172,7 +172,7 @@ def performance(request):
     # 장르 검색
     if genre != "" : ## 찾으려는 genre 값이 있을 경우
         genre_df = pd.DataFrame()
-        genre_objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-07-')
+        genre_objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-07-1')
         for obj in genre_objects.get('Contents'):
             file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
             if (file_path.find('parquet') == -1) or (file_path.find(genre) == -1) :

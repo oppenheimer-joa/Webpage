@@ -12,5 +12,5 @@ def userpage(request) :
     context = {
         'user' : user
     }
-
+    
     return render(request, 'userpage/mypage.html', context)

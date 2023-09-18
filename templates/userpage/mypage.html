@@ -116,7 +116,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <h6 class="dropdown-header text-primary">회원정보</h6>
-                                                            <a class="dropdown-item" href="/prf/">로그아웃</a>
+                                                            <a class="dropdown-item" href="/logout/">로그아웃</a>
                                                             <div class="dropdown-divider border-0 d-lg-none"></div>
                                                         </div>
                                                     </div>
@@ -174,19 +174,18 @@
                                     <div class="col-lg-6 z-1" data-aos="fade-right">
                                         <div data-aos="fade-up" class="aos-init aos-animate">
                                             <img class="mb-4" src=" {{ user.image }}" style="width: 15rem" />
-                                            <h1 class="page-header-ui-title"> 반가워요 <strong style="background: linear-gradient(to top, #fff891 40%, transparent 40%);"> {{ user }} </strong> 님! </h1>
-                                            <p class="page-header-ui-text"> 오늘도 슬기로운 하루 되세요 :ㅇ </p>
+                                            <h1 class="page-header-ui-title"> 반가워요 <strong style="background: linear-gradient(to top, #fff891 40%, transparent 40%);"> {{ user.username }} </strong> 님! </h1>
+                                            <p class="page-header-ui-text"> 오늘도 슬기로운 하루 되세요 😊 </p>
                                         </div>
                                         <div class="col-lg-8 text-center">
                                             <div class="card"> 
                                                 <div class="card-body">
-                                                    <h3 style="color: orange;"> 가입 정보 </h3>
                                                     <h3> </h3>
                                                     <div class="row gx-5">
                                                         <div class="col">
-                                                        <div class="icon-stack icon-stack-g bg-orange text-white mb-3"><i data-feather="mail"></i> </div>
+                                                        <div class="icon-stack icon-stack-g bg-orange text-white mb-3"><i data-feather="smile"></i> </div>
                                                         <span> &nbsp; </span>
-                                                        E-mail : nayeon1107@gmail.com
+                                                        <strong> {{ user.short_description }}</strong>
                                                         </div>
                                                     </div>
                                                 </div>

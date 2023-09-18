@@ -35,7 +35,6 @@ def main(request):
     context = {
         'user' : user
     }
-
     return render(request, 'posts/DEMO-main.html', context)
 
 
