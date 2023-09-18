@@ -173,6 +173,7 @@
                                         <div class="col flex-grow-1">
                                             <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="검색어를 입력해주세요" />
                                         </div>
+
                                         <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
                                     </form>
                                 </div>
@@ -360,9 +361,10 @@
     genreDivs.forEach(div => {
         div.addEventListener("click", function() {
             const genre = div.getAttribute("prf-genre");
-            const url = `/prf?genre=${genre}`;
+            const url = new URL(window.location.href);
+            url.searchParams.set("genre", genre);
+            window.location.href = url.toString();
 
-            window.location.href = url;
             div.setAttribute("aria-selected", "true");
         });
     });

@@ -29,6 +29,7 @@ def dictionary(request):
     search = request.GET.get('search', '')
     genre = request.GET.get('genre', '')
     sort_by = request.GET.get('sort', 'recent')
+    date = request.GET.get('date', '')
 
     # s3 연동
     parser = ConfigParser()
@@ -101,6 +102,11 @@ def dictionary(request):
                     return False
 
             movie_details = movie_details[movie_details['production_countries'].apply(contains_country)]
+
+    if date != "" :
+        prf_details[['prfpdfrom','prfpdto']] = prf_details[['prfpdfrom','prfpdto']].applymap(lambda x : pd.to_datetime(x, format='%Y.%m.%d'))
+        prf_details = prf_details[(prf_details['prfpdfrom'] <= date) & (date <= prf_details['prfpdto'])]
+
 
     if sort_by != "": # sort_by 값이 있으면
         if sort_by == 'recent' :
