@@ -3181,3 +3181,900 @@ Traceback (most recent call last):
     if not is_authenticated:
     ^
 IndentationError: unexpected indent
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 18, 2023 - 16:03:00
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 18, 2023 - 16:03:05
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+user: admin
+is_authenticated: True
+[18/Sep/2023 16:03:22] "GET / HTTP/1.1" 200 31284
+[18/Sep/2023 16:03:22] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 200 1942
+[18/Sep/2023 16:03:22] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 200 410049
+[18/Sep/2023 16:03:22] "GET /static/sb-ui-kit-pro/dist/assets/img/demo/app-desktop-demo-screenshot.jpg HTTP/1.1" 200 322232
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:03:22] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:03:22] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:03:22] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:03:22] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/img/favicon.png
+[18/Sep/2023 16:03:22] "GET /assets/img/favicon.png HTTP/1.1" 404 6559
+[18/Sep/2023 16:03:24] "GET /login/ HTTP/1.1" 302 0
+[18/Sep/2023 16:03:24] "GET /main HTTP/1.1" 301 0
+[18/Sep/2023 16:03:25] "GET /main/ HTTP/1.1" 200 23241
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:03:25] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:03:25] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:03:25] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:03:25] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:03:25] "GET /static/Img/main_image.jpeg HTTP/1.1" 200 2044787
+Not Found: /favicon.ico
+[18/Sep/2023 16:03:25] "GET /favicon.ico HTTP/1.1" 404 6526
+[18/Sep/2023 16:03:27] "GET /dir/ HTTP/1.1" 200 38636
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:03:27] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/ACTION.png HTTP/1.1" 200 643636
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/CRIME.png HTTP/1.1" 200 475773
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/COMEDY.png HTTP/1.1" 200 446288
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/FANTASY.png HTTP/1.1" 200 825335
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:03:27] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:03:27] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/ANIME.png HTTP/1.1" 200 689838
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:03:27] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:03:27] "GET /static/Img/background.jpg HTTP/1.1" 200 208770
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/DOCU.png HTTP/1.1" 200 487615
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/HISTORY.png HTTP/1.1" 200 458208
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/DRAMA.png HTTP/1.1" 200 750621
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/MUSIC.png HTTP/1.1" 200 416356
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/MYSTERY.png HTTP/1.1" 200 736743
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/HORROR.png HTTP/1.1" 200 463180
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/SCIENCE.png HTTP/1.1" 200 637720
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/THRILLER.png HTTP/1.1" 200 569712
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/ROMANCE.png HTTP/1.1" 200 667144
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/WAR.png HTTP/1.1" 200 697303
+[18/Sep/2023 16:03:27] "GET /static/Img/IMAGES/FAMILY.png HTTP/1.1" 200 748408
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(Action/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:03:30] "GET /movie/?genre=Action%2F&sort=recent/ HTTP/1.1" 500 110085
+Not Found: /dir/assets/img/backgrounds/bg-dropdown-xl.jpg
+[18/Sep/2023 16:04:31] "GET /dir/assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 6628
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+[18/Sep/2023 16:04:34] "GET /movie/ HTTP/1.1" 200 55219
+[18/Sep/2023 16:04:34] "GET /static/Img/noimage.jpg HTTP/1.1" 200 145689
+[18/Sep/2023 16:04:34] "GET /static/css/styles.css HTTP/1.1" 200 413740
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:04:34] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:04:34] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+[18/Sep/2023 16:04:34] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:04:34] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /movie/assets/img/favicon.png
+[18/Sep/2023 16:04:34] "GET /movie/assets/img/favicon.png HTTP/1.1" 404 6577
+[18/Sep/2023 16:04:36] "GET /movie?genre=Action HTTP/1.1" 301 0
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:04:37] "GET /movie/?genre=Action HTTP/1.1" 200 55697
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:04:37] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:04:37] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:04:37] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:04:37] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:04:41] "GET /movie?genre=Science_Fiction HTTP/1.1" 301 0
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:04:42] "GET /movie/?genre=Science_Fiction HTTP/1.1" 200 55601
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:04:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:04:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:04:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:04:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:05:44] "GET /movie/?genre=Science_Fiction&sort=recent HTTP/1.1" 200 55601
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:05:44] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:05:44] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:05:44] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:05:44] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:06:28] "GET /movie/?genre=Science_Fiction&sort=recent HTTP/1.1" 200 55601
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:06:28] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:06:28] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:06:28] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:06:28] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /movie/assets/img/backgrounds/bg-dropdown-xl.jpg
+[18/Sep/2023 16:06:30] "GET /movie/assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 6634
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+[18/Sep/2023 16:06:34] "GET /movie/ HTTP/1.1" 200 55219
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:06:34] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:06:34] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:06:34] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:06:34] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /movie/assets/img/backgrounds/bg-dropdown-xl.jpg
+[18/Sep/2023 16:06:35] "GET /movie/assets/img/backgrounds/bg-dropdown-xl.jpg HTTP/1.1" 404 6634
+[18/Sep/2023 16:06:37] "GET /main/ HTTP/1.1" 200 23241
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:06:37] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:06:37] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:06:37] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:06:37] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:06:39] "GET /dir/ HTTP/1.1" 200 38636
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:06:39] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:06:39] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:06:39] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:06:39] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(Animation/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:06:41] "GET /movie/?genre=Animation%2F&sort=recent/ HTTP/1.1" 500 110124
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:08:28] "GET /movie/?genre=Science_Fiction&sort=recent HTTP/1.1" 200 55601
+[18/Sep/2023 16:08:28] "GET /static/Img/background.jpg HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:08:28] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:08:28] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+[18/Sep/2023 16:08:28] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:08:28] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:08:28] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:08:29] "GET /dir/ HTTP/1.1" 200 38633
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/ACTION.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/sb-ui-kit-pro/dist/css/styles.css HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/sb-ui-kit-pro/dist/js/scripts.js HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/FANTASY.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/ANIME.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/CRIME.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/COMEDY.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/DOCU.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/DRAMA.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/background.jpg HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/FAMILY.png HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/HISTORY.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/MUSIC.png HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:08:29] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/HORROR.png HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:08:29] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:08:29] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/MYSTERY.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/ROMANCE.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/SCIENCE.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/THRILLER.png HTTP/1.1" 304 0
+[18/Sep/2023 16:08:29] "GET /static/Img/IMAGES/WAR.png HTTP/1.1" 304 0
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:08:31] "GET /movie/?genre=Action&sort=recent/ HTTP/1.1" 200 55810
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:08:31] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:08:31] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:08:31] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:08:31] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+[18/Sep/2023 16:08:41] "GET /movie/1134677 HTTP/1.1" 301 0
+64    None
+Name: backdrop_path, dtype: object
+[]
+[]
+[18/Sep/2023 16:08:42] "GET /movie/1134677/ HTTP/1.1" 200 24892
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[18/Sep/2023 16:08:42] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:08:42] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:08:42] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:08:42] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[18/Sep/2023 16:08:42] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 6649
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:08:42] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+[18/Sep/2023 16:08:46] "GET /movie/1127497 HTTP/1.1" 301 0
+54    /zB8y0CVopkoqsAMfv995fHlSPXL.jpg
+Name: backdrop_path, dtype: object
+[]
+[]
+[18/Sep/2023 16:08:47] "GET /movie/1127497/ HTTP/1.1" 200 24658
+Not Found: /assets/img/device-mockups/iPhoneX/portrait.png
+[18/Sep/2023 16:08:47] "GET /assets/img/device-mockups/iPhoneX/portrait.png HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:08:47] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:08:47] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/img/device-mockups/iPhoneX/portrait_black.png
+[18/Sep/2023 16:08:47] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:08:47] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:08:47] "GET /assets/img/device-mockups/iPhoneX/portrait_black.png HTTP/1.1" 404 6649
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(War/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:10:07] "GET /movie/?genre=War%2F&sort=recent/ HTTP/1.1" 500 110046
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(War/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:10:15] "GET /movie/?genre=War%2F&sort=recent/ HTTP/1.1" 500 110070
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(War/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:10:28] "GET /movie/?genre=War%2F&sort=recent/ HTTP/1.1" 500 110046
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(Adventure/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:10:56] "GET /movie/?genre=Adventure%2F&sort=recent/ HTTP/1.1" 500 110132
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:10:59] "GET /movie/?genre=Action&sort=recent/ HTTP/1.1" 200 55810
+[18/Sep/2023 16:10:59] "GET /static/css/styles.css HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:10:59] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+[18/Sep/2023 16:10:59] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:10:59] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+[18/Sep/2023 16:10:59] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+Internal Server Error: /movie/
+Traceback (most recent call last):
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hooniegit/git/organization/sms/Webpage/sms_site/views.py", line 64, in dictionary
+    parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3002, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home/hooniegit/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2630, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 547, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 393, in pyarrow._dataset.Dataset.scanner
+  File "pyarrow/_dataset.pyx", line 3391, in pyarrow._dataset.Scanner.from_dataset
+  File "pyarrow/_dataset.pyx", line 3309, in pyarrow._dataset.Scanner._make_scan_options
+  File "pyarrow/_dataset.pyx", line 3243, in pyarrow._dataset._populate_builder
+  File "pyarrow/_compute.pyx", line 2595, in pyarrow._compute._bind
+  File "pyarrow/error.pxi", line 144, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: No match for FieldRef.Name(Adventure/) in id: int64
+Action: int32 not null
+Adventure: int32 not null
+Animation: int32 not null
+Comedy: int32 not null
+Crime: int32 not null
+Documentary: int32 not null
+Drama: int32 not null
+Family: int32 not null
+Fantasy: int32 not null
+History: int32 not null
+Horror: int32 not null
+Music: int32 not null
+Mystery: int32 not null
+Romance: int32 not null
+Science_Fiction: int32 not null
+TV_Movie: int32 not null
+Thriller: int32 not null
+War: int32 not null
+Western: int32 not null
+[18/Sep/2023 16:11:16] "GET /movie/?genre=Adventure%2F&sort=recent/ HTTP/1.1" 500 110007
+[18/Sep/2023 16:11:42] "GET /movie?genre=Adventure HTTP/1.1" 301 0
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:11:43] "GET /movie/?genre=Adventure HTTP/1.1" 200 55680
+[18/Sep/2023 16:11:43] "GET /static/Img/noimage.jpg HTTP/1.1" 304 0
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:11:43] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:11:43] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+[18/Sep/2023 16:11:43] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:11:43] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
+s3://sms-warehouse/TMDB/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-07/part-00000-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-07/part-00001-98f2912b-9212-4ac3-ab97-3271bc9f0ef2-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-14/part-00000-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-14/part-00001-1b438015-27a4-4632-b92d-53ca5480c3d7-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-21/part-00000-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-21/part-00001-a99f4807-883d-4a3c-9dcb-22f09e0d0e93-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB/2023-07-28/part-00000-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB/2023-07-28/part-00001-02c9abdc-5746-47ca-90e7-b2f5c7f52843-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00000-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-07/part-00001-14364f3e-7c29-4b97-b8cb-bacede9d39ea-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00000-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-14/part-00001-2480e004-203d-48a6-829a-5b22b8056132-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00000-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-21/part-00001-78a32e61-adf8-4f5f-86eb-99126e06b836-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/_SUCCESS
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00000-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+s3://sms-warehouse/TMDB_genre/2023-07-28/part-00001-e8dd5fe4-e08e-48b1-805b-2e2875dc1184-c000.snappy.parquet
+[18/Sep/2023 16:11:46] "GET /movie/?genre=Adventure&sort=recent HTTP/1.1" 200 55680
+Not Found: /assets/fonts/metropolis/Metropolis-Medium.otf
+[18/Sep/2023 16:11:46] "GET /assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 404 6628
+Not Found: /assets/fonts/metropolis/Metropolis-Bold.otf
+Not Found: /assets/fonts/metropolis/Metropolis-Regular.otf
+[18/Sep/2023 16:11:46] "GET /assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 404 6631
+Not Found: /assets/fonts/metropolis/Metropolis-RegularItalic.otf
+[18/Sep/2023 16:11:46] "GET /assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 404 6622
+[18/Sep/2023 16:11:46] "GET /assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 404 6649
