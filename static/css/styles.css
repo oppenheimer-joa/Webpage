@@ -18749,8 +18749,8 @@ section {
 
 .page-header-ui {
   position: relative;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .page-header-ui .page-header-ui-content .page-header-ui-title {
   font-size: 2.5rem;
@@ -18779,7 +18779,7 @@ section {
   color: #4a515b;
 }
 .page-header-ui.navbar-fixed .page-header-ui-content {
-  padding-top: 12.5rem;
+  padding-top: 2.5rem;
 }
 .page-header-video video {
   position: absolute;
@@ -18993,4 +18993,167 @@ aside.filter-sidebar button {
     border: none;
     padding: 10px;
     cursor: pointer;
+<<<<<<< HEAD
+}
+.image-container {
+    position: relative; /* 부모 요소를 상대 위치로 설정 */
+    display: inline-block; /* 인라인 블록 요소로 설정 (예: 이미지 크기에 따라 조정) */
+}
+.show-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 포스터 이미지 스타일 */
+.show-poster {
+    width: 200px; /* 포스터 이미지 너비 조정 */
+    height: auto; /* 높이 자동 조정 */
+    margin-right: 20px; /* 포스터 이미지와 정보 간격 조정 */
+}
+
+/* 정보 테이블 스타일 */
+.show-info-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.show-info-table, .show-info-th, .show-info-td {
+    border: none;
+    color: #f4fbfd;
+}
+
+.show-info-th, .show-info-td {
+    padding: 10px;
+    text-align: left;
+}
+
+.show-info-th {
+    background-color: #f2f2f2;
+}
+/* Statistics */
+
+.statistics {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+    font-weight: 400px;
+    font-size : 16px
+}
+
+    .statistics li {
+        -moz-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        color: #000;
+        text-align: center;
+    }
+
+        .statistics li.style1 {
+            background-color: var(--bs-dropdown-bg);
+        }
+
+        .statistics li.style2 {
+            background-color: var(--bs-accordion-active-bg);
+        }
+
+        .statistics li.style3 {
+            background-color: #a89cc8;
+        }
+
+        .statistics li.style4 {
+            background-color: #9bb2e1;
+        }
+
+        .statistics li.style5 {
+            background-color: #8cc9f0;
+        }
+        .statistics li.style6 {
+            background-color: #7adec6;
+        }
+
+        .statistics li strong, .statistics li b {
+            display: block;
+            font-size: 2em;
+            line-height: 1.1;
+            color: inherit !important;
+            font-weight: 500;
+            letter-spacing: -0.025em;
+        }
+
+        .statistics li:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .statistics li:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .statistics li .icon {
+            display: inline-block;
+        }
+
+            .statistics li .icon:before {
+                font-size: 2.75rem;
+                line-height: 1.3;
+            }
+
+    @media screen and (max-width: 980px) {
+
+        .statistics li strong, .statistics li b {
+            font-size: 1.5em;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .statistics {
+            display: block;
+            width: 20em;
+            max-width: 100%;
+            margin: 0 auto 2em auto;
+        }
+
+            .statistics li:first-child {
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 8px;
+            }
+
+            .statistics li:last-child {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 8px;
+            }
+
+            .statistics li .icon:before {
+                font-size: 3.75rem;
+            }
+
+            .statistics li strong, .statistics li b {
+                font-size: 2.5em;
+            }
+
+    }
+.img-container {
+    width: 100%; /* 부모 div에 맞게 이미지를 확대/축소 */
+    height: 150px; /* 이미지 높이를 조절합니다. 필요에 따라 조절하세요. */
+    overflow: hidden; /* 이미지가 div를 넘어갈 때 잘라냅니다. */
+    position: relative; /* 부모 div 내에서의 위치 설정 */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지를 가로세로 비율 유지하며 맞춤 */
+=======
+>>>>>>> 37584ecf05b36e23527ad1afa878f47bc1c04461
 }

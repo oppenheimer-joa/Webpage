@@ -7,18 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>슬기로운 문화생활 - 공연 및 문화 데이터 플랫폼</title>
+        <title> {{ prf_info.prfnm }} </title>
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
                             <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
@@ -161,148 +159,90 @@
                             </div>
                         </div>
                     </nav>
-
-                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('{% static "Img/background.jpg" %}')">
-                        <div class="page-header-ui-content position-relative">
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-xl-8 col-lg-10 text-center">
-                                    <a href="/people"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 영화 사전 </h1> </a>
-                                    <p class="page-header-ui-text mb-5"> 찾고 싶은 영화 컨텐츠를 검색해보세요. </p>
-                                </div>
-                            </div>
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-xl-6 col-lg-8 text-center">
-                                    <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
-                                        <select class="select_component" name="type">
-                                            <option selected value="title"> 제목 </option>
-                                            <option value="country"> 국가 </option>
-                                        </select>
-                                        <div class="col flex-grow-1">
-                                            <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="검색어를 입력해주세요" />
+                    <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-80" style="background-image: url({{ prf_info.poster }})">
+                        <div class="page-header-ui-content py-5 position-relative">
+                            <a class="btn btn-primary fw-500 aos-init aos-animate" href="/prf" data-aos="fade-up" data-aos-delay="100" style="position: relative; top: -20px; left: 30px; --bs-btn-bg: rgba(0, 0, 0, 0.5); border:none;" > ◀ 목록 보기 </a>
+                            <div class="container px-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-6 z-1" data-aos="fade-left" style="margin:0px">
+                                        <div class="device-wrapper mx-auto mb-n15">
+                                            <div class="device" data-device="iPhone13" data-orientation="portrait" data-color="black">
+                                                <div class="screen"><img class="img-fluid z-1" src="{{ prf_info.poster }}" /></div>
+                                            </div>
                                         </div>
-                                        <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
-                                    </form>
+                                    </div>
+                                    <div class="col-lg-6 z-1" data-aos="fade-right">
+                                        <div data-aos="fade-up" class="aos-init aos-animate">
+                                            <h3 class="page-header-ui-title"> <strong style="color: rgba(230, 230, 230, 0.9);"> {{ prf_info.prfnm }} </strong> </h3>
+                                            <div class="col-md-10">
+                                                <table class="table table-bordered">
+                                                    <div> &nbsp; </div>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="show-info-th">공연기간</th>
+                                                            <td class="show-info-td">{{ prf_info.prfpdfrom }} ~ {{ prf_info.prfpdto }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">공연장소</th>
+                                                            <td class="show-info-td">
+                                                                <a href="https://map.naver.com/p/search/{{ prf_info.fcltynm }}" style="text-decoration: none; color: #F4FDFB;"> {{ prf_info.fcltynm }}↗ </a> <br>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">공연가격</th>
+                                                            <td class="show-info-td">{{ prf_info.pcseguidance }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">출연진</th>
+                                                            <td class="show-info-td">{{ prf_info.prfcast }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">관람연령</th>
+                                                            <td class="show-info-td">{{ prf_info.prfage }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">예매처</th>
+                                                            <td class="show-info-td">
+                                                                {% for tksite, tkurl in tksites.items %}
+                                                                <a href="{{ tkurl }}" style="text-decoration: none; color: #F4FDFB;"> {{ tksite }}↗</a><br>
+                                                                {% endfor %}
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p class="page-header-ui-text"> {% if prf_info.sty == True %} {{ prf_info.sty }} {% else %}  {% endif %} </p>
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
                         </div>
                     </header>
-                    <section class="bg-white pt-5 pb-10">
-                            <div class="container px-5">
-                                {% if selected_genre %}
-                                <h2 class="mb-4" style="color: #00ba94;"> {{ selected_genre }} <span style="color:#888"> ({{ movie_list.shape.0 }}건) </span> </h2>
-                                {% else %}
-                                <h2 class="mb-4"> Select Genre Categories  </h2>
-                                {% endif %}
-                                <!-- genre tag -->
-                                <div>
-                                    <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
-                                        <button type="button" role="tab" onclick="location.href='/movie'" style="font-size: 16px; line-height: 37px;display: flex; overflow: hidden; text-overflow: ellipsis; align-items: center; margin: 1px 20px 15px 1px; padding: 1px 12px; border:none; border-radius: 4px;">#ALL</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Action' %}true{% else %}false{% endif %}" movie-genre="Action">#Action</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Adventure' %}true{% else %}false{% endif %}" movie-genre="Adventure">#Adventure</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Animation' %}true{% else %}false{% endif %}" movie-genre="Animation">#Animation</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Comedy' %}true{% else %}false{% endif %}" movie-genre="Comedy">#Comedy</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Crime' %}true{% else %}false{% endif %}" movie-genre="Crime">#Crime</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Documentary' %}true{% else %}false{% endif %}" movie-genre="Documentary">#Documentary</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Drama' %}true{% else %}false{% endif %}" movie-genre="Drama">#Drama</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Family' %}true{% else %}false{% endif %}" movie-genre="Family">#Family</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Fantasy' %}true{% else %}false{% endif %}" movie-genre="Fantasy">#Fantasy</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'History' %}true{% else %}false{% endif %}" movie-genre="History">#History</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Horror' %}true{% else %}false{% endif %}" movie-genre="Horror">#Horror</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Music' %}true{% else %}false{% endif %}" movie-genre="Music">#Music</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Mystery' %}true{% else %}false{% endif %}" movie-genre="Mystery">#Mystery</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Science_Fiction' %}true{% else %}false{% endif %}" movie-genre="Science_Fiction">#Science_Fiction</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'TV_Movie' %}true{% else %}false{% endif %}" movie-genre="TV_Movie">#TV_Movie</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Thriller' %}true{% else %}false{% endif %}" movie-genre="Thriller">#Thriller</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'War' %}true{% else %}false{% endif %}" movie-genre="War">#War</button>
-                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_genre == 'Western' %}true{% else %}false{% endif %}" movie-genre="Western">#Western</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <section class="bg-white py-10">
                         <div class="container px-5">
-                            <div>
-                                {% if no_filter %}
-                                <h3 style="text-align: center; margin-top: 40px;"> {{ no_filter }} </h3>
-                                {% else %}
-                                <div role="tablist" class="ComponentHead__tab_control--R1TyL">
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="recent">최신순</button>
-                                    <span> · </span>
-                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="old">오래된 순</button>
-                                </div>
-                                {% endif %}
-                            </div>
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="mb-5 text-center">
-                                        {% if search %}
-                                        <h3> <p class="page-header-ui-text mb-5"> {{ search_type }} 기준 "<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
-                                        <p class="lead mb-0">Here are some of the most popular new movie in your area.</p>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row gx-5">
-                                <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
-                                {% for movie in pages %}
-                                <div class="col-lg-3 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <a href="/movie/{{ movie.id }}">
-                                        {% if movie.poster_path %}
-                                            <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt="..." />
-                                        {% else %}
-                                            <img class="card-img-top" src="{% static 'Img/noimage.jpg' %}" alt="..." />
-                                        {% endif %}
-                                        </a>
-                                        <div class="card-body p-3">
-                                            <h4 class="card-title mb-0" style="display: inline; margin: 0;"> {{ movie.original_title }} </h4> <span style="font-size: 15px; color: #888; margin-left: 10px;"> {{ movie.runtime }} minutes</span>
-                                            <div>
-                                            <i class="fas fa-store-alt me-1"></i>
-                                            {{ movie.release_date }}
-                                            </div>
-                                            
+                            <div class="row gx-5 justify-content-center z-1">
+                                <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up">
+                                    <div class="card lift mb-n15">
+                                        <div class="card-body p-2">
+                                            {% for img in styurls %}
+                                            <img src="{{ img }}" alt="..." style="width:100%; object-fit: cover;"/>
+                                            {% endfor %}
                                         </div>
                                     </div>
                                 </div>
-                                {% endfor %}
                             </div>
-
-                            <!-- 페이지네이션 UI -->
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination pagination-blog justify-content-center">
-                                    {% if pages.has_previous %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.previous_page_number }}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                    {% else %}
-                                        <li class="page-item disabled"><div class="page-link text-secondary d-inline-block disabled" href="#" aria-label="Previous"><span aria-hidden="true">«</span></div></li>
-                                    {% endif %}
-                        
-                                    {% if pages.has_previous %}
-                                        {% if pages.previous_page_number != 1 %}
-                                            <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page=1">1</a></li>
-                                            <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                                        {% endif %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.previous_page_number }}">{{ pages.previous_page_number }}</a></li>
-                                    {% endif %}
-                                    <li class="page-item active"><div class="page-link" href="#!">{{ pages.number }}</div></li>
-                                    {% if pages.has_next %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.next_page_number }}">{{ pages.next_page_number }}</a></li>
-                                        {% if pages.next_page_number != pages.paginator.num_pages %}
-                                        <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                                            <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.paginator.num_pages }}">{{ pages.paginator.num_pages }}</a></li>
-                                        {% endif %}
-                                    {% endif %}
-                        
-                                    {% if pages.has_next %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.next_page_number }}" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                    {% else %}
-                                        <li class="page-item disabled"><div class="page-link text-secondary d-inline-block disabled" href="#" aria-label="Next"><span aria-hidden="true">»</span></div></li>
-                                    {% endif %}
-                                </ul>
-                            </nav>
-
                         </div>
-                        
-                        <!-- <div class="svg-border-angled text-dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
-                        </div> -->
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
                     </section>
                 </main>
             </div>
@@ -372,40 +312,6 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="{% static 'sb-ui-kit-pro/dist/js/scripts.js' %}"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                disable: 'mobile',
-                duration: 600,
-                once: true,
-            });
-        </script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
-
-<script>
-    const genreDivs = document.querySelectorAll(".TagGroup__tag--xu0OH");
-    genreDivs.forEach(div => {
-        div.addEventListener("click", function() {
-            const genre = div.getAttribute("movie-genre");
-            const url = `/movie?genre=${genre}`;
-
-            window.location.href = url;
-            div.setAttribute("aria-selected", "true");
-        });
-    });
-</script>
-<script>
-    const sortDivs = document.querySelectorAll(".ComponentHead__button_tab--YoR6Z");
-    sortDivs.forEach(div => {
-        div.addEventListener("click", function() {
-            const sortby = div.getAttribute("sort-by");
-            const url = new URL(window.location.href);
-
-            url.searchParams.set("sort", sortby);
-            window.location.href = url.toString();
-            div.setAttribute("aria-selected", "true");
-        });
-    });
-</script>

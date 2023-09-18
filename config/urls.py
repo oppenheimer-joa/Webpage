@@ -12,14 +12,15 @@ urlpatterns = [
     # main page
     path('', include('posts.urls')), 
     # movie info
-    path('', include('sms_site.urls')),
-
-    path('', include('userpage.urls')),
+    path('movie/', include('sms_site.urls')),
+    path('prf/', performance),
+    path('prf/<str:id>', prf_detail),
     path('admin/', admin.site.urls),
+    path('mypage/', include('userpage.urls')),
 
     # path('', performance),
     path('', include('people.urls')),
-    path('', include('award.urls')),
+    path('', include('award.urls'))
 ]
 
 urlpatterns += static(

@@ -73,9 +73,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 config = ConfigParser()
-# config.read('config.ini')
-config.read('./config/config.ini')
-# config.read("/home/neivekim76/config/config.ini")
+config.read("config/config.ini")
 
 s3_access = config.get("AWS", "S3_ACCESS")
 s3_secret = config.get("AWS", "S3_SECRET")
@@ -180,3 +178,21 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'neivekim76@gmail.com'
 EMAIL_HOST_PASSWORD = 'wuuuqrwnwihexrdi'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'default_cache',  # 기본 캐시 백엔드 설정
+        'TIMEOUT': None,
+    },
+    'movie_details': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'movie_details',  # movie_details 캐시 백엔드 설정
+        'TIMEOUT': None,
+    },
+    'prf_details': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'prf_details',  # prf_details 캐시 백엔드 설정
+        'TIMEOUT': None,
+    },
+}
