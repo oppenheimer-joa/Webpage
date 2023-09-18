@@ -7,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
-        <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
+        <title>슬기로운 문화생활 - 공연 및 문화 데이터 플랫폼</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
@@ -16,9 +17,10 @@
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
-                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
@@ -115,7 +117,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <h6 class="dropdown-header text-primary">회원정보</h6>
-                                                            <a class="dropdown-item" href="/logout/">로그아웃</a>
+                                                            <a class="dropdown-item" href="/prf/">로그아웃</a>
                                                             <div class="dropdown-divider border-0 d-lg-none"></div>
                                                         </div>
                                                     </div>
@@ -158,29 +160,29 @@
                             </div>
                         </div>
                     </nav>
-                    <!-- Page Header-->
 
 
 
                     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('{% static "Img/people.jpeg" %}')">
                         <div class="page-header-ui-content position-relative">
-                            <div class="container px-5">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-8 col-lg-10 text-center">
-                                        <a href="/people"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 인물 사전 </h1> </a>
-                                        <p class="page-header-ui-text mb-5"> 관심있는 영화인 정보를 검색해보세요. </p>
-                                    </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-xl-8 col-lg-10 text-center">
+                                    <a href="/people"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 인물 사전 </h1> </a>
+                                    <p class="page-header-ui-text mb-5"> 관심있는 영화인 정보를 검색해보세요. </p>
                                 </div>
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-6 col-lg-8 text-center">
-                                        <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
-                                            <div class="col flex-grow-1">
-                                                <label class="sr-only" for="inputEmail">인물의 이름을 입력해주세요</label>
-                                                <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="인물의 이름을 입력해주세요" />
-                                            </div>
-                                            <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
-                                        </form>
-                                    </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-xl-6 col-lg-8 text-center">
+                                    <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
+                                        <div class="col flex-grow-1">
+                                            <label class="sr-only" for="inputEmail">인물의 이름을 입력해주세요</label>
+                                            <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="인물의 이름을 입력해주세요" />
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -192,12 +194,11 @@
 
                     <section class="bg-white pt-5 pb-10">
                             <div class="container px-5">
-                            {% if selected_department %}
+                                {% if selected_department %}
                                 <h2 class="mb-4" style="color: #00ba94;"> {{ selected_department }} <span style="color:#888"> ({{ people_list.shape.0 }}건) </span> </h2>
-                            {% else %}
+                                {% else %}
                                 <h2 class="mb-4"> Select deparment Categories  </h2>
-                            {% endif %}
-                                <!-- department tag -->
+                                {% endif %}
                                 <div>
                                     <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
                                         <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == False %}true{% else %}false{% endif %}" department="">#ALL</button>
