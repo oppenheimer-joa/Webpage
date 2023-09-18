@@ -11,6 +11,15 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
     
 def dictionary(request):
+    # department list 변수
+    department_list = ['Acting', 'Production', 'Sound', 'Directing', 'Writing', 'Editing',
+       'Crew', 'Visual Effects', 'Camera', 'Lighting',
+       'Costume & Make-Up', 'Art', 'Creator']
+    
+    # request GET
+    search = request.GET.get('search', '')
+    department = request.GET.get('department', '')
+    sort_by = request.GET.get('sort', 'name_asc')
 
     parser = ConfigParser()
     parser.read("./config/config.ini")
@@ -39,6 +48,22 @@ def dictionary(request):
     # 중복된 'id'를 가진 행 제거 (처음 발견되는 것만 남김)
     people_details.drop_duplicates(subset=['id'], keep='first', inplace=True)
 
+    # 역할 별 필터링
+    if department != "" : ## 찾으려는 역할 값이 있을 경우
+        people_details = people_details[people_details['known_for_department'] == department]
+        if people_details.shape[0] == 0 :
+            return render(request, 'people/dictionary.html',{"no_filter": "조건에 맞는 결과가 없습니다",
+                                                               "selected_department": department,
+                                                               "department_list":department_list})
+    if search != "": # search 값이 있으면
+        people_details = people_details[people_details['name'].str.contains(search)]
+        
+    if sort_by != "": # sort_by 값이 있으면
+        if sort_by == 'name_dsc' :
+            people_details = people_details.sort_values(by='name', ascending=False)
+        elif sort_by == 'name_asc' :
+            people_details = people_details.sort_values(by='name', ascending=True)
+
     # 페이지 기능 구현
     # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
     people_list = people_details.to_dict('records')
@@ -52,13 +77,12 @@ def dictionary(request):
     except EmptyPage:
         pages = paginator.page(1)
         
-    search = request.GET.get('search', '')
-    if search != "": # search 값이 있으면
-        people_details = people_details
     # 리턴값에 'pages': pages 추가 
-    return render(request, 'people/dictionary.html',{"people_list": people_list,
-                                                       "search":search,
-                                                       'pages': pages})
+    return render(request, 'people/dictionary.html',{"people_list": people_details,
+                                                    "selected_department": department,
+                                                    "department_list":department_list,
+                                                    "search":search,
+                                                    'pages': pages})
     
 def people_info(request, id):
     parser = ConfigParser()
