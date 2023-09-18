@@ -7,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
-        <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
+        <title>슬기로운 문화생활 - 공연 및 문화 데이터 플랫폼</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
@@ -16,9 +17,10 @@
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
-                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
@@ -40,8 +42,8 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <h6 class="dropdown-header text-primary">영화</h6>
-                                                            <a class="dropdown-item" href="/movie/"">영화 목록</a>
-                                                            <a class="dropdown-item" href="/people/"">인물 목록</a>
+                                                            <a class="dropdown-item" href="/movie/">영화 목록</a>
+                                                            <a class="dropdown-item" href="/people/">인물 목록</a>
                                                             <a class="dropdown-item" href="/boxoffice/">박스오피스</a>
                                                             <a class="dropdown-item" href="/awards/">영화제</a>
                                                             <div class="dropdown-divider border-0"></div>
@@ -115,7 +117,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <h6 class="dropdown-header text-primary">회원정보</h6>
-                                                            <a class="dropdown-item" href="/logout/">로그아웃</a>
+                                                            <a class="dropdown-item" href="/prf/">로그아웃</a>
                                                             <div class="dropdown-divider border-0 d-lg-none"></div>
                                                         </div>
                                                     </div>
@@ -158,6 +160,7 @@
                             </div>
                         </div>
                     </nav>
+
                     <!-- Page Header-->
                     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60" style="background-image: url('{% static 'Img/LOGOS/bg.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="page-header-ui-content pt-10 position-relative">

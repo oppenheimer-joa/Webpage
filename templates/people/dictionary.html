@@ -7,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
-        <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
+        <title>슬기로운 문화생활 - 공연 및 문화 데이터 플랫폼</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
@@ -16,9 +17,10 @@
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
-                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
@@ -40,8 +42,8 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <h6 class="dropdown-header text-primary">영화</h6>
-                                                            <a class="dropdown-item" href="/movie/"">영화 목록</a>
-                                                            <a class="dropdown-item" href="/people/"">인물 목록</a>
+                                                            <a class="dropdown-item" href="/movie/">영화 목록</a>
+                                                            <a class="dropdown-item" href="/people/">인물 목록</a>
                                                             <a class="dropdown-item" href="/boxoffice/">박스오피스</a>
                                                             <a class="dropdown-item" href="/awards/">영화제</a>
                                                             <div class="dropdown-divider border-0"></div>
@@ -115,7 +117,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <h6 class="dropdown-header text-primary">회원정보</h6>
-                                                            <a class="dropdown-item" href="/logout/">로그아웃</a>
+                                                            <a class="dropdown-item" href="/prf/">로그아웃</a>
                                                             <div class="dropdown-divider border-0 d-lg-none"></div>
                                                         </div>
                                                     </div>
@@ -158,29 +160,29 @@
                             </div>
                         </div>
                     </nav>
-                    <!-- Page Header-->
 
 
 
                     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('{% static "Img/people.jpeg" %}')">
                         <div class="page-header-ui-content position-relative">
-                            <div class="container px-5">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-8 col-lg-10 text-center">
-                                        <a href="/people"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 인물 사전 </h1> </a>
-                                        <p class="page-header-ui-text mb-5"> 관심있는 영화인 정보를 검색해보세요. </p>
-                                    </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-xl-8 col-lg-10 text-center">
+                                    <a href="/people"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 인물 사전 </h1> </a>
+                                    <p class="page-header-ui-text mb-5"> 관심있는 영화인 정보를 검색해보세요. </p>
                                 </div>
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-xl-6 col-lg-8 text-center">
-                                        <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
-                                            <div class="col flex-grow-1">
-                                                <label class="sr-only" for="inputEmail">검색어를 입력해주세요</label>
-                                                <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="검색어를 입력해주세요" />
-                                            </div>
-                                            <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
-                                        </form>
-                                    </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-xl-6 col-lg-8 text-center">
+                                    <form  method="GET" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
+                                        <div class="col flex-grow-1">
+                                            <label class="sr-only" for="inputEmail">인물의 이름을 입력해주세요</label>
+                                            <input class="form-control form-control-solid" id="inputEmail" name="search" type="text" placeholder="인물의 이름을 입력해주세요" />
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="col"><button class="btn btn-teal fw-500" type="submit"> 검색하기 </button></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -191,15 +193,48 @@
 
 
                     <section class="bg-white pt-5 pb-10">
+                            <div class="container px-5">
+                                {% if selected_department %}
+                                <h2 class="mb-4" style="color: #00ba94;"> {{ selected_department }} <span style="color:#888"> ({{ people_list.shape.0 }}건) </span> </h2>
+                                {% else %}
+                                <h2 class="mb-4"> Select deparment Categories  </h2>
+                                {% endif %}
+                                <div>
+                                    <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == False %}true{% else %}false{% endif %}" department="">#ALL</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Acting' %}true{% else %}false{% endif %}" department="Acting">#Acting</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Production' %}true{% else %}false{% endif %}" department="Production">#Production</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Sound' %}true{% else %}false{% endif %}" department="Sound">#Sound</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Directing' %}true{% else %}false{% endif %}" department="Directing">#Directing</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Writing' %}true{% else %}false{% endif %}" department="Writing">#Writing</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Editing' %}true{% else %}false{% endif %}" department="Editing">#Editing</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Crew' %}true{% else %}false{% endif %}" department="Crew">#Crew</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Visual Effects' %}true{% else %}false{% endif %}" department="Visual Effects">#Visual Effects</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Camera' %}true{% else %}false{% endif %}" department="Camera">#Camera</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Lighting' %}true{% else %}false{% endif %}" department="Lighting">#Lighting</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Costume & Make-Up' %}true{% else %}false{% endif %}" department="Costume & Make-Up">#Costume & Make-Up</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Art' %}true{% else %}false{% endif %}" department="Art">#Art</button>
+                                        <button type="button" role="tab" class="TagGroup__tag--xu0OH" aria-selected="{% if selected_department == 'Creator' %}true{% else %}false{% endif %}" department="Creator">#Creator</button>
+                                    </div>
+                                </div>
+                            </div>
                         <div class="container px-5">
                             <div> 
-                                <h6 style="text-align: right; color: #888; margin-right: 3%;"> 최신순 &nbsp; | &nbsp; 평점순 </h6>
+                                {% if no_filter %}
+                                <h3 style="text-align: center; margin-top: 40px;"> {{ no_filter }} </h3>
+                                {% else %}
+                                <div role="tablist" class="ComponentHead__tab_control--R1TyL">
+                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="name_asc">가나다 순</button>
+                                    <span> · </span>
+                                    <button type="button" role="tab" class="ComponentHead__button_tab--YoR6Z" aria-selected="false" sort-by="name_dsc">가나다 역순</button>
+                                </div>
+                                {% endif %}
                             </div>
                             <div class="row gx-5 justify-content-center">
                                 <div class="col-lg-6">
                                     <div class="mb-5 text-center">
                                         {% if search %}
-                                        <h3> <p class="page-header-ui-text mb-5"> {{ search_type }} 기준 "<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
+                                        <h3> <p class="page-header-ui-text mb-5">"<span style="color: #00ba94;"> {{ search }} </span>" 검색 결과 </p> </h3>
                                         <p class="lead mb-0">Here are some of the most popular people in your area.</p>
                                         {% endif %}
                                     </div>
@@ -210,7 +245,7 @@
                                 {% for person in pages %}
                                 <div class="col-lg-3 mb-5">
                                     <div class="card h-100 shadow border-0">
-                                        <a href="{{ person.id }}">
+                                        <a href="/people/{{ person.id }}">
                                         {% if person.profile_img %}
                                             <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
                                         {% else %}
@@ -232,29 +267,29 @@
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination pagination-blog justify-content-center">
                                     {% if pages.has_previous %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.previous_page_number }}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.previous_page_number }}{% if search %}&search={{ search }}{% endif %}{% if selected_department %}&deparment={{ selected_department }}{% endif %}{% if sort_by %}&sort={{ sort_by }}{% endif %}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
                                     {% else %}
                                         <li class="page-item disabled"><div class="page-link text-secondary d-inline-block disabled" href="#" aria-label="Previous"><span aria-hidden="true">«</span></div></li>
                                     {% endif %}
                         
                                     {% if pages.has_previous %}
                                         {% if pages.previous_page_number != 1 %}
-                                            <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page=1">1</a></li>
+                                            <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page=1{% if search %}&search={{ search }}{% endif %}{% if selected_department %}&department={{ selected_department }}{% endif %}{% if sort_by %}&sort={{ sort_by }}{% endif %}">1</a></li>
                                             <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
                                         {% endif %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.previous_page_number }}">{{ pages.previous_page_number }}</a></li>
+                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.previous_page_number }}{% if search %}&search={{ search }}{% endif %}{% if selected_department %}&department={{ selected_department }}{% endif %}{% if sort_by %}&sort={{ sort_by }}{% endif %}">{{ pages.previous_page_number }}</a></li>
                                     {% endif %}
                                     <li class="page-item active"><div class="page-link" href="#!">{{ pages.number }}</div></li>
                                     {% if pages.has_next %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.next_page_number }}">{{ pages.next_page_number }}</a></li>
+                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.next_page_number }}{% if search %}&search={{ search }}{% endif %}{% if selected_department %}&department={{ selected_department }}{% endif %}{% if sort_by %}&sort={{ sort_by }}{% endif %}">{{ pages.next_page_number }}</a></li>
                                         {% if pages.next_page_number != pages.paginator.num_pages %}
                                         <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                                            <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.paginator.num_pages }}">{{ pages.paginator.num_pages }}</a></li>
+                                            <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.paginator.num_pages }}{% if search %}&search={{ search }}{% endif %}{% if selected_department %}&department={{ selected_department }}{% endif %}{% if sort_by %}&sort={{ sort_by }}{% endif %}">{{ pages.paginator.num_pages }}</a></li>
                                         {% endif %}
                                     {% endif %}
                         
                                     {% if pages.has_next %}
-                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.next_page_number }}" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        <li class="page-item"><a class="page-link text-primary d-inline-block" href="?page={{ pages.next_page_number }}{% if search %}&search={{ search }}{% endif %}{% if selected_department %}&department={{ selected_department }}{% endif %}{% if sort_by %}&sort={{ sort_by }}{% endif %}" aria-label="Next" aria-label="Next"><span aria-hidden="true">»</span></a></li>
                                     {% else %}
                                         <li class="page-item disabled"><div class="page-link text-secondary d-inline-block disabled" href="#" aria-label="Next"><span aria-hidden="true">»</span></div></li>
                                     {% endif %}
@@ -346,3 +381,36 @@
         </script>
     </body>
 </html>
+
+<script>
+    const departmentDivs = document.querySelectorAll(".TagGroup__tag--xu0OH");
+    departmentDivs.forEach(div => {
+        div.addEventListener("click", function() {
+            const department = div.getAttribute("department");
+            const url = `/people?department=${department}`;
+
+            window.location.href = url;
+            div.setAttribute("aria-selected", "true");
+        });
+    });
+</script>
+<script>
+    const sortDivs = document.querySelectorAll(".ComponentHead__button_tab--YoR6Z");
+    sortDivs.forEach(div => {
+        div.addEventListener("click", function() {
+            const sortby = div.getAttribute("sort-by");
+
+            // 현재 URL 가져오기
+            const url = new URL(window.location.href);
+
+            // "sort" 매개 변수를 가져오고, 새로운 값으로 대체
+            url.searchParams.set("sort", sortby);
+
+            // 새 URL로 이동
+            window.location.href = url.toString();
+
+            div.setAttribute("aria-selected", "true");
+        });
+    });
+
+</script>

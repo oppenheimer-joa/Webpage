@@ -30,7 +30,7 @@ def main(request):
     user = request.user
     is_authenticated = user.is_authenticated
     if not is_authenticated:
-        return redirect('')
+        return redirect('/login')
 
     context = {
         'user' : user
