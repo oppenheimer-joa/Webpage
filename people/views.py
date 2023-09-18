@@ -13,8 +13,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def dictionary(request):
 
     parser = ConfigParser()
-    # parser.read("./config/config.ini")
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
+    # parser.read("/home/neivekim76/config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
 
@@ -62,8 +62,8 @@ def dictionary(request):
     
 def people_info(request, id):
     parser = ConfigParser()
-    # parser.read("./config/config.ini")
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
+    # parser.read("/home/neivekim76/config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
 

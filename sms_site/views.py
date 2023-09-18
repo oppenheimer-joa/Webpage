@@ -97,8 +97,8 @@ def movie_filter_by_genre(request):
     genre = request.GET.get('genre', '')
 
     parser = ConfigParser()
-    # parser.read("./config/config.ini")
-    parser.read("/home/neivekim76/config/config.ini")
+    parser.read("./config/config.ini")
+    # parser.read("/home/neivekim76/config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
     
