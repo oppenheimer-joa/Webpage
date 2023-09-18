@@ -190,7 +190,8 @@
 
                                 <script>
                                     const dropdownItems = document.querySelectorAll('.dropdown-item');
-                                    categoryDropdownButton.innerText = item.innerText;
+                                    
+                                    {% comment %} categoryDropdownButton.innerText = item.innerText; {% endcomment %}
                                     dropdownItems.forEach(item => {
                                         item.addEventListener('click', () => {
                                             const categoryInput = document.getElementById('categoryInput');
