@@ -235,7 +235,7 @@ def movie_detail(request, pk):
     secret = parser.get("AWS", "S3_SECRET")
 
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/1960-01-01/')
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-')
     
     combined_df = pd.DataFrame()
     for obj in objects.get('Contents', []):  # 만약 'Contents'가 없으면 빈 리스트를 반환
