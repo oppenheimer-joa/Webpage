@@ -13,9 +13,10 @@ urlpatterns = [
     path('', include('posts.urls')), 
     # movie info
     path('movie/', include('sms_site.urls')),
-    path('prf', performance),
+    path('prf/', performance),
     path('prf/<str:id>', prf_detail),
     path('admin/', admin.site.urls),
+    path('mypage/', include('userpage.urls')),
 
     # path('', performance),
     path('', include('people.urls')),
