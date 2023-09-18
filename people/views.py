@@ -53,8 +53,10 @@ def dictionary(request):
         people_details = people_details[people_details['known_for_department'] == department]
         if people_details.shape[0] == 0 :
             return render(request, 'people/dictionary.html',{"no_filter": "조건에 맞는 결과가 없습니다",
-                                                               "selected_department": department,
-                                                               "department_list":department_list})
+                                                                "selected_department": department,
+                                                                "department_list":department_list,
+                                                                'sort_by':sort_by,
+                                                                "search":search,})
     if search != "": # search 값이 있으면
         people_details = people_details[people_details['name'].str.contains(search)]
         
@@ -81,6 +83,7 @@ def dictionary(request):
     return render(request, 'people/dictionary.html',{"people_list": people_details,
                                                     "selected_department": department,
                                                     "department_list":department_list,
+                                                    'sort_by':sort_by,
                                                     "search":search,
                                                     'pages': pages})
     
