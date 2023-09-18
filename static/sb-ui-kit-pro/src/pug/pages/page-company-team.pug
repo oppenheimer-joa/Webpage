@@ -1,0 +1,164 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Team'
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container px-5',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-gradient-primary-to-secondary',
+        pageHeaderStyle: 'page-header-ui-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .page-header-ui-content.pt-10
+            .container.px-5.text-center
+                .row.gx-5.justify-content-center
+                    .col-lg-8
+                        h1.page-header-ui-title.mb-3 Meet the team
+                        p.page-header-ui-text We are a group of designers and developers
+
+    //- * * * * * * * * * * *
+    //- * * Text Section  * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container.px-5
+            .row.gx-5
+                .col-md-6.col-xl-4.mb-5
+                    .card.card-team
+                        .card-body
+                            img.card-team-img.mb-3(src='assets/img/illustrations/profiles/profile-1.png', alt='...')
+                            .card-team-name Valerie Luna
+                            .card-team-position.mb-3 Managing Partner
+                            p.small.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .card-footer.text-center
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-linkedin-in
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-github
+                .col-md-6.col-xl-4.mb-5
+                    .card.card-team
+                        .card-body
+                            img.card-team-img.mb-3(src='assets/img/illustrations/profiles/profile-2.png', alt='...')
+                            .card-team-name Ewan Rogers
+                            .card-team-position.mb-3 Managing Partner
+                            p.small.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .card-footer.text-center
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-linkedin-in
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-github
+                .col-md-6.col-xl-4.mb-5
+                    .card.card-team
+                        .card-body
+                            img.card-team-img.mb-3(src='assets/img/illustrations/profiles/profile-3.png', alt='...')
+                            .card-team-name Alicia Allen
+                            .card-team-position.mb-3 Sales Manager
+                            p.small.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .card-footer.text-center
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-linkedin-in
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-github
+                .col-md-6.col-xl-4.mb-5.mb-xl-0
+                    .card.card-team
+                        .card-body
+                            img.card-team-img.mb-3(src='assets/img/illustrations/profiles/profile-4.png', alt='...')
+                            .card-team-name Kolby Brock
+                            .card-team-position.mb-3 UI/UX Designer
+                            p.small.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .card-footer.text-center
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-linkedin-in
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-github
+                .col-md-6.col-xl-4.mb-5.mb-md-0
+                    .card.card-team
+                        .card-body
+                            img.card-team-img.mb-3(src='assets/img/illustrations/profiles/profile-5.png', alt='...')
+                            .card-team-name William Cole
+                            .card-team-position.mb-3 Lead Developer
+                            p.small.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .card-footer.text-center
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-linkedin-in
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-github
+                .col-md-6.col-xl-4
+                    .card.card-team
+                        .card-body
+                            img.card-team-img.mb-3(src='assets/img/illustrations/profiles/profile-6.png', alt='...')
+                            .card-team-name Amy Love
+                            .card-team-position.mb-3 Creative Director
+                            p.small.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .card-footer.text-center
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-linkedin-in
+                            a.btn.btn-icon.btn-transparent-dark.mx-1(href='#!')
+                                i.fab.fa-github
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })

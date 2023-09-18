@@ -1,0 +1,102 @@
+// Default styling for the page header
+.page-header-ui {
+    position: relative;
+    padding-top: $page-header-padding-y;
+    padding-bottom: $page-header-padding-y;
+
+    .page-header-ui-content {
+        .page-header-ui-title {
+            font-size: 2.5rem;
+        }
+
+        .page-header-ui-text {
+            font-size: 1.15rem;
+
+            &.small {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// Page header style when using a dark background color
+.page-header-ui-dark {
+    color: $white;
+    // Fallback background color
+    background-color: $gray-900;
+
+    .page-header-ui-title {
+        color: $white;
+    }
+
+    .page-header-ui-text {
+        @extend .text-white-50;
+
+        a {
+            @extend .text-white-75;
+        }
+    }
+
+    .btn-link {
+        @extend .text-light;
+    }
+}
+
+// Page header style when using a light background
+.page-header-ui-light {
+    // Fallback background color
+    background-color: $gray-100;
+
+    .page-header-ui-text {
+        color: $gray-600;
+
+        a {
+            color: $gray-700;
+        }
+    }
+
+    .btn-link {
+        @extend .text-dark;
+    }
+}
+
+// Behavior for fixed navbar
+.page-header-ui.navbar-fixed {
+    .page-header-ui-content {
+        padding-top: $page-header-padding-y + $navbar-marketing-padding-y * 2 + 1rem;
+    }
+
+    .navbar {
+        @extend .fixed-top;
+    }
+}
+
+// Video Header
+.page-header-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    .page-header-video {
+        background: url('/img/bg/bg-header-video-mobile-fallback.jpg') black no-repeat center center scroll;
+    }
+
+    .page-header-video video video {
+        display: none;
+    }
+}

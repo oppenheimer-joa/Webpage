@@ -5,6 +5,6 @@ from django.conf.urls import include
 from userpage import views
 
 urlpatterns = [
-    path('', views.userdetail, name='userdetail'),
-    path('moviedetail/<str:id>/', views.moviedetail, name='moviedetail')
+    path('mypage/', views.userdetail, name='userdetail'),
+    # path('moviedetail/<str:id>/', views.moviedetail, name='moviedetail')
 ]

@@ -5324,9 +5324,13 @@ textarea.form-control-lg {
 }
 
 .card-body {
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
+  flex: 1;  /* 가능한 모든 공간을 차지하게 설정 */
+  display: flex;
+  flex-direction: column; /* 수직 방향으로 아이템 배열 */
+  justify-content: flex-end;  /* 아이템을 하단에 정렬 */
 }
 
 .card-title {
@@ -5399,9 +5403,9 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 140px;
-  height: 200px;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .card-img,
@@ -18989,6 +18993,7 @@ aside.filter-sidebar button {
     border: none;
     padding: 10px;
     cursor: pointer;
+<<<<<<< HEAD
 }
 .image-container {
     position: relative; /* 부모 요소를 상대 위치로 설정 */
@@ -19149,4 +19154,6 @@ aside.filter-sidebar button {
     width: 100%;
     height: 100%;
     object-fit: contain; /* 이미지를 가로세로 비율 유지하며 맞춤 */
+=======
+>>>>>>> 37584ecf05b36e23527ad1afa878f47bc1c04461
 }

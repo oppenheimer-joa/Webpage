@@ -1,0 +1,111 @@
+// Set section positioning to relative for bottom borders
+section {
+    position: relative;
+}
+
+// Set the base styling for SVG borders used throughout sections and components
+.svg-border-angled {
+    padding-top: 3rem;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3rem;
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(sm) {
+        padding-top: 3.5rem;
+
+        svg {
+            height: 3.5rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-top: 4rem;
+
+        svg {
+            height: 4rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 4.5rem;
+
+        svg {
+            height: 4.5rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 5rem;
+
+        svg {
+            height: 5rem;
+        }
+    }
+}
+
+.svg-border-rounded {
+    svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1rem;
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(sm) {
+        svg {
+            height: 1.5rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        svg {
+            height: 2rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        svg {
+            height: 2.5rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        svg {
+            height: 3rem;
+        }
+    }
+}
+
+.svg-border-waves {
+    padding-top: 1rem;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2rem;
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(sm) {
+        padding-top: 1.5rem;
+
+        svg {
+            height: 2.5rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 2rem;
+
+        svg {
+            height: 3rem;
+        }
+    }
+}

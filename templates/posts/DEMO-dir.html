@@ -1,0 +1,501 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
+        <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="layoutDefault">
+            <div id="layoutDefault_content">
+                <main>
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+                        <div class="container px-5">
+                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto me-lg-5">
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            문화 컨텐츠
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row g-0">
+                                                <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <div class="mb-3">내가 관심있는 컨텐츠의 정보를 한 눈에 확인해보세요.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">영화</h6>
+                                                            <a class="dropdown-item" href="/movie/"">영화 목록</a>
+                                                            <a class="dropdown-item" href="/people/"">인물 목록</a>
+                                                            <a class="dropdown-item" href="/boxoffice/">박스오피스</a>
+                                                            <a class="dropdown-item" href="/awards/">영화제</a>
+                                                            <div class="dropdown-divider border-0"></div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">공연</h6>
+                                                            <a class="dropdown-item" href="/prf/">공연 목록</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            나의 문화생활
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row g-0">
+                                                <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <div class="mb-3">문화생활과 커뮤니티. 서로의 이야기들을 공유하고 즐거움을 찾아보는 시간을 가져요.</div>
+                                                            <a class="btn btn-white btn-sm text-primary fw-500" href="index.html">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">영화</h6>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">내가 찜한 영화</a>
+                                                            <a class="dropdown-item" href="landing-app-mobile.html">나의 별점</a>
+                                                            <a class="dropdown-item" href="landing-app-desktop.html">나의 리뷰</a>
+                                                            <div class="dropdown-divider border-0"></div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">공연</h6>
+                                                            <a class="dropdown-item" href="landing-multipurpose.html">내가 찜한 공연</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">나의 별점</a>
+                                                            <a class="dropdown-item" href="landing-agency.html">나의 리뷰</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li> -->
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            마이페이지
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15" aria-labelledby="navbarDropdownDemos">
+                                            <div class="row g-0">
+                                                <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block" style="background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                                    <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                        <div class="text-white text-center z-1">
+                                                            <div class="mb-3">사이트에서의 나의 활동을 확인해보세요.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 p-lg-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">문화생활</h6>
+                                                            <a class="dropdown-item" href="/mypage/">마이페이지</a>
+                                                            <div class="dropdown-divider border-0"></div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6 class="dropdown-header text-primary">회원정보</h6>
+                                                            <a class="dropdown-item" href="/logout/">로그아웃</a>
+                                                            <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            • • •
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
+                                            <a class="dropdown-item py-3" href="/document/">
+                                                <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="book-open"></i></div>
+                                                <div>
+                                                    <div class="small text-gray-500">Documentation</div>
+                                                    사이트 공식 이용 가이드
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="/help/">
+                                                <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="code"></i></div>
+                                                <div>
+                                                    <div class="small text-gray-500">고객 지원</div>
+                                                    고객 상담 | FAQ | Q&A
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="/about/">
+                                                <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="file-text"></i></div>
+                                                <div>
+                                                    <div class="small text-gray-500">소개</div>
+                                                    개요 | 팀 소개 | 패치노트 | API
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+ 
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('{% static "Img/background.jpg" %}')">
+                        <div class="page-header-ui-content position-relative">
+                            <div class="container px-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-xl-8 col-lg-10 text-center">
+                                        <h1 class="page-header-ui-title">영화 데이터 저장소</h1>
+                                        <p class="page-header-ui-text mb-5">오늘 하루를 즐겁게 보내기 위한 컨텐츠를 찾아볼까요?</p>
+                                    </div>
+                                </div> 
+
+                                <!-- Your HTML template -->
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-xl-6 col-lg-8 text-center">
+                                        <form method="POST" class="row row-cols-1 row-cols-md-auto g-3 align-items-center">
+                                            {% csrf_token %}
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">카테고리</button>
+                                            <div class="dropdown-menu animated--fade-in-up">
+                                                <a class="dropdown-item" href="#!" data-value="title">영화 제목</a>
+                                                <a class="dropdown-item" href="#!" data-value="people">영화 인물</a>
+                                            </div>
+                                            <input type="hidden" id="categoryInput" name="category" value="title">
+                                            <div class="col flex-grow-1">
+                                                <input class="form-control form-control-solid" id="inputEmail" type="text" name="search_term" placeholder="문화 컨텐츠 검색하기..." />
+                                            </div>
+                                            <div class="col"><button class="btn btn-teal fw-500" type="submit">검색</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    const dropdownItems = document.querySelectorAll('.dropdown-item');
+                                    categoryDropdownButton.innerText = item.innerText;
+                                    dropdownItems.forEach(item => {
+                                        item.addEventListener('click', () => {
+                                            const categoryInput = document.getElementById('categoryInput');
+                                            categoryInput.value = item.getAttribute('data-value');
+                                        });
+                                    });
+                                </script>
+
+                                
+                            </div>
+                        </div>
+                        <!-- <div class="svg-border-angled text-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        </div> -->
+                    </header>
+                    <section class="bg-light py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="mb-5 text-center">
+                                        <div class="text-xs text-uppercase-expanded mb-2"</div>
+                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">장르 검색</div>
+                                            <p class="lead mb-0">내가 가장 좋아하는 장르를 컨텐츠로 만나보세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="/movie/?genre=Action%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/ACTION.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">액션</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="/movie/?genre=Adventure%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/FANTASY.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">어드벤처</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="/movie/?genre=Animation%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/ANIME.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">애니메이션</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                                    <a class="card lift" href="/movie/?genre=Comedy%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/COMEDY.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">코미디</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-0">
+                                    <a class="card lift" href="/movie/?genre=Comedy%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/CRIME.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">범죄</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+                                    <a class="card lift" href="/movie/?genre=Documentary%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/DOCU.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">다큐멘터리</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+                                    <a class="card lift" href="/movie/?genre=Drama%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/DRAMA.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">드라마</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <a class="card lift" href="/movie/?genre=Family%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/FAMILY.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">가족</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-0">
+                                    <a class="card lift" href="/movie/?genre=History%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/HISTORY.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">역사</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+                                    <a class="card lift" href="/movie/?genre=Horror%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/HORROR.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">공포</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+                                    <a class="card lift" href="/movie/?genre=Music%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/MUSIC.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">음악</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <a class="card lift" href="/movie/?genre=Mystery%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/MYSTERY.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">미스터리</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/ROMANCE.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">로맨스</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+                                    <a class="card lift" href="/movie/?genre=Science_Fiction%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/SCIENCE.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">과학</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+                                    <a class="card lift" href="/movie/?genre=Thriller%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/THRILLER.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">스릴러</h6></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <a class="card lift" href="/movie/?genre=War%2F&sort=recent/">
+                                        <img class="card-img-top" src="{% static 'Img/IMAGES/WAR.png' %}" alt="..." />
+                                        <div class="card-body text-center py-3"><h6 class="card-title mb-0">전쟁</h6></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="svg-border-angled text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                        </div> -->
+                    </section>
+
+
+
+<!--                     <section class="bg-white pt-5 pb-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="mb-5 text-center">
+                                        <div class="text-xs text-uppercase-expanded text-primary mb-2">이 주의 추천 영화들</div>
+                                        <p class="lead mb-0">슬문생 팀의 에디터가 엄선한 추천 영화들을 만나보세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-5">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/E6HjQaB7UEA/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">The Bamboo Ranch</h6>
+                                            <div class="small">Upper West Ceon, Gram</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 2 weeks ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Lakeside Oyster</h6>
+                                            <div class="small">East Fom, Kugan</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 1 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/sWEpcc0Rm0U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Wild Junction</h6>
+                                            <div class="small">Shotles Wood, Drada</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 2 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 mb-5 py-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Lakeside Oyster</h6>
+                                            <div class="small">East Fom, Kugan</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 1 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 mb-5 py-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Lakeside Oyster</h6>
+                                            <div class="small">East Fom, Kugan</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 1 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 mb-5 py-5">
+                                    <a class="card lift" href="#!">
+                                        <img class="card-img-top" src="https://source.unsplash.com/ODNxWmNja2U/800x500" alt="..." />
+                                        <div class="card-body text-center py-3">
+                                            <h6 class="card-title mb-0">Lakeside Oyster</h6>
+                                            <div class="small">East Fom, Kugan</div>
+                                        </div>
+                                        <div class="card-footer text-center text-xs">
+                                            <i class="fas fa-store-alt me-1"></i>
+                                            Opened 1 months ago
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+
+
+                </main>
+            </div>
+
+            
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+                    <div class="container px-5">
+                        <div class="row gx-5">
+                            <div class="col-lg-3">
+                                <div class="footer-brand">슬기로운 문화생활</div>
+                                <div class="mb-3">공연 및 영화 데이터 플랫폼</div>
+                                <div class="icon-list-social mb-5">
+                                    <a class="icon-list-social-link" href="/main/"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row gx-5">
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">문화 컨텐츠</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="/movie/">영화 목록</a></li>
+                                            <li class="mb-2"><a href="/people/">영화 인물 목록</a></li>
+                                            <li class="mb-2"><a href="/boxoffice/">박스오피스</a></li>
+                                            <li class="mb-2"><a href="/awards/">영화제</a></li>
+                                            <li class="mb-2"><a href="/prf/">공연 목록</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">나의 문화생활</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="#!">내가 찜한 영화</a></li>
+                                            <li class="mb-2"><a href="#!">나의 별점(영화)</a></li>
+                                            <li class="mb-2"><a href="#!">나의 리뷰(영화)</a></li>
+                                            <li class="mb-2"><a href="#!">내가 찜한 공연</a></li>
+                                            <li class="mb-2"><a href="#!">나의 별점(공연)</a></li>
+                                            <li class="mb-2"><a href="#!">나의 리뷰(공연)</a></li>
+                                        </ul>
+                                    </div> -->
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">마이페이지</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="/mypage/">마이페이지</a></li>
+                                            <li class="mb-2"><a href="/logout/">로그아웃</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="text-uppercase-expanded text-xs mb-4">• • •</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="/document/">Documentation</a></li>
+                                            <li class="mb-2"><a href="/help/">고객 지원</a></li>
+                                            <li class="mb-2"><a href="/about/">소개</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-5" />
+
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-md-6 small">Copyright &copy; 슬기로운 문화생활 2023</div>
+                            <div class="col-md-6 text-md-end small">
+                                <a href="/policy/">운영 약관 및 정책</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{% static 'sb-ui-kit-pro/dist/js/scripts.js' %}"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true,
+            });
+        </script>
+    </body>
+</html>

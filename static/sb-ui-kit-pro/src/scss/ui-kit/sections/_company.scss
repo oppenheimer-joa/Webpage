@@ -1,0 +1,32 @@
+.card-team {
+    overflow: visible;
+    margin-top: 3rem;
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+
+        .card-team-img {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 100%;
+            margin-top: -4.5rem;
+            box-shadow: $box-shadow-sm;
+        }
+
+        .card-team-name {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .card-team-position {
+            font-style: italic;
+            color: $gray-500;
+            font-size: 0.8rem;
+        }
+
+    }
+}

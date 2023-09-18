@@ -1,0 +1,46 @@
+// * * * * * * * * * * * * * * * * * * * * * * * *
+// * * Import SB UI Kit Pro specific variables * *
+// * * * * * * * * * * * * * * * * * * * * * * * *
+
+@import './variables';
+
+// * * * * * * * * * * * *
+// * * Import layouts  * *
+// * * * * * * * * * * * *
+
+@import './layout/default';
+
+
+// * * * * * * * * * * * * *
+// * * Import utilities  * *
+// * * * * * * * * * * * * *
+
+@import './utilities/images';
+
+// * * * * * * * * * * * * *
+// * * Import components * *
+// * * * * * * * * * * * * *
+
+@import './components/badges';
+@import './components/list-group';
+@import './components/media';
+@import './components/mega';
+@import './components/navbar';
+@import './components/navbar-marketing';
+@import './components/pagination';
+@import './components/portfolio';
+@import './components/video';
+
+// * * * * * * * * * * * *
+// * * Import sections * *
+// * * * * * * * * * * * *
+
+@import './sections/blog';
+@import './sections/borders';
+@import './sections/brands';
+@import './sections/company';
+@import './sections/device';
+@import './sections/footer';
+@import './sections/header';
+@import './sections/pricing';
+@import './sections/testimonials';

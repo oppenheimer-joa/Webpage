@@ -1,0 +1,15 @@
+// Page Header
+mixin headerVideo(options)
+
+    header.page-header-ui.page-header-video(class=options.pageHeaderStyle + ' ' + options.pageHeaderBg, style=options.pageHeaderBgImg)
+
+        video(playsinline='playsinline' autoplay='autoplay' muted='muted' loop='loop')
+            source(src=options.pageHeaderVideoSource type='video/mp4')
+
+        if block
+            block
+        else
+            p.text-center.py-5 No content provided
+
+        //- SVG Border
+        include includes/border-options.pug

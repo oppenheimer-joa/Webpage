@@ -1,0 +1,56 @@
+{
+    "title": "SB UI Kit Pro",
+    "name": "sb-ui-kit-pro",
+    "version": "2.0.5",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "description": "A premium admin dashboard theme based on Bootstrap 4, created by Start Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template",
+        "ui"
+    ],
+    "homepage": "https://shop.startbootstrap.com/product/sb-ui-kit-pro",
+    "bugs": {
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "SEE_LICENSE",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (https://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StartBootstrap/sb-ui-kit-pro.git"
+    },
+    "dependencies": {
+        "bootstrap": "5.2.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "10.4.14",
+        "browser-sync": "2.29.1",
+        "chokidar": "3.5.3",
+        "concurrently": "6.3.0",
+        "dotenv": "16.0.3",
+        "p-limit": "3.1.0",
+        "postcss": "8.4.21",
+        "prettier": "2.8.7",
+        "pug": "3.0.2",
+        "sass": "1.60.0",
+        "shelljs": "0.8.5",
+        "upath": "2.0.1",
+        "workerpool": "6.4.0"
+    }
+}

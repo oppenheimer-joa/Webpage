@@ -13,7 +13,7 @@ SECRET_KEY = 'ejdqv%f@s4i0qj@l%3o5%(qjw*ju$yz9v7(h+5t-e@xvy*zcsb'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.70.89', 'localhost']
+ALLOWED_HOSTS = ['192.168.70.89', '34.64.160.47', 'localhost', 'google.com']
 
 INSTALLED_APPS = [
     # add bootstrap4
@@ -74,7 +74,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 config = ConfigParser()
 # config.read('config.ini')
-config.read('config/config.ini')
+# config.read('./config/config.ini')
+config.read("config/config.ini")
 
 s3_access = config.get("AWS", "S3_ACCESS")
 s3_secret = config.get("AWS", "S3_SECRET")
@@ -170,3 +171,30 @@ CORS_ALLOW_HEADERS = (
 
 # 문제 일으킬 시 삭제..
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# email service
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'neivekim76@gmail.com'
+EMAIL_HOST_PASSWORD = 'wuuuqrwnwihexrdi'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'default_cache',  # 기본 캐시 백엔드 설정
+        'TIMEOUT': None,
+    },
+    'movie_details': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'movie_details',  # movie_details 캐시 백엔드 설정
+        'TIMEOUT': None,
+    },
+    'prf_details': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'prf_details',  # prf_details 캐시 백엔드 설정
+        'TIMEOUT': None,
+    },
+}

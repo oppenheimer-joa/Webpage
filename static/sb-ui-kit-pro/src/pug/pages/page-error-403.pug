@@ -1,0 +1,69 @@
+//- * * * * * * * *
+//- * * Layout  * *
+//- * * * * * * * *
+
+//- The page layout is set using the Pug `extends` directive with a path to a layout template
+//- All of the layout options are contained in src/pug/layouts
+extends ../layouts/default.pug
+
+//- * * * * * * * *
+//- * * Config  * *
+//- * * * * * * * *
+
+//- These are page-level configuration options that should be set for each page
+block config
+    - var pageTitle = '403 Error'
+
+//- Define the main `block content` from the layout
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-primary',
+        navbarBtnColor: 'btn-primary',
+        navbarContainer: 'container px-5',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * * *
+    //- * * Page Content  * *
+    //- * * * * * * * * * * *
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+        .container.px-5
+            .row.gx-5.justify-content-center
+                .col-lg-6
+                    .text-center.mt-4
+                        img.img-fluid.p-4(src='assets/img/illustrations/403-error-forbidden.svg', alt='...')
+                        p.lead Your client does not have permission to get this page from the server.
+                        a.text-arrow-icon(href='index.html')
+                            i.ms-0.me-1(data-feather='arrow-left')
+                            | Return Home
+
+//- * * * * * * * *
+//- * * Footer  * *
+//- * * * * * * * *
+
+//- Define the `block footer` from the layout
+block footer
+
+    //- Bring in the footer mixin and configure
+    //- For all available config options for this mixin, visit https://docs.startbootstrap.co/sb-admin-pro/
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
