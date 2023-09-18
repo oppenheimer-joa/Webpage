@@ -198,9 +198,11 @@
 
                     <div style="padding: 0px 12px; margin-top: 18px;">
                         <!-- 공연종류 선택 -->
+                        
                         <div class="row gx-5 justify-content-center" style="margin: 20px;">
-                            <div style="display: flex; flex-direction: row;">
-                                <label for="period" class="genre-label"> 장르 </label>
+                            <div style="display: flex; flex-direction: row; margin-left: 100px;">
+                                <label for="period" class="genre-label"> <h3> 장르 &nbsp; </h3> </label>
+
                                 <div class="row gx-15 align-items-center" style="flex: 8;">
                                     <div role="tablist" class="TagGroup__tag_group--uUJza TagGroup__type_l--tJOoo">
                                         <button type="button" role="tab" onclick="location.href='/prf'" style="font-size: 16px; line-height: 37px;display: flex; overflow: hidden; text-overflow: ellipsis; align-items: center; margin: 1px 20px 15px 1px; padding: 1px 12px; border:none; border-radius: 4px;"> #전체 </button>
@@ -241,7 +243,11 @@
                             </div>
                         </div>
                         <div class="container px-5">
-                        <h2 class="mb-4">Recent postings</h2>
+                        {% if selected_genre_nm %}
+                        <h2 class="mb-4" style="color: #00ba94;"> {{ selected_genre_nm }} <span style="color:#888"> ({{ prf_list.shape.0 }}건) </span> </h2>
+                        {% else %}
+                        <h2 class="mb-4"> Performance List  </h2>
+                        {% endif %}
                         <div class="row gx-5">
                             {% for idx,prf in prf_list.iterrows %}
                             <div class="col-lg-2 mb-5">

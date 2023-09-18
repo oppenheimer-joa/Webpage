@@ -132,6 +132,11 @@ def performance(request):
     # request GET
     genre = request.GET.get('genre', '')
     sort_by = request.GET.get('sort', 'recent')
+    search_type = request.GET.get('type', '')
+    search = request.GET.get('search', '')
+
+    # 장르 변수
+    genre_dict = {'':'', 'theater':'연극', 'musical':'뮤지컬', 'classic':'서양음악(클래식)', 'korean':'한국음악(국악)', 'popular':'대중무용/대중음악', 'dance':'무용(서양무용/한국무용)', 'extra':'기타'}
 
     # s3 연동
     parser = ConfigParser()
@@ -192,10 +197,15 @@ def performance(request):
             parquet_df = parquet_table.to_pandas()
             genre_df = pd.concat([genre_df, parquet_df], ignore_index=True)
         prf_details = genre_df
+        
         if prf_details.shape[0] == 0 :
             return render(request, 'sms_site/prf.html',{"no_filter": "조건에 맞는 결과가 없습니다",
                                                         "selected_genre": genre,
+                                                        "selected_genre_nm": genre_dict[genre],
                                                         'pages': pages})
+    if search != "": # search 값이 있으면
+        if search_type == 'title' :
+            prf_details = prf_details[prf_details['prfnm'].str.contains(search)]
 
     if sort_by != "": # sort_by 값이 있으면
         if sort_by == 'open' :
@@ -204,7 +214,9 @@ def performance(request):
             prf_details = prf_details.sort_values(by='prfpdto') # 투표자순으로 배치 필요
 
 
-    return render(request, 'sms_site/prf.html',{'prf_list':prf_details})
+    return render(request, 'sms_site/prf.html',{'prf_list':prf_details,
+                                                "selected_genre": genre,
+                                                "selected_genre_nm": genre_dict[genre]})
 
 
 def prf_detail(request,id):
