@@ -7,16 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title> 공연 정보 </title>
+        <title>슬기로운 문화생활 - 공연 및 문화 데이터 플랫폼</title>
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
+
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
                             <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
@@ -161,6 +163,19 @@
                     </nav>
 
 
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60" style="background-image: url('{% static 'Img/LOGOS/bg.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="page-header-ui-content pt-10 position-relative">
+                            <div class="container px-5 text-center">
+                                <div class="row gx-5 justify-content-center align-items-center">
+                                    <div class="col-lg-8" data-aos="fade-right">
+                                        <h1 class="page-header-ui-title mb-3">박스오피스</h1>
+                                        <p class="page-header-ui-text">지역별 박스오피스 순위를 날짜별로 조회해 보세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
 
                     <header class="page-header-ui-content position-relative">
                         <div>
@@ -241,89 +256,90 @@
                             <div class="card">
                                 <div class="list-group list-group-flush small">
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105001">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <!-- <i class="fas fa-plus fa-fw me-2 text-gray-400"></i> -->
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>서울</b> |<br> 
-                                        &emsp;&emsp;Seoul
+                                        &emsp;&emsp;&emsp;Seoul
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105002">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>경기도</b> |<br>
-                                        &emsp;&emsp;Gyeonggi
+                                        &emsp;&emsp;&emsp;Gyeonggi
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105003">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>강원도</b> |<br>
-                                        &emsp;&emsp;Gangwon
+                                        &emsp;&emsp;&emsp;Gangwon
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105004">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>충청북도</b> |<br>
-                                        &emsp;&emsp;Chungcheongbuk
+                                        &emsp;&emsp;&emsp;Chungcheongbuk
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105005">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>충청남도</b> |<br>
-                                        &emsp;&emsp;Chungcheongnam
+                                        &emsp;&emsp;&emsp;Chungcheongnam
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105006">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>경상북도</b> |<br>
-                                        &emsp;&emsp;Gyeongsangbuk
+                                        &emsp;&emsp;&emsp;Gyeongsangbuk
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105007">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>경상남도</b> |<br>
-                                        &emsp;&emsp;Gyeongsangnam
+                                        &emsp;&emsp;&emsp;Gyeongsangnam
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105008">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>전라북도</b> |<br>
-                                        &emsp;&emsp;Jeollabuk
+                                        &emsp;&emsp;&emsp;Jeollabuk
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105009">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>전라남도</b> |<br>
-                                        &emsp;&emsp;Jeollanam
+                                        &emsp;&emsp;&emsp;Jeollanam
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105010">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>제주도</b> |<br>
-                                        &emsp;&emsp;Jeju
+                                        &emsp;&emsp;&emsp;Jeju
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105011">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>부산광역시</b> |<br>
-                                        &emsp;&emsp;Busan
+                                        &emsp;&emsp;&emsp;Busan
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105012">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>대구광역시</b> |<br>
-                                        &emsp;&emsp;Daegu
+                                        &emsp;&emsp;&emsp;Daegu
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105013">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>대전광역시</b> |<br>
-                                        &emsp;&emsp;Daejeon
+                                        &emsp;&emsp;&emsp;Daejeon
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105014">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>울산광역시</b> |<br>
-                                        &emsp;&emsp;Ulsan
+                                        &emsp;&emsp;&emsp;Ulsan
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105015">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>인천광역시</b> |<br>
-                                        &emsp;&emsp;Incheon
+                                        &emsp;&emsp;&emsp;Incheon
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105016">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>광주광역시</b> |<br>
-                                        &emsp;&emsp;Gwangju
+                                        &emsp;&emsp;&emsp;Gwangju
                                     </a>
                                     <a id="seoulButton" class="list-group-item list-group-item-action p-3" area="0105017">
-                                        <i class="fas fa-plus fa-fw me-2 text-gray-400"></i>
+                                        <img src="{% static 'Img/click.png' %}" width="40" height="40" alt="click">
                                         <b>세종특별시</b> |<br>
-                                        &emsp;&emsp;Sejong
+                                        &emsp;&emsp;&emsp;Sejong
                                     </a>
                                 </div>
                             </div>
@@ -336,20 +352,33 @@
                                         <div class="accordion-item">
                                             <h5 class="accordion-header" id="heading{{ movie.rank }}">
                                                 <button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ movie.rank }}" aria-expanded="true" aria-controls="collapse{{ movie.rank }}">
-                                                    <div class="icon-stack icon-stack bg-green-soft text-green flex-shrink-0 me-4"><p>{{ movie.rank }}</p></div>
-                                                    <h2 class="mb-4">{{ movie.movie_nm }}</h2>
+                                                    <!-- <div class="icon-stack icon-stack bg-green-soft text-green flex-shrink-0 me-4"><p>{{ movie.rank }}</p></div> -->
+                                                    <div class="icon-stack icon-stack bg-green-soft text-green flex-shrink-0 me-4">
+                                                        {% if movie.rank == '1' %}
+                                                            <img src="{% static 'Img/medal.png' %}" width="60" height="60" alt="Image 1">
+                                                        {% elif movie.rank == '2' %}
+                                                            <img src="{% static 'Img/medal_2.png' %}" width="60" height="60" alt="Image 2">
+                                                        {% elif movie.rank == '3' %}
+                                                            <img src="{% static 'Img/medal_3.png' %}" width="60" height="60" alt="Image 2">
+                                                        {% else %}
+                                                            <p><b><span class="big-font">{{ movie.rank }}</span></b></p>
+                                                            <!-- <img src="{% static 'Img/2nd.png' %}" width="80" height="80" alt="Image 2"> -->
+                                                        {% endif %}
+                                                    </div>
+                                                    <h2 class="mb-4"><b>{{ movie.movie_nm }}</b></h2>
                                                 </button>
                                             </h5>
                                             <div class="accordion-collapse collapse" id="collapse{{ movie.rank }}" aria-labelledby="heading{{ movie.rank }}" data-bs-parent="#accordionAuth">
                                                 <div class="accordion-body p-4">
+                                                    {% load humanize %}
                                                     <div class="text-xs text-uppercase-expanded text-primary mb-2">INFOS</div>
-                                                    <h6> {{ movie.movie_open }} 개봉  ・  상영관 수 {{ movie.scrn_cnt }} </h6>
+                                                    <h6> <span class="small-font">개봉일</span> <b>{{ movie.movie_open }}</b><br><span class="small-font">상영관 수</span> <b>{{ movie.scrn_cnt }}</b> </h6>
                                                     <br>
                                                     <div class="text-xs text-uppercase-expanded text-primary mb-2">AUDIENCE</div>
-                                                    <h6> 오늘 {{ movie.audi_cnt }}명 / 총 {{ movie.audi_acc }}명</h6>
+                                                    <h6> <span class="small-font">오늘</span> <b>{{ movie.audi_cnt|intcomma }}명</b> ・ <span class="small-font">총</span> <b>{{ movie.audi_acc|intcomma }}명</b></h6>
                                                     <br>
                                                     <div class="text-xs text-uppercase-expanded text-primary mb-2">SALES ACCOUNT</div>
-                                                    <h6> 오늘 {{ movie.sales_amount }}원 / 총 {{ movie.sales_acc }}원</h6>
+                                                    <h6> <span class="small-font">오늘</span> <b>{{ movie.sales_amount|intcomma}}원</b> ・ <span class="small-font">총</span> <b>{{ movie.sales_acc|intcomma }}원</b></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -482,3 +511,11 @@
     });
 
 </script>
+<style>
+    .small-font {
+        font-size: 0.8em; /* 원하는 작은 크기로 설정 */
+    }
+    .big-font {
+        font-size: 1.2em;
+    }
+</style>
