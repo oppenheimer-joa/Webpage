@@ -358,14 +358,13 @@ def boxoffice(request):
     import pyarrow.parquet as pq
     from io import BytesIO
     from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+    from datetime import datetime, timedelta
 
     # request GET
     year = request.GET.get('year',)
     month = request.GET.get('month',)
     date = request.GET.get('date', ) 
     area = request.GET.get('area', )
-
-    print(year)
 
     # s3 연동
     parser = ConfigParser()
@@ -390,8 +389,32 @@ def boxoffice(request):
         parquet_table = pq.read_table(parquet_data)
         parquet_df = parquet_table.to_pandas()
         box_details = pd.concat([box_details, parquet_df], ignore_index=True)
+    
+    box_details = box_details[box_details['date'] == f"{year}-{month}-{date}"]
 
-    print(f"{year}-{month}-{date}")
-    box_details= box_details[box_details['date'] == f"{year}-{month}-{date}"]
+    if date == "01":
+        nowdate = datetime.strptime(f"{year}{month}{date}", "%Y%m%d")
+        yesterday = nowdate - timedelta(days=1)
+        year_bf = yesterday.strftime("%Y")
+        month_bf = yesterday.strftime("%m")
+        date_bf = yesterday.strftime("%d")
+        objects_before = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kobis/{year_bf}/boxOffice_{month_bf}/loc_code={area}')
 
+        box_details_before = pd.DataFrame(columns=['date', 'rank', 'movie_nm', 'movie_open', 'sales_amount', 'sales_share',
+        'sales_inten', 'sales_change', 'sales_acc', 'audi_cnt', 'audi_inten',
+        'audi_change', 'audi_acc', 'scrn_cnt', 'show_cnt'])
+
+        for obj in objects_before.get('Contents'):
+            file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
+            if (file_path.find('parquet') == -1):
+                continue
+            s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
+            parquet_data = BytesIO(s3_object['Body'].read())
+            parquet_table = pq.read_table(parquet_data)
+            parquet_df = parquet_table.to_pandas()
+            box_details_before = pd.concat([box_details_before, parquet_df], ignore_index=True)
+
+        box_details_before = box_details_before[box_details_before['date'] == f"{year_bf}-{month_bf}-{date_bf}"]
+
+    box_details = pd.concat(box_details_before)
     return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details})
