@@ -160,12 +160,11 @@
                         </div>
                     </nav>
                     <!-- Page Header-->
-
                     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay" style="background-image: url('{% static "Img/Image-5.avif" %}')">
                         <div class="page-header-ui-content position-relative">
                             <div class="row gx-5 justify-content-center">
                                 <div class="col-xl-8 col-lg-10 text-center">
-                                    <a href="/prf/"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 공연 사전 </h1> </a>
+                                    <a href="/prf"> <h1 class="page-header-ui-title" style="text-decoration: none;"> 공연 사전 </h1> </a>
                                     <p class="page-header-ui-text mb-5"> 찾고 싶은 공연 컨텐츠를 검색해보세요. </p>
                                 </div>
                             </div>
@@ -245,7 +244,7 @@
                                 <div class="card h-100 shadow border-0" style="object-fit: contain;">
                                     <div class="img-container" style="object-fit: contain;">
                                         <a href="/prf/{{ prf.mt20id }}">
-                                        <img class="card-img-top" src="{{ prf.poster }}" alt="..." style="object-fit: contain;" />
+                                        <img class="card-img-top" src="{{ prf.poster }}" alt="..." onerror="this.src='{% static 'Img/noimage.jpg' %}'" style="object-fit: contain;" />
                                         </a>
                                     </div>
                                     <div class="card-flag card-flag-dark card-flag-top-right card-flag-l"> {{ prf.genrenm }} </div>

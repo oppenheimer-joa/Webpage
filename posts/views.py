@@ -349,7 +349,16 @@ def movie_detail(request, pk):
 
 
 # box
-
+def rank_change_to_string(rank_change):
+    if rank_change >= 100:
+        return 'New'
+    elif rank_change > 0:
+        return f'▲ {rank_change}'
+    elif rank_change < 0:
+        return f'▼ {abs(rank_change)}'
+    elif rank_change == 0:
+        return '-'
+    
 def boxoffice(request):
     from django.shortcuts import render, get_object_or_404, redirect
     from .models import ExternalImageModel
@@ -368,6 +377,11 @@ def boxoffice(request):
     date = request.GET.get('date', '31')
     area = request.GET.get('area', '0105001')
     
+    now_date = f"{year}-{month}-{date}"
+    now_date_dt = datetime.strptime(now_date,"%Y-%m-%d")
+    yesterday = now_date_dt - timedelta(days=1)
+    yesterday = yesterday.strftime("%Y-%m-%d")
+
     # s3 연동
     parser = ConfigParser()
     parser.read("config/config.ini")
@@ -376,7 +390,12 @@ def boxoffice(request):
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
     objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kobis/{year}/boxOffice_{month}/loc_code={area}')
 
-    print(objects)
+
+    ##
+    area_code = {'0105001':'서울시','0105002':'경기도','0105003':'강원도','0105004':'충청북도','0105005':'충청남도',
+                 '0105006':'경상북도','0105007':'경상남도','0105008':'전라북도','0105009':'전라남도','0105010':'제주도',
+                 '0105011':'부산시','0105012':'대구시','0105013':'대전시','0105014':'울산시','0105015':'인천시','0105016':'광주시',
+                 '0105017':'세종시'}
 
     box_details = pd.DataFrame(columns=['date', 'rank', 'movie_nm', 'movie_open', 'sales_amount', 'sales_share',
        'sales_inten', 'sales_change', 'sales_acc', 'audi_cnt', 'audi_inten',
@@ -396,9 +415,53 @@ def boxoffice(request):
         parquet_df = parquet_table.to_pandas()
         box_details = pd.concat([box_details, parquet_df], ignore_index=True)
     
-    box_details = box_details[box_details['date'] == f"{year}-{month}-{date}"]
+    box_details_today = box_details[box_details['date'] == f"{year}-{month}-{date}"]
 
-    return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details,
+    if date == "01":
+        nowdate = datetime.strptime(f"{year}{month}{date}", "%Y%m%d")
+        yesterday = nowdate - timedelta(days=1)
+        year_bf = yesterday.strftime("%Y")
+        month_bf = yesterday.strftime("%m")
+        date_bf = yesterday.strftime("%d")
+        yesterday.strftime("%Y-%m-%d")
+        objects_before = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kobis/{year_bf}/boxOffice_{month_bf}/loc_code={area}')
+
+        
+        for obj in objects_before.get('Contents'):
+            file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
+            if (file_path.find('parquet') == -1):
+                continue
+            s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
+            parquet_data = BytesIO(s3_object['Body'].read())
+            parquet_table = pq.read_table(parquet_data)
+            parquet_df = parquet_table.to_pandas()
+            box_details_before = pd.concat([box_details_before, parquet_df], ignore_index=True)
+
+        box_details_before = box_details_before[box_details_before['date'] == f"{year_bf}-{month_bf}-{date_bf}"]
+        # box_details_today = pd.concat([box_details_today, box_details_before], ignore_index=True)
+    else :
+        box_details_before = box_details[box_details['date'] == f"{yesterday}"]
+
+    box_details_today = pd.merge(box_details_today, box_details_before[['movie_nm','rank']], on='movie_nm', how='left')
+    box_details_today['rank_y'] = box_details_today['rank_y'].fillna('1000') # 신작의 전날 순위값 1000등으로 대체
+    box_details_today[['rank_x','rank_y']]  = box_details_today[['rank_x','rank_y']].astype(int)
+    box_details_today['rank_change'] = box_details_today['rank_y'] - box_details_today['rank_x']
+    box_details_today['rank_change'] = box_details_today['rank_change'].apply(rank_change_to_string)
+    box_details_today[['rank_x','rank_y', 'rank_change']]  = box_details_today[['rank_x','rank_y', 'rank_change']].astype(str)
+    box_details_today = box_details_today.rename(columns={'rank_x':'rank'})
+    print(box_details_today)
+    # box_rank_change['rank_change'] = box_details_today['rank_y'] - box_details_today['rank']
+    # box_rank_change = box_rank_change.fillna('1000')
+    # box_rank_change[['rank_x','rank_y']] = box_rank_change[['rank_x','rank_y']].astype(int)
+    # box_rank_change['rank_change'] = box_rank_change['rank_y'] - box_rank_change['rank_x']
+    # box_rank_change['rank_change'] = box_rank_change['rank_change'].apply(rank_change_to_string)
+    # box_details_today['rank_change'] = box_rank_change['rank_change']
+    # # box_rank_change = box_rank_change.astype(int)
+
+
+    return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details_today,
                                                         'year':year,
                                                         'month':month,
-                                                        'date':date})
+                                                        'date':date,
+                                                        'area':area_code[area]})
+    

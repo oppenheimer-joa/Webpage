@@ -169,7 +169,7 @@
                                     <div class="col-lg-6 z-1" data-aos="fade-left" style="margin:0px">
                                         <div class="device-wrapper mx-auto mb-n15">
                                             <div class="device" data-device="iPhone13" data-orientation="portrait" data-color="black">
-                                                <div class="screen"><img class="img-fluid z-1" src="{{ prf_info.poster }}" /></div>
+                                                <div class="screen"><img class="img-fluid z-1" src="{{ prf_info.poster }}" onerror="this.src='{% static 'Img/noimage.jpg' %}'"/></div>
                                             </div>
                                         </div>
                                     </div>
