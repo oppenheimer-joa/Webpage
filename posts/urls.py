@@ -9,11 +9,6 @@ from . import views
 
 from datetime import datetime, timedelta
 
-nowdate = datetime.now() - timedelta(days=2)
-year = nowdate.strftime("%Y")
-month = nowdate.strftime("%m")
-date = nowdate.strftime("%d")
-
 urlpatterns = [
     path('', home, name='home'),
     path('main/', views.main, name='main'),
