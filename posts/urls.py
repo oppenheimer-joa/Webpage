@@ -7,6 +7,13 @@ from django.urls import path
 from django.conf.urls.static import static
 from . import views
 
+from datetime import datetime, timedelta
+
+nowdate = datetime.now() - timedelta(days=2)
+year = nowdate.strftime("%Y")
+month = nowdate.strftime("%m")
+date = nowdate.strftime("%d")
+
 urlpatterns = [
     path('', home, name='home'),
     path('main/', views.main, name='main'),
@@ -28,6 +35,8 @@ urlpatterns = [
     path('document/', views.document, name='document'),
 
     path('send_email/', send_email, name='send_email'),
+
+    path(f'boxoffice/', boxoffice, name='boxoffice')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

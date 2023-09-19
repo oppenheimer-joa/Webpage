@@ -345,3 +345,53 @@ def movie_detail(request, pk):
 
     return render(request, 'posts/DEMO-movie-detail.html', context)
 
+
+# box
+
+def boxoffice(request):
+    from django.shortcuts import render, get_object_or_404, redirect
+    from .models import ExternalImageModel
+    from configparser import ConfigParser
+    import boto3
+    import json
+    import pandas as pd
+    import pyarrow.parquet as pq
+    from io import BytesIO
+    from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+    # request GET
+    year = request.GET.get('year',)
+    month = request.GET.get('month',)
+    date = request.GET.get('date', ) 
+    area = request.GET.get('area', )
+
+    print(year)
+
+    # s3 연동
+    parser = ConfigParser()
+    parser.read("config/config.ini")
+    access = parser.get("AWS", "S3_ACCESS")
+    secret = parser.get("AWS", "S3_SECRET")
+    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
+    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kobis/{year}/boxOffice_{month}/loc_code={area}')
+
+    print(objects)
+
+    box_details = pd.DataFrame(columns=['date', 'rank', 'movie_nm', 'movie_open', 'sales_amount', 'sales_share',
+       'sales_inten', 'sales_change', 'sales_acc', 'audi_cnt', 'audi_inten',
+       'audi_change', 'audi_acc', 'scrn_cnt', 'show_cnt'])
+
+    for obj in objects.get('Contents'):
+        file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
+        if (file_path.find('parquet') == -1):
+            continue
+        s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
+        parquet_data = BytesIO(s3_object['Body'].read())
+        parquet_table = pq.read_table(parquet_data)
+        parquet_df = parquet_table.to_pandas()
+        box_details = pd.concat([box_details, parquet_df], ignore_index=True)
+
+    print(f"{year}-{month}-{date}")
+    box_details= box_details[box_details['date'] == f"{year}-{month}-{date}"]
+
+    return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details})
