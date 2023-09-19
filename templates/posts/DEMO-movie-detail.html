@@ -7,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>슬기로운 문화생활 - 공연 및 영화 데이터 플랫폼</title>
-        <link href="{% static 'sb-ui-kit-pro/dist/css/styles.css' %}" rel="stylesheet" />
+        <title> {{ prf_info.prfnm }} </title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
@@ -16,9 +17,9 @@
         <div id="layoutDefault">
             <div id="layoutDefault_content">
                 <main>
-                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                         <div class="container px-5">
-                            <a class="navbar-brand text-white" href="/main/">슬기로운 문화생활</a>
+                            <a class="navbar-brand text-dark" href="/main/">슬기로운 문화생활</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
@@ -158,80 +159,154 @@
                             </div>
                         </div>
                     </nav>
-                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60" style="background-image: url('{{ external_image }}')">
-                        <div class="page-header-ui-content position-relative">
+
+
+
+                    <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-80" style="background-image: url({{ external_image }})">
+                        <div class="page-header-ui-content py-5 position-relative">
+                            <a class="btn btn-primary fw-500 aos-init aos-animate" href="/movie" data-aos="fade-up" data-aos-delay="100" style="position: relative; top: -20px; left: 30px; --bs-btn-bg: rgba(0, 0, 0, 0.5); border:none;" > ◀ 목록 보기 </a>
                             <div class="container px-5">
-                                <div class="row gx-5 justify-content-center align-items-center">
-                                    <div class="col-lg-6" data-aos="fade-right">
-                                        <h1 class="page-header-ui-title">{{ movie_nm }}</h1>
-                                        <span class="badge bg-dark text-white ms-1"><!--{{ movie_gr }} | -->{{ date }}</span>
-                                        <p class="page-header-ui-text mb-lg-0">{{ movie_dt }}</p>
-                                    </div>
-                                    <div class="col-lg-6 z-1" data-aos="fade-left">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-6 z-1" data-aos="fade-left" style="margin:0px">
                                         <div class="device-wrapper mx-auto mb-n15">
-                                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                            <div class="device" data-device="iPhone13" data-orientation="portrait" data-color="black">
                                                 <div class="screen"><img class="img-fluid z-1" src="{{ poster }}" /></div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 z-1" data-aos="fade-right">
+                                        <div data-aos="fade-up" class="aos-init aos-animate">
+                                            <h3 class="page-header-ui-title"> <strong style="color: rgba(230, 230, 230, 0.9);"> {{ movie_nm }} </strong> </h3>
+                                            <div class="col-md-10">
+                                                <table class="table table-bordered">
+                                                    <div> &nbsp; </div>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="show-info-th">개봉일</th>
+                                                            <td class="show-info-td">{{ date }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">상영시간</th>
+                                                            <td class="show-info-td">{{ runtime }}분</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">시리즈</th>
+                                                            <td class="show-info-td">
+                                                                {{ belongs_to_collection.name }}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">제작국가</th>
+                                                            <td class="show-info-td">
+                                                                {% for country in production_countries %}
+                                                                {{ country.name }}
+                                                                {% if forloop.counter < production_countries|length %}
+                                                                <br>
+                                                                {% endif %}
+                                                                {% endfor %}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            {% load humanize %}
+                                                            <th class="show-info-th">매출액</th>
+                                                            <td class="show-info-td">{{ revenue|intcomma }}$</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="show-info-th">배급사</th>
+                                                            <td class="show-info-td">
+                                                                {% for company in production_companies %}
+                                                                {{ company.name }}
+                                                                {% if forloop.counter < production_companies|length %}
+                                                                <br>
+                                                                {% endif %}
+                                                                {% endfor %}
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p class="page-header-ui-text"> {% if prf_info.sty == True %} {{ prf_info.sty }} {% else %}  {% endif %} </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </header>
-                    <section class="bg-light py-10">
-                        <div class="container px-5">
-                            <h2 class="mb-4 text-center">영화 출연진 목록</h2>
-                            <div class="mb-5 text">
-                                <div class="text-xs text-uppercase-expanded mb-2"></div>
-                                    <div class="text-xs text-uppercase-expanded text-primary mb-2">ACTORS</div>
-                                    <p class="lead mb-0">출연진 목록</p>
-                            </div>
-                            <div class="row gx-5">
-                                <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
-                                {% for person in cast.objerct_list %}
-                                <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                    <a class="card lift h-100" href="{% url "people_info" person.id %}">
-                                        <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
-                                        {% if person.profile_img %}
-                                        <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
-                                        {% else %}
-                                            <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
-                                        {% endif %}
-                                        <div class="card-body p-3">
-                                            <div class="card-title small mb-0"> {{ person.name }}</div>
-                                            <div class="text-xs text-gray-500">{{ person.birth }}</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                {% endfor %}
-                            </div>
 
-                            <div class="mb-5 text">
-                                <div class="text-xs text-uppercase-expanded mb-2"></div>
-                                    <div class="text-xs text-uppercase-expanded text-primary mb-2">CREWS</div>
-                                    <p class="lead mb-0">제작진 목록</p>
-                            </div>
-                            <div class="row gx-5">
-                                <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
-                                {% for person in crew.objerct_list %}
-                                <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                    <a class="card lift h-100" href="{% url "people_info" person.id %}">
-                                        <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
-                                        {% if person.profile_img %}
-                                        <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
-                                        {% else %}
-                                            <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
-                                        {% endif %}
-                                        <div class="card-body p-3">
-                                            <div class="card-title small mb-0"> {{ person.name }}</div>
-                                            <div class="text-xs text-gray-500">{{ person.birth }}</div>
-                                        </div>
-                                    </a>
+
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <div class="col-lg-12 p-5">
+                                    <a class="badge badge-marketing bg-primary-soft rounded-pill text-primary mb-3">SUMMARY</a>
+                                    <a class="text-dark" href="#!"><h1>줄거리</h1></a>
+                                    <p>{{ movie_dt }}</p>
                                 </div>
-                                {% endfor %}
                             </div>
                         </div>
-                    </section>          
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <div class="col-lg-12 p-5">
+                                    <a class="badge badge-marketing bg-primary-soft rounded-pill text-primary mb-3">PEOPLE</a>
+                                    <a class="text-dark" href="#!"><h1>영화 관련인물</h1></a>
+                                    <br>
+                                    <div class="mb-5 text">
+                                        <div class="text-xs text-uppercase-expanded mb-2"></div>
+                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">ACTORS</div>
+                                            <p class="lead mb-0">출연진 목록</p>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
+                                        {% for person in cast.objerct_list %}
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="{% url "people_info" person.id %}">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
+                                                {% if person.profile_img %}
+                                                <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
+                                                {% else %}
+                                                    <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
+                                                {% endif %}
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0"> {{ person.name }}</div>
+                                                    <div class="text-xs text-gray-500">{{ person.birth }}</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+        
+                                    <div class="mb-5 text">
+                                        <div class="text-xs text-uppercase-expanded mb-2"></div>
+                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">CREWS</div>
+                                            <p class="lead mb-0">제작진 목록</p>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <!-- 페이지로 보여줄 데이터를 pages 에서 가져오기 -->
+                                        {% for person in crew.objerct_list %}
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+                                            <a class="card lift h-100" href="{% url "people_info" person.id %}">
+                                                <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
+                                                {% if person.profile_img %}
+                                                <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
+                                                {% else %}
+                                                    <img class="card-img-top" src="{% static 'Img/LOGOS/no-image.png' %}" alt="Default Image" />
+                                                {% endif %}
+                                                <div class="card-body p-3">
+                                                    <div class="card-title small mb-0"> {{ person.name }}</div>
+                                                    <div class="text-xs text-gray-500">{{ person.birth }}</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <hr class="my-0" />
                     <!-- <section class="bg-transparent py-10">
                         <div class="row gx-5">
@@ -269,7 +344,7 @@
                                 <div class="footer-brand">슬기로운 문화생활</div>
                                 <div class="mb-3">공연 및 영화 데이터 플랫폼</div>
                                 <div class="icon-list-social mb-5">
-                                    <a class="icon-list-social-link" href="https://github.com/oppenheimer-joa/"><i class="fab fa-github"></i></a>
+                                    <a class="icon-list-social-link" href="/main/"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-9">

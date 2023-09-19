@@ -266,19 +266,16 @@ def movie_detail(request, pk):
     poster_path_str = dataframe_confirm(row, 'posters')
     date = dataframe_confirm(row, 'release_date')
     backdrop_path_str = dataframe_confirm(row, 'backdrop_path')
+
     cast = dataframe_confirm(row, 'cast')
     crew = dataframe_confirm(row, 'crew')
-    
-    # json_path = "/home/neivekim76/demo/json/genre.json"
-    # with open(json_path, 'r') as file:
-    #     data = json.load(file)
-    # json_genre = data["genres"]
 
-    # genre_string = ""
-    # for genre_id in movie_gr:
-    #     for genre_reference in json_genre:
-    #         if genre_id == genre_reference['id']:
-    #             genre_string += f"{genre_reference['name']}, "
+    belongs_to_collection = dataframe_confirm(row, 'belongs_to_collection')
+    budget = dataframe_confirm(row, 'idbudget')
+    production_companies = dataframe_confirm(row, 'production_companies')
+    production_countries = dataframe_confirm(row, 'production_countries')
+    revenue = dataframe_confirm(row, 'revenue')
+    runtime = dataframe_confirm(row, 'runtime')
 
     try: 
         url_poster = f"https://image.tmdb.org/t/p/original{poster_path_str}"
@@ -335,13 +332,18 @@ def movie_detail(request, pk):
         'movie_id' : movie_id,
         'movie_nm' : movie_nm,
         'movie_dt' : movie_dt,
-        #'movie_gr' : genre_string[:-2],
         'poster' : url_poster,
         'external_image' : url_backdrop,
         'date' : date,
         'cast' : cast_pages,
-        'crew' : crew_pages
-    }
+        'crew' : crew_pages,
+        'belongs_to_collection' : belongs_to_collection,
+        'budget' : budget,
+        'production_companies' : production_companies,
+        'production_countries' : production_countries,
+        'revenue' : revenue,
+        'runtime' : runtime
+    } 
 
     return render(request, 'posts/DEMO-movie-detail.html', context)
 
