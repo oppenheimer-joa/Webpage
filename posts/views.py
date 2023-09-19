@@ -380,6 +380,10 @@ def boxoffice(request):
        'sales_inten', 'sales_change', 'sales_acc', 'audi_cnt', 'audi_inten',
        'audi_change', 'audi_acc', 'scrn_cnt', 'show_cnt'])
 
+    box_details_before = pd.DataFrame(columns=['date', 'rank', 'movie_nm', 'movie_open', 'sales_amount', 'sales_share',
+       'sales_inten', 'sales_change', 'sales_acc', 'audi_cnt', 'audi_inten',
+       'audi_change', 'audi_acc', 'scrn_cnt', 'show_cnt'])
+
     for obj in objects.get('Contents'):
         file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
         if (file_path.find('parquet') == -1):
@@ -400,10 +404,6 @@ def boxoffice(request):
         date_bf = yesterday.strftime("%d")
         objects_before = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kobis/{year_bf}/boxOffice_{month_bf}/loc_code={area}')
 
-        box_details_before = pd.DataFrame(columns=['date', 'rank', 'movie_nm', 'movie_open', 'sales_amount', 'sales_share',
-        'sales_inten', 'sales_change', 'sales_acc', 'audi_cnt', 'audi_inten',
-        'audi_change', 'audi_acc', 'scrn_cnt', 'show_cnt'])
-
         for obj in objects_before.get('Contents'):
             file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
             if (file_path.find('parquet') == -1):
@@ -415,6 +415,6 @@ def boxoffice(request):
             box_details_before = pd.concat([box_details_before, parquet_df], ignore_index=True)
 
         box_details_before = box_details_before[box_details_before['date'] == f"{year_bf}-{month_bf}-{date_bf}"]
-
-    box_details = pd.concat(box_details_before)
+        box_details = pd.concat(box_details_before)
+        
     return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details})
