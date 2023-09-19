@@ -374,6 +374,12 @@ def boxoffice(request):
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
     objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kobis/{year}/boxOffice_{month}/loc_code={area}')
 
+
+    ##
+    area_code = {'0105001':'서울시','105002':'경기도','0105003':'강원도','0105004':'충청북도','0105005':'충청남도',
+                 '0105006':'경상북도','0105007':'경상남도','0105008':'전라북도','0105009':'전라남도','0105010':'제주도',
+                 '0105011':'부산시','0105012':'대구시','0105013':'대전시','0105014':'울산시','0105015':'인천시','0105016':'광주시',
+                 '0105017':'세종시'}
     print(objects)
 
     box_details = pd.DataFrame(columns=['date', 'rank', 'movie_nm', 'movie_open', 'sales_amount', 'sales_share',
@@ -399,4 +405,5 @@ def boxoffice(request):
     return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details,
                                                         'year':year,
                                                         'month':month,
-                                                        'date':date})
+                                                        'date':date,
+                                                        'area':area_code[area]})
