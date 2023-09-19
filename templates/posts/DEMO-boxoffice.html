@@ -364,8 +364,19 @@
                                                             <p><b><span class="big-font">{{ movie.rank }}</span></b></p>
                                                             <!-- <img src="{% static 'Img/2nd.png' %}" width="80" height="80" alt="Image 2"> -->
                                                         {% endif %}
+                                                        
                                                     </div>
-                                                    <h2 class="mb-4"><b>{{ movie.movie_nm }}</b></h2>
+                                                    <h2 class="mb-4"><b>{{ movie.movie_nm }}</b> &nbsp; 
+                                                        {% if "▲" in movie.rank_change %}
+                                                        <span style="color: #ff9191; font-size: 18px;"> {{ movie.rank_change }} </span>
+                                                        {% elif "▼" in movie.rank_change %}
+                                                        <span style="color: #9391ff; font-size: 18px;"> {{ movie.rank_change }} </span>
+                                                        {% elif movie.rank_change == "New" %}
+                                                        <span style="background: linear-gradient(to top, #fdff91 40%, transparent 40%); font-size: 18px;"> {{ movie.rank_change }} </span>
+                                                        {% else %}
+                                                        <span> {{ movie.rank_change }} </span>
+                                                        {% endif %}
+                                                    </h2>
                                                 </button>
                                             </h5>
                                             <div class="accordion-collapse collapse" id="collapse{{ movie.rank }}" aria-labelledby="heading{{ movie.rank }}" data-bs-parent="#accordionAuth">
@@ -463,7 +474,8 @@
     </body>
 </html>
 
-{% comment %} <script>
+{% comment %} 
+<script>
     const year = "{{ year }}";
     const month = "{{ month }}";
     const date = "{{ date }}";
