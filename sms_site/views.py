@@ -29,6 +29,7 @@ def dictionary(request):
     search = request.GET.get('search', '')
     genre = request.GET.get('genre', '')
     sort_by = request.GET.get('sort', 'recent')
+    date = request.GET.get('date', '')
 
     # s3 연동
     parser = ConfigParser()
@@ -84,6 +85,9 @@ def dictionary(request):
             return render(request, 'sms_site/dictionary.html',{"no_filter": "조건에 맞는 결과가 없습니다",
                                                             "selected_genre": genre,
                                                             "genre_list":genre_list,
+                                                            'search_type':search_type,
+                                                            'search':search,
+                                                            'sort_by':sort_by,
                                                             'pages': pages})
 
     if search != "": # search 값이 있으면
@@ -98,6 +102,11 @@ def dictionary(request):
                     return False
 
             movie_details = movie_details[movie_details['production_countries'].apply(contains_country)]
+
+    if date != "" :
+        prf_details[['prfpdfrom','prfpdto']] = prf_details[['prfpdfrom','prfpdto']].applymap(lambda x : pd.to_datetime(x, format='%Y.%m.%d'))
+        prf_details = prf_details[(prf_details['prfpdfrom'] <= date) & (date <= prf_details['prfpdto'])]
+
 
     if sort_by != "": # sort_by 값이 있으면
         if sort_by == 'recent' :
@@ -122,6 +131,7 @@ def dictionary(request):
     return render(request, 'sms_site/dictionary.html',{"movie_list": movie_details,
                                                        "search":search,
                                                        "search_type":search_type,
+                                                       'sort_by':sort_by,
                                                        "genre_list":genre_list,
                                                        "selected_genre":genre,
                                                        'pages': pages})
@@ -189,6 +199,7 @@ def performance(request):
             return render(request, 'sms_site/prf.html',{"no_filter": "조건에 맞는 결과가 없습니다",
                                                         'search_type':search_type,
                                                         'search':search,
+                                                        'sort_by':sort_by,
                                                         "selected_genre": genre,
                                                         "selected_genre_nm": genre_dict[genre],
                                                         'pages': pages})
@@ -220,6 +231,7 @@ def performance(request):
     return render(request, 'sms_site/prf.html',{'prf_list':prf_details,
                                                 'search_type':search_type,
                                                 'search':search,
+                                                'sort_by':sort_by,
                                                 "selected_genre": genre,
                                                 "selected_genre_nm": genre_dict[genre],
                                                 'pages': pages})
