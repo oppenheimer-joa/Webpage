@@ -125,7 +125,7 @@ def people_info(request, id):
         selected_person_dict = {}  # 해당 ID가 없을 경우 빈 딕셔너리를 사용
         
     print(selected_person_dict)
-    api_key = parser.get("TMDB", "API_KEY")
+    api_key = parser.get("TMDB", "API_KEY_1")
     base_url = f'https://api.themoviedb.org/3/person/{id}/movie_credits'
     headers = {
     	"Authorization": f"Bearer {api_key}",
