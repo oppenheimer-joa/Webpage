@@ -167,9 +167,9 @@
                                 <div class="row gx-5 justify-content-center">
                                     <div class="col-xl-8 col-lg-10 text-center">
                                         {% if person_info.profile_img %}
-                                        <img class="mb-4" src="https://image.tmdb.org/t/p/original{{ person_info.profile_img }}" style="width: 15rem" />
+                                            <img class="mb-4" src="https://image.tmdb.org/t/p/original{{ person_info.profile_img }}" style="width: 15rem" />
                                         {% else %}
-                                        <img class="mb-4" src="{% static 'Img/noimage.jpg' %}" alt="Default Image" style="width: 15rem" />
+                                            <img class="mb-4" src="{% static 'Img/noimage.jpg' %}" alt="Default Image" style="width: 15rem" />
                                         {% endif %}
                                         <h1 class="page-header-ui-title">{{ person_info.name }}</h1>
                                         <p class="page-header-ui-text">{{ person_info.birth }}</p>
