@@ -216,106 +216,105 @@ def directory(request):
 
 
 def movie_detail(request, pk):
-    from django.shortcuts import render, get_object_or_404, redirect
-    from .models import ExternalImageModel
-    from configparser import ConfigParser
-    import boto3
-    import json
+    from django.shortcuts import render
     import pandas as pd
     import pyarrow.parquet as pq
     from io import BytesIO
     from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+    import duckdb, os
 
+    # database 절대 경로 반환
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    database_dir = os.path.join(current_dir, f'../database/tmdb')
 
-    parser = ConfigParser()
-    parser.read("./config/config.ini")
-    # parser.read("/home/neivekim76/config/config.ini")
-    access = parser.get("AWS", "S3_ACCESS")
-    secret = parser.get("AWS", "S3_SECRET")
+    # DuckDB에 연결
+    conn = duckdb.connect(database=database_dir, read_only=False)  
 
-    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-')
+    # 쿼리 실행 - cast 목록 반환
+    cursor = conn.cursor()
+    cursor.execute(f'''
+                SELECT 
+                    id, original_title, overview, posters,
+                    backdrop_path, release_date, "cast", crew,
+                    belongs_to_collection, budget, production_companies, production_countries,
+                    revenue, runtime
+                FROM 
+                   tmdb_movie
+                WHERE 
+                   id = {pk};
+                ''')
     
-    combined_df = pd.DataFrame()
-    for obj in objects.get('Contents', []):  # 만약 'Contents'가 없으면 빈 리스트를 반환
-        file_key = obj.get('Key', '')  # 파일의 S3 키를 가져옴
-        if file_key.endswith('.parquet'):  # parquet 파일만 처리
-            s3_object = s3.get_object(Bucket='sms-warehouse', Key=file_key)
-            parquet_stream = s3_object['Body'].read()
-            table = pq.read_table(BytesIO(parquet_stream))
-            df = table.to_pandas()
-            combined_df = pd.concat([combined_df, df])
+    # 결과 가져오기
+    result_all = cursor.fetchall()[0]
 
-    # for obj in objects.get('Contents'):
-    #     file_path = f"s3://sms-warehouse/{obj.get('Key')}"
-    #     if file_path.find('parquet') == -1:
-    #         continue
-    #     s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-    #     parquet_stream = s3_object['Body'].read()
-    #     table = pq.read_table(BytesIO(parquet_stream))
-    #     df = table.to_pandas()
-    #     new_df = pd.concat([combined_df, df])
+    # 데이터 1차 가공
+    movie_id = result_all[0]
+    movie_nm = result_all[1]
+    movie_dt = result_all[2]
+    poster = result_all[3]
+    external_image = result_all[4]
+    date = result_all[5]
+    cast_list = result_all[6]
+    crew_list = result_all[7]
+    belongs_to_collection = result_all[8]
+    budget = result_all[9]
+    production_companies = result_all[10]
+    production_countries = result_all[11]
+    revenue = result_all[12]
+    runtime = result_all[13]
 
-    row = combined_df[combined_df['id'] == pk]
-    print(row['backdrop_path'])
+    # 쿼리 실행 - cast 목록 반환
+    try:
+        cast_tuple = tuple(id for id in cast_list)
+        cursor.execute(f'''
+                        SELECT id, name, known_for_department, profile_img, birth, year
+                        FROM tmdb_people
+                        WHERE id IN {str(cast_tuple)};
+                        ''')
 
-    movie_id = dataframe_confirm(row, 'id')
-    movie_nm = dataframe_confirm(row, 'original_title')
-    movie_dt = dataframe_confirm(row, 'overview')
-    movie_gr = dataframe_confirm(row, 'genres')
-    poster_path_str = dataframe_confirm(row, 'posters')
-    date = dataframe_confirm(row, 'release_date')
-    backdrop_path_str = dataframe_confirm(row, 'backdrop_path')
+    # 결과 가져오기
+        cast = cursor.fetchall()
+    except : cast = []
 
-    cast = dataframe_confirm(row, 'cast')
-    crew = dataframe_confirm(row, 'crew')
+    print("\nPRINT CAST <<<<<<<<<<<")
+    print(cast)
 
-    belongs_to_collection = dataframe_confirm(row, 'belongs_to_collection')
-    budget = dataframe_confirm(row, 'idbudget')
-    production_companies = dataframe_confirm(row, 'production_companies')
-    production_countries = dataframe_confirm(row, 'production_countries')
-    revenue = dataframe_confirm(row, 'revenue')
-    runtime = dataframe_confirm(row, 'runtime')
+    # 쿼리 실행 - crew 목록 반환
+    try:
+        crew_tuple = tuple(id for id in crew_list)
+        cursor.execute(f'''
+                        SELECT id, name, known_for_department, profile_img, birth, year
+                        FROM tmdb_people
+                        WHERE id IN {str(crew_tuple)};
+                        ''')
 
-    try: 
-        url_poster = f"https://image.tmdb.org/t/p/original{poster_path_str}"
-    except Exception as e: 
-        url_poster = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
+        # 결과 가져오기
+        crew = cursor.fetchall()
+    except : crew = []
+
+    print("\nPRINT CREW <<<<<<<<<<<")
+    print(crew)
 
 
-    try: 
-        url_backdrop = f"https://image.tmdb.org/t/p/original{backdrop_path_str}"
-    except Exception as e: 
-        url_backdrop = "https://image.tmdb.org/t/p/original/9Yg7DZE4ip2Yl0K2BUm6hAd8iRK.jpg"
+    # 연결 종료
+    conn.close()
 
-    # 출연진 가져오기
-    objects_credit = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people_test/')
-    
-    people_details = pd.DataFrame(columns=[
-        'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
-    ])
+    # cast 및 crew로 페이지 구현하기
+    column_list = ['id', 'name', 'known_for_department', 'profile_img', 'birth', 'year']
 
-    # 각 객체(파일)에 대해 반복
-    for obj in objects_credit.get('Contents', []):  # 만약 'Contents'가 없으면 빈 리스트를 반환
-        file_key = obj.get('Key', '')  # 파일의 S3 키를 가져옴
-        if file_key.endswith('.parquet'):  # parquet 파일만 처리
-            s3_object = s3.get_object(Bucket='sms-warehouse', Key=file_key)
-            parquet_stream = s3_object['Body'].read()
-            table = pq.read_table(BytesIO(parquet_stream))
-            df = table.to_pandas()
-            combined_df = pd.concat([combined_df, df], ignore_index=True)
-        
-    # 중복된 'id'를 가진 행 제거 (처음 발견되는 것만 남김)
-    people_details.drop_duplicates(subset=['id'], keep='first', inplace=True)
-    
-    cast_list = people_details[people_details['id'].isin(cast)].to_dict('records')
+    # people dict를 담은 리스트 생성
+    cast_list = [{col: val for col, val in zip(column_list, person)} for person in cast]
+    cast_list = [{col: val for col, val in zip(column_list, person)} for person in crew]
+
+    print("\nSHOW CAST AND CREWS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
+    print(cast_list)
+    print(crew_list)
+
     cast_paginator = Paginator(cast_list, 12)
-    crew_list = people_details[people_details['id'].isin(crew)].to_dict('records')
     crew_paginator = Paginator(crew_list, 12)
     cast_page = request.GET.get('cast_page', 1)
     crew_page = request.GET.get('crew_page', 1)
-    print(cast_list)
-    print(crew_list)
+
     
     try:
         cast_pages = cast_paginator.page(cast_page)
@@ -329,20 +328,20 @@ def movie_detail(request, pk):
     
     
     context = {
-        'movie_id' : movie_id,
-        'movie_nm' : movie_nm,
-        'movie_dt' : movie_dt,
-        'poster' : url_poster,
-        'external_image' : url_backdrop,
-        'date' : date,
-        'cast' : cast_pages,
-        'crew' : crew_pages,
-        'belongs_to_collection' : belongs_to_collection,
-        'budget' : budget,
-        'production_companies' : production_companies,
-        'production_countries' : production_countries,
-        'revenue' : revenue,
-        'runtime' : runtime
+        'movie_id' : movie_id, # id
+        'movie_nm' : movie_nm, # original_title
+        'movie_dt' : movie_dt, # overview
+        'poster' : f"https://image.tmdb.org/t/p/original/{poster}", # posters
+        'external_image' : f"https://image.tmdb.org/t/p/original/{external_image}", # backdrop_path
+        'date' : date, # release_date
+        'cast' : cast_pages, # "cast"
+        'crew' : crew_pages, # crew
+        'belongs_to_collection' : belongs_to_collection, # belongs_to_collection
+        'budget' : budget, # budget
+        'production_companies' : production_companies, # production_companies
+        'production_countries' : production_countries, # productuon_countries
+        'revenue' : revenue, # revenue
+        'runtime' : runtime # runtime
     } 
 
     return render(request, 'posts/DEMO-movie-detail.html', context)
@@ -384,7 +383,7 @@ def boxoffice(request):
 
     # s3 연동
     parser = ConfigParser()
-    parser.read("config/config.ini")
+    parser.read("./config/config.ini")
     access = parser.get("AWS", "S3_ACCESS")
     secret = parser.get("AWS", "S3_SECRET")
     s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
@@ -438,7 +437,6 @@ def boxoffice(request):
             box_details_before = pd.concat([box_details_before, parquet_df], ignore_index=True)
 
         box_details_before = box_details_before[box_details_before['date'] == f"{year_bf}-{month_bf}-{date_bf}"]
-        # box_details_today = pd.concat([box_details_today, box_details_before], ignore_index=True)
     else :
         box_details_before = box_details[box_details['date'] == f"{yesterday}"]
 
@@ -450,14 +448,6 @@ def boxoffice(request):
     box_details_today[['rank_x','rank_y', 'rank_change']]  = box_details_today[['rank_x','rank_y', 'rank_change']].astype(str)
     box_details_today = box_details_today.rename(columns={'rank_x':'rank'})
     print(box_details_today)
-    # box_rank_change['rank_change'] = box_details_today['rank_y'] - box_details_today['rank']
-    # box_rank_change = box_rank_change.fillna('1000')
-    # box_rank_change[['rank_x','rank_y']] = box_rank_change[['rank_x','rank_y']].astype(int)
-    # box_rank_change['rank_change'] = box_rank_change['rank_y'] - box_rank_change['rank_x']
-    # box_rank_change['rank_change'] = box_rank_change['rank_change'].apply(rank_change_to_string)
-    # box_details_today['rank_change'] = box_rank_change['rank_change']
-    # # box_rank_change = box_rank_change.astype(int)
-
 
     return render(request, 'posts/DEMO-boxoffice.html',{'box_details':box_details_today,
                                                         'year':year,

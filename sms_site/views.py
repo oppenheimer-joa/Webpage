@@ -15,8 +15,6 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 global prf_details
 
-
-
 def dictionary(request):
     # genre list 변수
     genre_list = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary',
@@ -118,6 +116,9 @@ def dictionary(request):
     # 페이지 기능 구현
     # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
     movie_list = movie_details.to_dict('records')
+    print("SHOW MOVIE LIST <<<<<<<<<<<<<<<<< ")
+    print(movie_list)
+
     paginator = Paginator(movie_list, 20)
     # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
     page = request.GET.get('page', 1)
@@ -127,7 +128,8 @@ def dictionary(request):
         pages = paginator.page(1)
     except EmptyPage:
         pages = paginator.page(1)
-    
+
+
     return render(request, 'sms_site/dictionary.html',{"movie_list": movie_details,
                                                        "search":search,
                                                        "search_type":search_type,
@@ -228,7 +230,7 @@ def performance(request):
     except EmptyPage:
         pages = paginator.page(1)
 
-    return render(request, 'sms_site/prf.html',{'prf_list':prf_details,
+    return render(request, 'sms_site/prf.html',{
                                                 'search_type':search_type,
                                                 'search':search,
                                                 'sort_by':sort_by,
