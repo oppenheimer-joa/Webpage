@@ -258,11 +258,12 @@
                                         <div class="text-xs text-uppercase-expanded mb-2"></div>
                                             <div class="text-xs text-uppercase-expanded text-primary mb-2">ACTORS</div>
                                             <p class="lead mb-0">출연진 목록</p>
+                                        </div>
                                     </div>
                                     <div class="row gx-5">
                                         {% for person in cast.object_list %}
                                         <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="{% url "people_info" person.id %}">
+                                            <a class="card lift h-100" href='{% url "people_info" person.id %}'>
                                                 <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
                                                 {% if person.profile_img %}
                                                 <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
@@ -277,16 +278,18 @@
                                         </div>
                                         {% endfor %}
                                     </div>
-        
+
                                     <div class="mb-5 text">
                                         <div class="text-xs text-uppercase-expanded mb-2"></div>
                                             <div class="text-xs text-uppercase-expanded text-primary mb-2">CREWS</div>
                                             <p class="lead mb-0">제작진 목록</p>
+                                        </div>
                                     </div>
+
                                     <div class="row gx-5">
                                         {% for person in crew.object_list %}
                                         <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
-                                            <a class="card lift h-100" href="">
+                                            <a class="card lift h-100" href='{% url "people_info" person.id %}'>
                                                 <div class="card-flag card-flag-dark card-flag-top-right card-flag-lg">{{ person.known_for_department }}</div>
                                                 {% if person.profile_img %}
                                                 <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{ person.profile_img }}" alt="..." />
@@ -300,6 +303,9 @@
                                             </a>
                                         </div>
                                         {% endfor %}
+                                    </div>
+    
+
                                 </div>
                             </div>
                         </div>

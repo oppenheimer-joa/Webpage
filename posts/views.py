@@ -304,10 +304,12 @@ def movie_detail(request, pk):
 
     # people dict를 담은 리스트 생성
     cast_list = [{col: val for col, val in zip(column_list, person)} for person in cast]
-    cast_list = [{col: val for col, val in zip(column_list, person)} for person in crew]
+    crew_list = [{col: val for col, val in zip(column_list, person)} for person in crew]
 
     print("\nSHOW CAST AND CREWS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
+    print("CAST")
     print(cast_list)
+    print("CREW")
     print(crew_list)
 
     cast_paginator = Paginator(cast_list, 12)
