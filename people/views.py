@@ -8,68 +8,66 @@ import boto3, re
 from io import BytesIO
 import pyarrow.parquet as pq
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+import duckdb, os
 
     
 def dictionary(request):
-    # department list 변수
-    department_list = ['Acting', 'Production', 'Sound', 'Directing', 'Writing', 'Editing',
-       'Crew', 'Visual Effects', 'Camera', 'Lighting',
-       'Costume & Make-Up', 'Art', 'Creator']
+    # # department list 변수
+    # department_list = ['Acting', 'Production', 'Sound', 'Directing', 'Writing', 'Editing',
+    #    'Crew', 'Visual Effects', 'Camera', 'Lighting',
+    #    'Costume & Make-Up', 'Art', 'Creator']
     
     # request GET
     search = request.GET.get('search', '')
     department = request.GET.get('department', '')
     sort_by = request.GET.get('sort', 'name_asc')
-
-    parser = ConfigParser()
-    parser.read("./config/config.ini")
-    # parser.read("/home/neivekim76/config/config.ini")
-    access = parser.get("AWS", "S3_ACCESS")
-    secret = parser.get("AWS", "S3_SECRET")
-
-    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people_test/')
     
-    people_details = pd.DataFrame(columns=[
-        'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
-    ])
-    
-    for obj in objects.get('Contents'):
-        file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
-        print(file_path)
-        if file_path.find('parquet') == -1:
-            continue
-        s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-        parquet_data = BytesIO(s3_object['Body'].read())
-        parquet_table = pq.read_table(parquet_data)
-        parquet_df = parquet_table.to_pandas()
-        people_details = pd.concat([people_details, parquet_df], ignore_index=True)
-    
-    # 중복된 'id'를 가진 행 제거 (처음 발견되는 것만 남김)
-    people_details.drop_duplicates(subset=['id'], keep='first', inplace=True)
+    # sort_by 값에 따라 SQL 정렬 구문 생성
+    order_by_clause = "ORDER BY name ASC" if sort_by == 'name_asc' else "ORDER BY name DESC" if sort_by == 'name_dsc' else ""
 
-    # 역할 별 필터링
-    if department != "" : ## 찾으려는 역할 값이 있을 경우
-        people_details = people_details[people_details['known_for_department'] == department]
-        if people_details.shape[0] == 0 :
-            return render(request, 'people/dictionary.html',{"no_filter": "조건에 맞는 결과가 없습니다",
-                                                                "selected_department": department,
-                                                                "department_list":department_list,
-                                                                'sort_by':sort_by,
-                                                                "search":search,})
-    if search != "": # search 값이 있으면
-        people_details = people_details[people_details['name'].str.contains(search)]
-        
-    if sort_by != "": # sort_by 값이 있으면
-        if sort_by == 'name_dsc' :
-            people_details = people_details.sort_values(by='name', ascending=False)
-        elif sort_by == 'name_asc' :
-            people_details = people_details.sort_values(by='name', ascending=True)
+    # search 및 department 값에 따라 SQL 필터 구문 생성
+    where_clauses = []
+    if search:
+        where_clauses.append(f"name LIKE '%{search}%'")
+    if department:
+        where_clauses.append(f"known_for_department = '{department}'")
+    where_clause = " AND ".join(where_clauses)
+    where_clause = f"WHERE {where_clause}" if where_clause else ""
+    
+    # database 절대 경로 반환
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    database_dir = os.path.join(current_dir, f'../database/tmdb_people')
+    
+    # DuckDB에 연결
+    conn = duckdb.connect(database=database_dir, read_only=False)
+
+    # 쿼리 실행
+    cursor = conn.cursor()
+    cursor.execute(f'''
+                SELECT 
+                    id, date_gte, name, 
+                    known_for_department, profile_img, 
+                    birth, death
+                FROM 
+                    tmdb_people
+                {where_clause}
+                {order_by_clause}
+                ''')
+
+    # 결과 가져오기
+    result_all = cursor.fetchall()
+
+    # 컬럼 이름 지정
+    columns = ['id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death']
+
+    # 결과를 딕셔너리 리스트로 변환
+    dict_list = [dict(zip(columns, row)) for row in result_all]
+
+    # 연결 종료
+    conn.close()
 
     # 페이지 기능 구현
-    # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
-    people_list = people_details.to_dict('records')
-    paginator = Paginator(people_list, 20)
+    paginator = Paginator(dict_list, 20)
     # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
     page = request.GET.get('page', 1)
     try:
@@ -80,52 +78,47 @@ def dictionary(request):
         pages = paginator.page(1)
         
     # 리턴값에 'pages': pages 추가 
-    return render(request, 'people/dictionary.html',{"people_list": people_details,
-                                                    "selected_department": department,
-                                                    "department_list":department_list,
+    return render(request, 'people/dictionary.html',{"selected_department": department,
                                                     'sort_by':sort_by,
                                                     "search":search,
                                                     'pages': pages})
     
 def people_info(request, id):
+    
+    # database 절대 경로 반환
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    database_dir = os.path.join(current_dir, f'../database/tmdb_people')
+    
+    # DuckDB에 연결
+    conn = duckdb.connect(database=database_dir, read_only=False)
+
+    # 쿼리 실행
+    cursor = conn.cursor()
+    cursor.execute(f'''
+                SELECT 
+                    id, date_gte, name, 
+                    known_for_department, profile_img, 
+                    birth, death
+                FROM 
+                    tmdb_people
+                WHERE id = {id}
+                ''')
+
+    # 결과 가져오기
+    result_all = cursor.fetchall()
+
+    # 컬럼 이름 지정
+    columns = ['id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death']
+
+    # 결과를 딕셔너리 리스트로 변환
+    dict_list = [dict(zip(columns, row)) for row in result_all]
+
+    # 연결 종료
+    conn.close()
+
     parser = ConfigParser()
     parser.read("./config/config.ini")
-    # parser.read("/home/neivekim76/config/config.ini")
-    access = parser.get("AWS", "S3_ACCESS")
-    secret = parser.get("AWS", "S3_SECRET")
-
-    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_people_test')
-    
-    people_details = pd.DataFrame(columns=[
-        'id', 'date_gte', 'name', 'known_for_department', 'profile_img', 'birth', 'death'
-    ])
-
-    for obj in objects.get('Contents'):
-        file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
-        print(file_path)
-        if file_path.find('parquet') == -1:
-            continue
-        s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-        parquet_data = BytesIO(s3_object['Body'].read())
-        parquet_table = pq.read_table(parquet_data)
-        parquet_df = parquet_table.to_pandas()
-        people_details = pd.concat([people_details, parquet_df], ignore_index=True)
-        
-    # 중복된 'id'를 가진 행 제거 (처음 발견되는 것만 남김)
-    people_details.drop_duplicates(subset=['id'], keep='first', inplace=True)
-
-    # 특정 ID 사람의 정보만 뽑기
-    selected_person = people_details.loc[people_details['id'] == str(id)]
-    print(selected_person)
-    # DataFrame을 딕셔너리로 변환
-    if not selected_person.empty:
-        selected_person_dict = selected_person.to_dict('records')[0]
-    else:
-        selected_person_dict = {}  # 해당 ID가 없을 경우 빈 딕셔너리를 사용
-        
-    print(selected_person_dict)
-    api_key = parser.get("TMDB", "API_KEY_1")
+    api_key = parser.get("TMDB", "API_KEY")
     base_url = f'https://api.themoviedb.org/3/person/{id}/movie_credits'
     headers = {
     	"Authorization": f"Bearer {api_key}",
@@ -164,7 +157,7 @@ def people_info(request, id):
     except EmptyPage:
         pages = paginator.page(1)
 
-    return render(request, 'people/people_info.html', {'person_info':selected_person_dict, 'pages':pages, 'count':count})
+    return render(request, 'people/people_info.html', {'person_info':dict_list[0], 'pages':pages, 'count':count})
     
 
 

@@ -3,7 +3,7 @@ from configparser import ConfigParser
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 config_dir = os.path.join(current_dir, f'../config/config.ini')
-database_dir = os.path.join(current_dir, f'../database/tmdb')
+database_dir = os.path.join(current_dir, f'../database/tmdb_people')
 
 # config.ini 파일 읽기
 parser = ConfigParser()
