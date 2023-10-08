@@ -18,14 +18,7 @@ conn = duckdb.connect(database=database_dir, read_only=False)
 cursor = conn.cursor()
 
 # 테이블 생성 : 2023년 1월, 서울
-cursor.execute("""SELECT column_name
-                FROM INFORMATION_SCHEMA.COLUMNS
-                WHERE table_name = 'performance'""")
-cursor.execute("DESCRIBE performance")
-returned = cursor.fetchall()
-
-column_list = [column[0] for column in returned]
-print(column_list)
+cursor.execute("""DESCRIBE kopis_performance""")
 
 # 연결 종료
 conn.close()
