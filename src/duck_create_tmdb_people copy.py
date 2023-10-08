@@ -20,13 +20,9 @@ cursor = conn.cursor()
 # 테이블 생성 : 2023년 1월, 서울
 
 cursor.execute(f'''
-            SELECT 
-                id, original_title, overview, posters,
-                backdrop_path, release_date, "cast", crew,
-                belongs_to_collection, budget, production_companies, production_countries,
-                revenue, runtime, genres
+            SELECT *
             FROM 
-            tmdb_movie;
+            tmdb_people;
             ''')
 
 returned = cursor.fetchall()[0]

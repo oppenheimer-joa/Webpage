@@ -34,25 +34,29 @@ def dictionary(request):
     where_clause = " AND ".join(where_clauses)
     where_clause = f"WHERE {where_clause}" if where_clause else ""
     
+    QUERY = f'''
+                SELECT 
+                    id, date_gte, name, 
+                    known_for_department, profile_img, 
+                    birth, death
+                FROM 
+                    tmdb_people 
+                {where_clause}
+                {order_by_clause}
+                '''
+    print("QUERY")
+    print(QUERY)
+
     # database 절대 경로 반환
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    database_dir = os.path.join(current_dir, f'../database/tmdb_people')
+    database_dir = os.path.join(current_dir, f'../database/tmdb')
     
     # DuckDB에 연결
     conn = duckdb.connect(database=database_dir, read_only=False)
 
     # 쿼리 실행
     cursor = conn.cursor()
-    cursor.execute(f'''
-                SELECT 
-                    id, date_gte, name, 
-                    known_for_department, profile_img, 
-                    birth, death
-                FROM 
-                    tmdb_people
-                {where_clause}
-                {order_by_clause}
-                ''')
+    cursor.execute(QUERY)
 
     # 결과 가져오기
     result_all = cursor.fetchall()
@@ -87,7 +91,7 @@ def people_info(request, id):
     
     # database 절대 경로 반환
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    database_dir = os.path.join(current_dir, f'../database/tmdb_people')
+    database_dir = os.path.join(current_dir, f'../database/tmdb')
     
     # DuckDB에 연결
     conn = duckdb.connect(database=database_dir, read_only=False)
@@ -118,7 +122,7 @@ def people_info(request, id):
 
     parser = ConfigParser()
     parser.read("./config/config.ini")
-    api_key = parser.get("TMDB", "API_KEY")
+    api_key = parser.get("TMDB", "API_KEY_1")
     base_url = f'https://api.themoviedb.org/3/person/{id}/movie_credits'
     headers = {
     	"Authorization": f"Bearer {api_key}",

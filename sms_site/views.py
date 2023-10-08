@@ -65,9 +65,9 @@ def dictionary(request):
     if search != "":
         if search_type == 'title' :
             if genre == "":
-                QUERY += f'WHERE original_title LIKE "%{search}%"'
+                QUERY += f"WHERE original_title LIKE '%{search}%'"
             else:
-                QUERY += f'AND original_title LIKE "%{search}%"'
+                QUERY += f"AND original_title LIKE '%{search}%'"
 
         if search_type == 'country' :
             if genre == "":
