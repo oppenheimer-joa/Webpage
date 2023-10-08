@@ -170,7 +170,11 @@
                                     <div class="col-lg-6 z-1" data-aos="fade-left" style="margin:0px">
                                         <div class="device-wrapper mx-auto mb-n15">
                                             <div class="device" data-device="iPhone13" data-orientation="portrait" data-color="black">
-                                                <div class="screen"><img class="img-fluid z-1" src="{{ poster }}" /></div>
+                                                {% if poster != "https://image.tmdb.org/t/p/original/" %}
+                                                    <div class="screen"><img class="img-fluid z-1" src="{{ poster }}" /></div>
+                                                {% else %}
+                                                    <div class="screen"><img class="img-fluid z-1" src="{% static 'Img/noimage.jpg' %}" /></div>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
@@ -253,13 +257,23 @@
                                 <div class="col-lg-12 p-5">
                                     <a class="badge badge-marketing bg-primary-soft rounded-pill text-primary mb-3">PEOPLE</a>
                                     <a class="text-dark" href="#!"><h1>영화 관련인물</h1></a>
-                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <div class="col-lg-12 p-5">
                                     <div class="mb-5 text">
                                         <div class="text-xs text-uppercase-expanded mb-2"></div>
-                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">ACTORS</div>
+                                            <div class="text-xs text-uppercase-expanded text-primary mb-2">CASTS</div>
                                             <p class="lead mb-0">출연진 목록</p>
                                         </div>
                                     </div>
+
                                     <div class="row gx-5">
                                         {% for person in cast.object_list %}
                                         <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
@@ -279,6 +293,15 @@
                                         {% endfor %}
                                     </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <div class="col-lg-12 p-5">
                                     <div class="mb-5 text">
                                         <div class="text-xs text-uppercase-expanded mb-2"></div>
                                             <div class="text-xs text-uppercase-expanded text-primary mb-2">CREWS</div>
@@ -305,7 +328,6 @@
                                         {% endfor %}
                                     </div>
     
-
                                 </div>
                             </div>
                         </div>

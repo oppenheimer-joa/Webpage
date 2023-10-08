@@ -16,11 +16,19 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 global prf_details
 
 def dictionary(request):
+    import os, duckdb
+
     # genre list 변수
     genre_list = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary',
         'Drama', 'Family', 'Fantasy', 'History', 'Horror', 'Music', 'Mystery',
         'Romance', 'Science_Fiction', 'TV_Movie', 'Thriller', 'War', 'Western',
         'id']
+    
+    genre_dict = {'Action' : '28', 'Adventure' : '12', 'Animation' : '16', 'Comedy' : '35', 
+                  'Crime' : '80', 'Documentary' : '99', 'Drama' : '18', 'Family' : '10751', 
+                  'Fantasy' : '14', 'History' : '36', 'Horror' : '27', 'Music' : '10402', 
+                  'Mystery' : '9648', 'Romance' : '10749', 'Science_Fiction' : '878', 'TV_Movie' : '10770',
+                  'Thriller' : '53', 'War' : '10752', 'Western' : '37'} 
     
     # request GET
     search_type = request.GET.get('type', '')
@@ -29,95 +37,106 @@ def dictionary(request):
     sort_by = request.GET.get('sort', 'recent')
     date = request.GET.get('date', '')
 
-    # s3 연동
-    parser = ConfigParser()
-    parser.read("config/config.ini")
-    access = parser.get("AWS", "S3_ACCESS")
-    secret = parser.get("AWS", "S3_SECRET")
-    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    
+    ######################################################################################################
 
-    # movie 정보 가져오기
-    # cache 가 있으면
-    movie_details = cache.get('movie_details')
-    print("캐시데이터 ::::: ", movie_details)
+    # database 절대 경로 반환
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    database_dir = os.path.join(current_dir, f'../database/tmdb')
 
-    if movie_details is None :
+    QUERY = '''
+            SELECT 
+                id, original_title, overview, posters,
+                backdrop_path, release_date, "cast", crew,
+                belongs_to_collection, budget, production_companies, production_countries,
+                revenue, runtime, genres
+            FROM 
+                tmdb_movie
+            '''
 
-        objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB/2023-07-')
-        movie_details = pd.DataFrame()
-        
-        for obj in objects.get('Contents'):
-            file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
-            print(file_path)
-            if file_path.find('parquet') == -1:
-                continue
-            s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-            parquet_data = BytesIO(s3_object['Body'].read())
-            parquet_table = pq.read_table(parquet_data)
-            parquet_df = parquet_table.to_pandas()
-            movie_details = pd.concat([movie_details, parquet_df], ignore_index=True)
-        # 캐시 데이터 저장
-        cache.set('movie_details', movie_details, timeout=None)
     # 장르 endpoint 가 붙으면
     if genre != "" :
-        s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-        objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix='TMDB_genre/2023-07-')
 
-        genre_df = pd.DataFrame()
+        QUERY += f'''
+                 WHERE
+                     ARRAY_CONTAINS(genres, {genre_dict[genre]}) 
+                 '''
 
-        for obj in objects.get('Contents'):
-            file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
-            print(file_path)
-            if file_path.find('parquet') == -1:
-                continue
-            s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-            parquet_data = BytesIO(s3_object['Body'].read())
-            parquet_table = pq.read_table(parquet_data, filters=[(genre,'=',1)])
-            parquet_df = parquet_table.to_pandas()
-            genre_df = pd.concat([genre_df, parquet_df], ignore_index=True)
-        movie_id_in_genre = genre_df['id'].tolist()
-        movie_id_in_genre = list(map(int,movie_id_in_genre)) # 해당 장르의 영화 id list
-        movie_details = movie_details[movie_details['id'].isin(movie_id_in_genre)]
-        if movie_details.shape[0] == 0 :
-            return render(request, 'sms_site/dictionary.html',{"no_filter": "조건에 맞는 결과가 없습니다",
-                                                            "selected_genre": genre,
-                                                            "genre_list":genre_list,
-                                                            'search_type':search_type,
-                                                            'search':search,
-                                                            'sort_by':sort_by,
-                                                            'pages': pages})
-
-    if search != "": # search 값이 있으면
+    # 검색 엔진이 붙으면
+    if search != "":
         if search_type == 'title' :
-            movie_details = movie_details[movie_details['original_title'].str.contains(search)]
-        if search_type == 'country' :
-            # 나라에 대한 검색: 여기에서는 production_countries가 문자열 형태의 JSON이라고 가정합니다.
-            def contains_country(row):
-                try:
-                    return any(country['name'] == search for country in row)
-                except:
-                    return False
+            if genre == "":
+                QUERY += f'WHERE original_title LIKE "%{search}%"'
+            else:
+                QUERY += f'AND original_title LIKE "%{search}%"'
 
-            movie_details = movie_details[movie_details['production_countries'].apply(contains_country)]
+        if search_type == 'country' :
+            if genre == "":
+                QUERY += f'''
+                        WHERE EXISTS (
+                            SELECT 1 
+                            FROM UNNEST(production_countries) AS c 
+                            WHERE c.name = 'f{search}'
+                        ) 
+                        '''
+            else:
+                QUERY += f'''
+                        AND EXISTS (
+                            SELECT 1 
+                            FROM UNNEST(production_countries) AS c 
+                            WHERE c.name = 'f{search}'
+                        ) 
+                        '''
 
     if date != "" :
         prf_details[['prfpdfrom','prfpdto']] = prf_details[['prfpdfrom','prfpdto']].applymap(lambda x : pd.to_datetime(x, format='%Y.%m.%d'))
         prf_details = prf_details[(prf_details['prfpdfrom'] <= date) & (date <= prf_details['prfpdto'])]
 
-
-    if sort_by != "": # sort_by 값이 있으면
+    # sort 조건이 붙으면
+    if sort_by != "": 
         if sort_by == 'recent' :
-            movie_details = movie_details.sort_values(by='release_date', ascending=False)
+            QUERY += 'ORDER BY release_date DESC '
         elif sort_by == 'old' :
-            movie_details = movie_details.sort_values(by='release_date', ascending=True)
-            
-        
-    # 페이지 기능 구현
-    # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
-    movie_list = movie_details.to_dict('records')
-    print("SHOW MOVIE LIST <<<<<<<<<<<<<<<<< ")
-    print(movie_list)
+            QUERY += 'ORDER BY release_date ASC '
+
+    ################################################################################################################################################            
+
+    # DuckDB에 연결
+    conn = duckdb.connect(database=database_dir, read_only=False)  
+
+    # 쿼리 실행 - cast 목록 반환
+    cursor = conn.cursor()
+    cursor.execute(QUERY)
+    
+    # 결과 가져오기
+    fetched = cursor.fetchall()
+    conn.close()
+
+    # # 데이터 1차 가공
+    # movie_id = result_all[0]
+    # movie_nm = result_all[1]
+    # movie_dt = result_all[2]
+    # poster = result_all[3]
+    # external_image = result_all[4]
+    # date = result_all[5]
+    # cast_list = result_all[6]
+    # crew_list = result_all[7]
+    # belongs_to_collection = result_all[8]
+    # budget = result_all[9]
+    # production_companies = result_all[10]
+    # production_countries = result_all[11]
+    # revenue = result_all[12]
+    # runtime = result_all[13]
+    # genre_list = result_all[14]
+
+    column_list = ['id', 'original_title', 'overview', 'posters',
+                'backdrop_path', 'release_date', '"cast"', 'crew',
+                'belongs_to_collection', 'budget', 'production_companies', 'production_countries',
+                'revenue', 'runtime', 'genres']
+    
+    movie_list = [{col: val for col, val in zip(column_list, movie)} for movie in fetched]
+
+    # print("SHOW MOVIE LIST <<<<<<<<<<<<<<<<< ")
+    # print(movie_list)
 
     paginator = Paginator(movie_list, 20)
     # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
@@ -130,7 +149,7 @@ def dictionary(request):
         pages = paginator.page(1)
 
 
-    return render(request, 'sms_site/dictionary.html',{"movie_list": movie_details,
+    return render(request, 'sms_site/dictionary.html',{"movie_list": movie_list,
                                                        "search":search,
                                                        "search_type":search_type,
                                                        'sort_by':sort_by,
