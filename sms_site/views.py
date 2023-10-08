@@ -87,10 +87,6 @@ def dictionary(request):
                         ) 
                         '''
 
-    if date != "" :
-        prf_details[['prfpdfrom','prfpdto']] = prf_details[['prfpdfrom','prfpdto']].applymap(lambda x : pd.to_datetime(x, format='%Y.%m.%d'))
-        prf_details = prf_details[(prf_details['prfpdfrom'] <= date) & (date <= prf_details['prfpdto'])]
-
     # sort 조건이 붙으면
     if sort_by != "": 
         if sort_by == 'recent' :
@@ -110,23 +106,6 @@ def dictionary(request):
     # 결과 가져오기
     fetched = cursor.fetchall()
     conn.close()
-
-    # # 데이터 1차 가공
-    # movie_id = result_all[0]
-    # movie_nm = result_all[1]
-    # movie_dt = result_all[2]
-    # poster = result_all[3]
-    # external_image = result_all[4]
-    # date = result_all[5]
-    # cast_list = result_all[6]
-    # crew_list = result_all[7]
-    # belongs_to_collection = result_all[8]
-    # budget = result_all[9]
-    # production_companies = result_all[10]
-    # production_countries = result_all[11]
-    # revenue = result_all[12]
-    # runtime = result_all[13]
-    # genre_list = result_all[14]
 
     column_list = ['id', 'original_title', 'overview', 'posters',
                 'backdrop_path', 'release_date', '"cast"', 'crew',
@@ -160,87 +139,73 @@ def dictionary(request):
 
 
 def performance(request):
+    import os, duckdb
+
     # request GET
     genre = request.GET.get('genre', '')
     sort_by = request.GET.get('sort', 'recent')
     search_type = request.GET.get('type', '')
     search = request.GET.get('search', '')
 
+    # database 절대 경로 반환
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    database_dir = os.path.join(current_dir, f'../database/kopis')
+
+    QUERY = '''
+            SELECT 
+                *
+            FROM 
+                performance
+            '''  
+
     # 장르 변수
     genre_dict = {'':'', 'theater':'연극', 'musical':'뮤지컬', 'classic':'서양음악(클래식)', 'korean':'한국음악(국악)', 'popular':'대중무용/대중음악', 'dance':'무용(서양무용/한국무용)', 'extra':'기타'}
+    if genre != "" :
+        QUERY += f"""
+                 WHERE
+                     genrenm = '{genre_dict[genre]}'
+                 """
 
-    # s3 연동
-    parser = ConfigParser()
-    parser.read("config/config.ini")
-    access = parser.get("AWS", "S3_ACCESS")
-    secret = parser.get("AWS", "S3_SECRET")
-    s3 = boto3.client('s3', aws_access_key_id=access, aws_secret_access_key=secret)
-    
-    # prf 정보 가져오기
-    # cache 가 있으면
-    prf_details = cache.get('prf_details')
-    print("캐시데이터 ::::: ", prf_details)
-    # cache 가 없으면
-    # prf 정보 가져오기
-    if prf_details is None :
-        objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-07-1')
-        prf_details = pd.DataFrame()
-
-        for obj in objects.get('Contents'):
-            file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
-            if (file_path.find('parquet') == -1):
-                continue
-            print(file_path)
-            s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-            parquet_data = BytesIO(s3_object['Body'].read())
-            parquet_table = pq.read_table(parquet_data)
-            parquet_df = parquet_table.to_pandas()
-            prf_details = pd.concat([prf_details, parquet_df], ignore_index=True)
-        # 캐시 데이터 저장
-        prf_details[['prfpdfrom','prfpdto']] = prf_details[['prfpdfrom','prfpdto']].applymap(lambda x : datetime.strptime(x, '%Y.%m.%d'))
-        cache.set('prf_details', prf_details, timeout=None)
-
-    # 장르 검색
-    if genre != "" : ## 찾으려는 genre 값이 있을 경우
-        genre_df = pd.DataFrame()
-        genre_objects = s3.list_objects_v2(Bucket='sms-warehouse', Prefix=f'kopis/2023/2023-07-1')
-        for obj in genre_objects.get('Contents'):
-            file_path = 's3://{}/{}'.format('sms-warehouse', obj.get('Key'))
-            if (file_path.find('parquet') == -1) or (file_path.find(genre) == -1) :
-                continue
-            print(file_path)
-            s3_object = s3.get_object(Bucket='sms-warehouse', Key=obj.get('Key'))
-            parquet_data = BytesIO(s3_object['Body'].read())
-            parquet_table = pq.read_table(parquet_data)
-            parquet_df = parquet_table.to_pandas()
-            genre_df = pd.concat([genre_df, parquet_df], ignore_index=True)
-        prf_details = genre_df
-        
-        if prf_details.shape[0] == 0 :
-            return render(request, 'sms_site/prf.html',{"no_filter": "조건에 맞는 결과가 없습니다",
-                                                        'search_type':search_type,
-                                                        'search':search,
-                                                        'sort_by':sort_by,
-                                                        "selected_genre": genre,
-                                                        "selected_genre_nm": genre_dict[genre],
-                                                        'pages': pages})
     if search != "": # search 값이 있으면
-        if search_type == 'title' :
-            prf_details = prf_details[prf_details['prfnm'].str.contains(search)]
-        if search_type == 'location' :
-            prf_details = prf_details[(prf_details['prfnm'].str.contains(search)) | (prf_details['fcltynm'].str.contains(search))]
+        if search_type == "title":
+            if genre == "":
+                QUERY += f"WHERE prfnm LIKE '%{search}%'"
+            else:
+                QUERY += f"AND prfnm LIKE '%{search}%'"
+
+        elif search_type == "location":
+            if genre == "":
+                QUERY += f"WHERE fcltynm LIKE '%{search}%'"
+            else:
+                QUERY += f"AND fcltynm LIKE '%{search}%'"
+
             
     if sort_by != "": # sort_by 값이 있으면
         if sort_by == 'open' :
-            prf_details = prf_details.sort_values(by='prfpdfrom', ascending=False)
-        if sort_by == 'close' :
-            prf_details = prf_details.sort_values(by='prfpdto') # 투표자순으로 배치 필요
+            QUERY += 'ORDER BY prfpdfrom DESC '
+        elif sort_by == 'close' :
+            QUERY += 'ORDER BY prfpdto DESC '
 
-    # 페이지 기능 구현
-    # 데이터프레임은 페이지 기능이 어려우니 to_dict를 이용해서 레코드 한 줄씩 리스트로 변환
-    prf_list = prf_details.to_dict('records')
+    # DuckDB에 연결
+    conn = duckdb.connect(database=database_dir, read_only=False)  
+
+    # 쿼리 실행 - cast 목록 반환
+    cursor = conn.cursor()
+    cursor.execute(QUERY)
+    
+    # 결과 가져오기
+    fetched = cursor.fetchall()
+    conn.close()
+
+    column_list = ['dtguidance', 'entrpsnm', 'fcltynm', 'genrenm', 
+                   'mt10id', 'mt20id', 'openrun', 'pcseguidance', 
+                   'poster', 'prfage', 'prfcast', 'prfcrew', 
+                   'prfnm', 'prfpdfrom', 'prfpdto', 'prfruntime', 
+                   'sty', 'styurls', 'tksites', 'genreCode']
+    
+    prf_list = [{col: val for col, val in zip(column_list, prf)} for prf in fetched]
     paginator = Paginator(prf_list, 18)
-    # 한 페이지에 보여줄 컨텐츠 수 지정(ex : 5개면 ('page', 5))
+
     page = request.GET.get('page', 1)
     try:
         pages = paginator.page(page)
@@ -258,24 +223,40 @@ def performance(request):
                                                 'pages': pages})
 
 
-def prf_detail(request,id):
-    if id == "" :
-        return performance(request)
-    prf_details = cache.get('prf_details')
-    print(prf_details)
-    prf_details_id = prf_details[prf_details['mt20id'] == id].iloc[0]
-    prf_details_id = prf_details_id.fillna("정보 없음")
-    tklists = ast.literal_eval(prf_details_id['tksites'])
-    print(tklists)
+def prf_detail(request, id):
+    import os, duckdb
 
-    ticket_lists = {}
-    # 리스트 내의 각 dictionary를 하나로 합침
-    for d in tklists:
-        ticket_lists.update(d)
-    print(ticket_lists)
-    return render(request, "sms_site/prf_detail.html", {"prf_info": prf_details_id,
-                                                       "styurls": prf_details_id['styurls'],
-                                                       "tksites": ticket_lists})
+    # database 절대 경로 반환
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    database_dir = os.path.join(current_dir, f'../database/kopis')
+
+    # DuckDB에 연결
+    conn = duckdb.connect(database=database_dir, read_only=False)  
+
+    # 쿼리 실행 - cast 목록 반환
+    cursor = conn.cursor()
+    cursor.execute(f"""
+                SELECT 
+                    *
+                FROM 
+                   performance
+                WHERE 
+                   mt20id = '{id}'
+                """)
+    fetched = cursor.fetchall()[0]
+    conn.close()
+
+    column_list = ['dtguidance', 'entrpsnm', 'fcltynm', 'genrenm', 
+                   'mt10id', 'mt20id', 'openrun', 'pcseguidance', 
+                   'poster', 'prfage', 'prfcast', 'prfcrew', 
+                   'prfnm', 'prfpdfrom', 'prfpdto', 'prfruntime', 
+                   'sty', 'styurls', 'tksites', 'genreCode']
+    
+    prf_list = {col: val for col, val in zip(column_list, fetched)}
+
+    return render(request, "sms_site/prf_detail.html", {"prf_info": prf_list,
+                                                       "styurls": prf_list['styurls'],
+                                                       "tksites": prf_list['tksites']})
 
 def home(request):
     return render(request, "sms_site/home.html")
